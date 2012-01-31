@@ -36,8 +36,13 @@ gem 'jquery-rails'
 # gem 'capistrano'
 
 # To use debugger
-gem 'ruby-debug19', :require => 'ruby-debug'
-
+group :development, :test do 
+  if RUBY_VERSION =~ /1.9/ 
+    gem 'ruby-debug19' 
+  else 
+    gem 'ruby-debug' 
+  end 
+end
 group :test do
   # Pretty printed test output
   gem 'turn', '0.8.2', :require => false

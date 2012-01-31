@@ -1,3 +1,6 @@
-- @results.each do |result|
-  = result['uri']['value']
-  %br
+- if @results.empty?
+  Aucun résultat trouvé 
+- else
+  - @results.each do |result|
+    = result['uri']['value']
+    %br

@@ -7,7 +7,7 @@ class HomeController < ApplicationController
   end
   def search
     query = <<-QUERY
-      select ?uri, ?sc, ?rank where 
+      select distinct ?uri, ?sc, ?rank where 
        { 
          { 
            { 
@@ -30,7 +30,12 @@ class HomeController < ApplicationController
 
     
     respond_to do |format|
-      format.html{ @results = JSON.parse(postData.body)["results"]["bindings"] }
+      begin
+        @results = JSON.parse(postData.body)["results"]["bindings"]
+      rescue
+        @results = []
+      end
+      format.html{ @results }
     end
   end
 

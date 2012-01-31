@@ -7,6 +7,7 @@ $(document).ready( ->
   xhr = $.ajax()
   $("#query_string").keyup((event) ->
     xhr.abort()
+    $("#ajax_loader").hide()
     val = $(this).val()
     data = query_string: val
     if data.query_string.length > 3

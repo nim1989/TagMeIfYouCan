@@ -12,6 +12,7 @@ group :development do
   gem 'mysql2'
 end
 
+gem 'jquery-rails'
 gem 'thin'
 gem 'haml'
 gem 'heroku'

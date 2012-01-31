@@ -3,8 +3,10 @@ require 'uri'
 require 'json'
 
 class HomeController < ApplicationController
+  
   def index
   end
+
   def search
     query = <<-QUERY
       select distinct ?uri, ?sc, ?rank where 
@@ -27,15 +29,16 @@ class HomeController < ApplicationController
              'default-graph-uri' => "http://dbpedia.org"}
 
     postData = Net::HTTP.post_form(URI.parse('http://dbpedia.org/sparql'), params)
-
+    
+    begin
+      @results = JSON.parse(postData.body)["results"]["bindings"]
+    rescue
+      @results = []
+    end
     
     respond_to do |format|
-      begin
-        @results = JSON.parse(postData.body)["results"]["bindings"]
-      rescue
-        @results = []
-      end
       format.html{ @results }
+      format.json{ render :json => @results.to_json }
     end
   end
 

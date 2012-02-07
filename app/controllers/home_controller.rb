@@ -9,19 +9,8 @@ class HomeController < ApplicationController
 
   def search
     query = <<-QUERY
-      select distinct ?uri, ?sc, ?rank where 
-       { 
-         { 
-           { 
-             select ?uri, ( ?sc * 3e-1 ) as ?sc, ?o1, ( sql:rnk_scale ( <LONG::IRI_RANK> ( ?uri ) ) ) as ?rank where 
-             { 
-               ?uri ?s1textp ?o1 .
-               ?o1 bif:contains '"#{params[:query_string]}"' option ( score ?sc ) .
-
-             }
-            order by desc ( ?sc * 3e-1 + sql:rnk_scale ( <LONG::IRI_RANK> ( ?uri ) ) ) limit 20 offset 0 
-           }
-          }
+        SELECT * WHERE {
+          ?x rdfs:type <http://dbpedia.org/ontology/Film>
         }
       QUERY
     params = {:query => query, 
@@ -43,3 +32,18 @@ class HomeController < ApplicationController
   end
 
 end
+
+# select distinct ?uri, ?sc, ?rank where 
+#  { 
+#    { 
+#      { 
+#        select ?uri, ( ?sc * 3e-1 ) as ?sc, ?o1, ( sql:rnk_scale ( <LONG::IRI_RANK> ( ?uri ) ) ) as ?rank where 
+#        { 
+#          ?uri ?s1textp ?o1 .
+#          ?o1 bif:contains '"#{params[:query_string]}"' option ( score ?sc ) .
+# 
+#        }
+#       order by desc ( ?sc * 3e-1 + sql:rnk_scale ( <LONG::IRI_RANK> ( ?uri ) ) ) limit 20 offset 0 
+#      }
+#     }
+#   }

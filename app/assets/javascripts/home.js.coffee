@@ -26,3 +26,5 @@ $(document).ready( ->
       )
     )
 )
+
+# FB.login(function(res){ console.log(res) }, {scope:'friends_about_me'})

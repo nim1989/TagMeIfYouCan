@@ -1,3 +1,30 @@
-// Place all the styles related to the home controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+input[type=text] {
+    width : 20em;
+}
+ul.results {
+    font-family : Helvetica, Arial; 
+    font-size   :1.2em;
+    list-style  : none;
+    width       : 15em;
+    position    : absolute;
+    margin-left : -1em;
+    li {
+        display         : block;
+        color           : black;
+        background-color: lightgrey;
+        padding-top     : 0.3em;
+        padding-bottom  : 0.3em;
+        padding-left    : 1.3em;
+        padding-right   : 1.3em;
+    }
+    li:hover {
+        cursor          : pointer;
+        color           : white;
+        background-color: gray; 
+    }
+}
+
+
+.ilb {
+    display: inline-block;
+}

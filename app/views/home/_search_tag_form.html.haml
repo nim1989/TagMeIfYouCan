@@ -1,0 +1,19 @@
+.ilb
+  = form_tag tag_user_path('__user_id__'), :class => 'tag_form' do 
+    - if defined? user
+      = hidden_field 'tag', 'user_id', :value => user.id
+    - else
+      .ilb
+        = label_tag 'user_select', 'User'
+        = select_tag  'user_select', options_for_select(@users), :name => 'tag[user_id]'
+    .ilb
+      - random = (rand * 1000).round
+      = label_tag "query_string_#{random}", 'Tag'
+      = text_field_tag "query_string_#{random}", '', :class => 'query_string'
+      %ul.results
+    = hidden_field 'tag', "wikipedia_url_#{random}", :class => 'wikipedia_url'
+    .ilb
+      - if defined? user
+        = submit_tag 'ReTag'
+      - else
+        = submit_tag 'Tag'

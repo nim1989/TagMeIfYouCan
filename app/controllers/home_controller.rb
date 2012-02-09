@@ -5,12 +5,17 @@ require 'json'
 class HomeController < ApplicationController
   
   def index
+    @users = User.all.map{|user| [user.username, user.id] } 
   end
 
   def search
+    query_string = params[:query_string]#.replace(' ', '_')
     query = <<-QUERY
-        SELECT * WHERE {
-          ?x rdfs:type <http://dbpedia.org/ontology/Film>
+        SELECT DISTINCT ?uri, ?page WHERE {
+          ?uri rdf:type <http://dbpedia.org/ontology/Sport>.
+          ?uri rdfs:label ?label.
+          ?uri foaf:page ?page
+          FILTER(regex(fn:lower-case(?label), fn:lower-case("#{query_string}")))
         }
       QUERY
     params = {:query => query, 
@@ -36,7 +41,7 @@ end
 # select distinct ?uri, ?sc, ?rank where 
 #  { 
 #    { 
-#      { 
+#      {
 #        select ?uri, ( ?sc * 3e-1 ) as ?sc, ?o1, ( sql:rnk_scale ( <LONG::IRI_RANK> ( ?uri ) ) ) as ?rank where 
 #        { 
 #          ?uri ?s1textp ?o1 .
@@ -47,3 +52,8 @@ end
 #      }
 #     }
 #   }
+
+# SELECT ?x ?label WHERE {
+#   ?x rdfs:label ?label
+#   FILTER(regex(?label,"^foot"))
+# }

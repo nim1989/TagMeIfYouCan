@@ -1,0 +1,51 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Username:</b>
+  <%= @user.username %>
+</p>
+<h2>Tags en attente</h2>
+<ul>
+  <% @pending_tags.each do |tag_user| %>
+    <li>
+      <%= link_to tag_user.tag.name, tag_user.tag.uri, :class => 'ilb'  %>
+      <div class='ilb'>
+        <%= button_to 'Accept', accept_tag_user_path(@user.id, :tag_id => tag_user.tag.id), %>
+      </div>
+      <div class='ilb'>
+        <%= button_to 'Decline', decline_tag_user_path(@user.id, :tag_id => tag_user.tag.id) %>
+      </div>
+      <div class='ilb'>
+        <%= button_to "Return tag", return_tag_user_path(@user.id, :tag_id => tag_user.tag.id, :to_user_id => tag_user.from_user.id) %>
+      </div>
+      <%= render :partial => '/home/search_tag_form', :locals => {:user => tag_user.from_user} %>
+      <div class='ilb'>
+        From <%= link_to tag_user.from_user.username, user_path(tag_user.from_user) %>
+      </div>
+    </li>
+  <% end %>
+</ul>
+
+<h2>Tags validés</h2>
+<ul>
+  <% @validated_tags.each do |tag_user| %>
+    <li>
+      <%= link_to tag_user.tag.name, tag_user.tag.uri %>
+      You might also like =>
+    </li>
+  <% end %>
+</ul>
+
+
+<h2>Tags refusé</h2>
+<ul>
+  <% @rejected_tags.each do |tag_user| %>
+    <li>
+      <%= link_to tag_user.tag.name, tag_user.tag.uri %>
+    </li>
+  <% end %>
+</ul>
+
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>

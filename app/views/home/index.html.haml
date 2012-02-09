@@ -1,11 +1,5 @@
-= form_tag "search" do 
-  Tag
-  = text_field_tag "query_string"
-  = submit_tag "GO!"
+= render 'search_tag_form'
 
-#ajax_loader
-  = image_tag 'ajax-loader.gif'
-%ul#results
 
 #fb-root
 %script

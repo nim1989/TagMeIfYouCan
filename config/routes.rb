@@ -1,4 +1,15 @@
 TagMeIfYouCan::Application.routes.draw do
+  devise_for :users
+
+  resources :tags
+
+  resources :users do 
+    post 'tag'         ,:on => :member
+    post 'accept_tag'  ,:on => :member
+    post 'decline_tag' ,:on => :member
+    post 'return_tag'  ,:on => :member
+  end
+
   root :to => 'home#index'
   match 'search' => 'home#search'
 

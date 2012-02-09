@@ -16,6 +16,8 @@ gem 'jquery-rails'
 gem 'thin'
 gem 'haml'
 gem 'heroku'
+gem 'rack-ssl'
+gem 'devise'
 
 # Gems used only for assets and not required
 # in production environments by default.

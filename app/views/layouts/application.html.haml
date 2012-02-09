@@ -6,4 +6,7 @@
     = javascript_include_tag "application"
     = csrf_meta_tags
   %body
+    #notice= flash[:notice]
     = yield
+  #ajax_loader
+    = image_tag 'ajax-loader.gif'

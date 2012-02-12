@@ -1,4 +1,9 @@
-= link_to "Start", new_facebook_path 
+- if current_user
+  %h2 
+    Hello 
+    %fb:name{:uid => current_user.identifier, :useyou => 'false'}
+- else
+  = link_to "Start", new_facebook_path 
 - #"http://www.facebook.com/dialog/oauth/?scope=email,user_birthday&client_id=252030558198465&redirect_uri=http://tagmeifyoucan.herokuapp.com/response&response_type=token"
 %br/
 = render 'search_tag_form'

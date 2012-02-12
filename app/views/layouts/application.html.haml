@@ -13,15 +13,14 @@
     = yield
 
 
-    = javascript_include_tag 'http://connect.facebook.net/fr_FR/all.js'
-    %script
-      :javascript
-        FB.init({
-          appId: "#{Facebook.config[:client_id]}",
-          cookie: true,
-          xfbml: true,
-          oauth: true
-        });
+    = javascript_include_tag 'http://connect.facebook.net/en_US/all.js'
+    :javascript
+      FB.init({
+        appId: "#{Facebook.config[:client_id]}",
+        cookie: true,
+        xfbml: true,
+        oauth: true
+      });
     
   #ajax_loader
     = image_tag 'ajax-loader.gif'

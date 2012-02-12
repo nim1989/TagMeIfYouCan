@@ -4,10 +4,22 @@
     %title TagMeIfYouCan
     = stylesheet_link_tag    'application'
     = javascript_include_tag 'application'
+    %meta{:property => 'fb:app_id', :content => Facebook.config[:client_id]}
+    
     = csrf_meta_tags
   %body
-    = javascript_include_tag 'http://connect.facebook.net/fr_FR/all.js'
     #fb-root
+    = javascript_include_tag 'http://connect.facebook.net/fr_FR/all.js'
+    %script
+      :javascript
+        FB.init({
+          appId: "<%= Facebook.config[:client_id] %>",
+          cookie: true,
+          xfbml: true,
+          oauth: true
+        });
+    
+    
     #notice= flash[:notice]
     = yield
   #ajax_loader

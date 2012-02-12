@@ -9,6 +9,10 @@
     = csrf_meta_tags
   %body
     #fb-root
+    #notice= flash[:notice]
+    = yield
+
+
     = javascript_include_tag 'http://connect.facebook.net/fr_FR/all.js'
     %script
       :javascript
@@ -19,8 +23,5 @@
           oauth: true
         });
     
-    
-    #notice= flash[:notice]
-    = yield
   #ajax_loader
     = image_tag 'ajax-loader.gif'

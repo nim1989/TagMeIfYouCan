@@ -22,6 +22,7 @@ class FacebooksController < ApplicationController
 
   # handle Normal OAuth flow: callback
   def create
+    debugger
     client = Facebook.auth(callback_facebook_url).client
     client.authorization_code = params[:code]
     access_token = client.access_token!

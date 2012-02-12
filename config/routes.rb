@@ -10,9 +10,15 @@ TagMeIfYouCan::Application.routes.draw do
     post 'return_tag'  ,:on => :member
   end
 
-  root :to => 'home#index'
   match 'search' => 'home#search'
 
+  # Connect Site
+  resource :facebook, :except => :create do
+    get :callback, :to => :create
+  end
+    
+  root :to => 'home#index'
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

@@ -2,10 +2,12 @@
 %html
   %head
     %title TagMeIfYouCan
-    = stylesheet_link_tag    "application"
-    = javascript_include_tag "application"
+    = stylesheet_link_tag    'application'
+    = javascript_include_tag 'application'
     = csrf_meta_tags
   %body
+    = javascript_include_tag 'http://connect.facebook.net/fr_FR/all.js'
+    #fb-root
     #notice= flash[:notice]
     = yield
   #ajax_loader

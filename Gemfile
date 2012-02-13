@@ -10,10 +10,10 @@ end
 
 group :development do
   gem 'mysql2'
+  gem 'thin'
 end
 
 gem 'jquery-rails'
-gem 'thin'
 gem 'haml'
 gem 'heroku'
 gem 'rack-ssl'

@@ -47,5 +47,3 @@ $(document).ready(function() {
         $(this).find('.query_string').val($(this).find('.query_string').attr('data-value'));
     });
 });
-
-// FB.login(function(res){ console.log(res) }, {scope:'friends_about_me'})

@@ -3,7 +3,7 @@
   - @users = user.friends.map{|user| [user.name, user.identifier] } 
 
 .ilb
-  = form_tag tag_facebook_path('__user_id__'), :class => 'tag_form' do 
+  = form_tag tag_facebook_path(current_user.id), :class => 'tag_form' do 
     = label_tag 'user_select', 'User'
     = select_tag  'user_select', options_for_select(@users), :name => 'tag[user_identifier]'
     .ilb
@@ -12,8 +12,4 @@
       = text_field_tag "query_string_#{random}", '', :class => 'query_string', :name => 'query_string'
       %ul.results
     = hidden_field 'tag', "wikipedia_url_#{random}", :class => 'wikipedia_url', :name => 'tag[wikipedia_url]'
-    .ilb
-      - if defined? user
-        = submit_tag 'ReTag'
-      - else
-        = submit_tag 'Tag'
+    .ilb= submit_tag 'Tag'

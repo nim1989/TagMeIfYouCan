@@ -45,7 +45,6 @@ $(document).ready(function() {
     
     $('.tag_form').submit(function(){
         $(this).find('.query_string').val($(this).find('.query_string').attr('data-value'));
-        $(this).attr('action', $(this).attr('action').replace('__user_id__', $('[name="tag[user_id]"]').val()));
     });
 });
 

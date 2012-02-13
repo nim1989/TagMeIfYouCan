@@ -11,16 +11,16 @@
   %h2 Tags en attente
   %ul
     - @pending_tags.each do |tag_facebook|
-      = debug tag_facebook.from_user
+      = debug tag_facebook.from_facebook
       %li
         = link_to tag_facebook.tag.name, tag_facebook.tag.uri, :class => 'ilb'
         .ilb= button_to 'Accept', accept_tag_facebook_path(:tag_id => tag_facebook.tag.id)
         .ilb= button_to 'Decline', decline_tag_facebook_path(:tag_id => tag_facebook.tag.id)
         .ilb= button_to "Return tag", return_tag_facebook_path(:tag_id => tag_facebook.tag.id, :to_user_id => tag_facebook.from_facebook.id)
-        = render :partial => '/home/search_tag_form' #, :locals => {:user => tag_facebook.from_user}
+        = render :partial => '/home/search_tag_form' #, :locals => {:user => tag_facebook.from_facebook}
         .ilb
           From
-          -# link_to tag_facebook.from_user.username, user_path(tag_facebook.from_user)
+          -# link_to tag_facebook.from_facebook.username, user_path(tag_facebook.from_facebook)
   %h2 Tags validés
   %ul
     - @validated_tags.each do |tag_facebook|

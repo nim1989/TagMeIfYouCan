@@ -15,8 +15,6 @@ TagMeIfYouCan::Application.routes.draw do
   # Connect Site
   resource :facebook, :except => :create do
     get  :callback    , :to => :create
-  end
-  resources :facebook do
     post :tag         , :on => :member
     post :accept_tag  , :on => :member
     post :decline_tag , :on => :member

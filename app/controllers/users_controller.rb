@@ -1,28 +1,6 @@
 require 'cgi'
 class UsersController < ApplicationController
 
-  def tag
-    user = User.find(params[:id])
-    # Prevent from duplicating a tag
-    tag = Tag.where(:uri => params[:query_string]).first
-    if tag.nil?
-      name = CGI.unescape(params[:query_string].gsub('_', ' ').gsub('http://dbpedia.org/resource/', ' '))
-      tag = Tag.new(:uri => params[:query_string], :name => name, :wikipedia_url => params[:tag][:wikipedia_url])
-    end
-    if tag.save
-      user.tags_users << TagsUser.create(:tag => tag)
-      respond_to do |format|
-        format.html { redirect_to root_path }
-        format.json { render json: @users }
-      end    
-    else
-      respond_to do |format|
-        format.html { redirect_to root_path, :notice => 'You have to choose a tag' }
-        format.json { render json: @users }
-      end    
-    end
-  end
-
   def accept_tag
     @user = Facebook.find(params[:id])
     tag_facebook = TagsFcaebook.where(:tag_id => params[:tag_id], :facebook_id => @user.id).first

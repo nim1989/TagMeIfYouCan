@@ -1,34 +1,6 @@
 require 'cgi'
 class UsersController < ApplicationController
 
-  def accept_tag
-    @user = Facebook.find(params[:id])
-    tag_facebook = TagsFcaebook.where(:tag_id => params[:tag_id], :facebook_id => @user.id).first
-    tag_facebook.status = Status.validated
-    tag_facebook.save    
-    respond_to do |format|
-      format.html { redirect_to user_path(@user) }
-    end
-  end
-
-  def decline_tag
-    @user = User.find(params[:id])
-    user_tag = TagsUser.where(:tag_id => params[:tag_id], :user_id => @user.id).first
-    user_tag.status = Status.rejected
-    user_tag.save
-    respond_to do |format|
-      format.html { redirect_to user_path(@user) }
-    end
-  end
-
-  def return_tag
-    @user = User.find(params[:id])
-    TagsUser.create(:tag_id => params[:tag_id], :user_id => params[:to_user_id])
-    respond_to do |format|
-      format.html { redirect_to user_path(@user) }
-    end
-  end
-
   # GET /users
   # GET /users.json
   def index

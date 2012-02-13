@@ -3,5 +3,6 @@ class Tag < ActiveRecord::Base
   has_many :facebooks, :through => :tags_facebooks
   
   validates :uri, :presence => true
+  
 
 end

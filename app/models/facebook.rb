@@ -4,7 +4,9 @@ class Facebook < ActiveRecord::Base
   has_many :tags_facebooks
   has_many :tags, :through => :tags_facebooks
 
-
+  validates :presence => :facebook_id
+  validates :presence => :from_facebook_id
+  
   def profile
     @profile ||= FbGraph::User.me(self.access_token).fetch
   end

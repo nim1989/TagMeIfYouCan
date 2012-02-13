@@ -3,7 +3,7 @@ $(document).ready(function() {
     var fillUriInput = function(uri, uriName, wikipediaURL) {
         $(this).find('.query_string').val(uriName);
         $(this).find('.query_string').attr('data-value', uri);
-        $(this).find('.tag_wikipedia_url').val(wikipediaURL);
+        $(this).find('.wikipedia_url').val(wikipediaURL);
         $(this).find('.results').html('');
     };
 

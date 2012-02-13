@@ -35,7 +35,7 @@ class FacebooksController < ApplicationController
     tag_facebook.status = Status.validated
     tag_facebook.save    
     respond_to do |format|
-      format.html { redirect_to user_path(@user) }
+      format.html { redirect_to root_path }
     end
   end
 
@@ -44,14 +44,14 @@ class FacebooksController < ApplicationController
     user_tag.status = Status.rejected
     user_tag.save
     respond_to do |format|
-      format.html { redirect_to user_path(@user) }
+      format.html { redirect_to root_path }
     end
   end
 
   def return_tag
     TagsFacebook.create(:tag_id => params[:tag_id], :from_facebook_id => current_user.id, :facebook_id => params[:to_user_id])
     respond_to do |format|
-      format.html { redirect_to user_path(@user) }
+      format.html { redirect_to root_path }
     end
   end
   

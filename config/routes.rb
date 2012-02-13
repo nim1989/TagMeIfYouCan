@@ -3,20 +3,26 @@ TagMeIfYouCan::Application.routes.draw do
 
   resources :tags
 
-  resources :users
+  resources :users do 
+    post :tag         , :on => :member
+    post :accept_tag  , :on => :member
+    post :decline_tag , :on => :member
+    post :return_tag  , :on => :member
+  end
   
   match 'search' => 'home#search'
 
   # Connect Site
   resource :facebook, :except => :create do
     get  :callback    , :to => :create
+  end
+  resources :facebook do
     post :tag         , :on => :member
     post :accept_tag  , :on => :member
     post :decline_tag , :on => :member
     post :return_tag  , :on => :member
-
   end
-    
+  
   root :to => 'home#index'
   
   # The priority is based upon order of creation:

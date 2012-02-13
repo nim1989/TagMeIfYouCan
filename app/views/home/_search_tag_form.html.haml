@@ -1,7 +1,6 @@
 - if current_user
   - user = FbGraph::User.me(current_user.access_token)
   - @users = user.friends.map{|user| [user.name, user.identifier] } 
-  = debug current_user
 
 .ilb
   = form_tag tag_facebook_path('__user_id__'), :class => 'tag_form' do 

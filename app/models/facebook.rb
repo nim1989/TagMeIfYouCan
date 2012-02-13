@@ -3,9 +3,6 @@ class Facebook < ActiveRecord::Base
 
   has_many :tags_facebooks
   has_many :tags, :through => :tags_facebooks
-
-  validates :facebook_id     , :presence => true
-  validates :from_facebook_id, :presence => true
   
   def profile
     @profile ||= FbGraph::User.me(self.access_token).fetch

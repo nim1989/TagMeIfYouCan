@@ -10,5 +10,5 @@
 
 
 - if current_user
-  - user = FbGraph::User.me(current_user.access_toke)
+  - user = FbGraph::User.me(current_user.access_token)
   = debug user.friends

@@ -19,7 +19,7 @@ class FacebooksController < ApplicationController
     end
 
     if tag.save
-      TagsFacebook.create(:tag => tag, :from_facebook_id => current_user.id, :facebook_id => user_to_tag.id)
+      TagsFacebook.create(:tag => tag, :from_facebook_id => current_user.id, :facebook_id => user_to_tag.id, :status => Status.pending)
       respond_to do |format|
         format.html { redirect_to root_path }
       end    

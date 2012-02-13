@@ -6,10 +6,8 @@
 .ilb
   = form_tag tag_facebook_path, :class => 'tag_form' do 
     - if defined? from_facebook
-      - user = @users.find(from_facebook).first
-      = debug user
-      = debug @users
-      = debug from_facebook
+      - @users.reject!{|user| user[1] != from_facebook}
+      - user = @users.first
       = label_tag 'user_select', "From #{user[0]}"
       = hidden_field 'username', "username_#{random}", :name => 'tag[user_identifier]', :value => user[1]
     - else

@@ -1,6 +1,5 @@
 class Facebook < ActiveRecord::Base
   # has_many :subscriptions
-
   has_many :tags_facebooks
   has_many :tags, :through => :tags_facebooks
   

@@ -6,9 +6,9 @@ class HomeController < ApplicationController
   
   def index
     if !current_user.nil?
-      @pending_tags   = TagsFacebook.where(:user_id => current_user.id, :status_id => Status.pending.id)
-      @validated_tags = TagsFacebook.where(:user_id => current_user.id, :status_id => Status.validated.id)
-      @rejected_tags  = TagsFacebook.where(:user_id => current_user.id, :status_id => Status.rejected.id)
+      @pending_tags   = TagsFacebook.where(:facebook_id => current_user.id, :status_id => Status.pending.id)
+      @validated_tags = TagsFacebook.where(:facebook_id => current_user.id, :status_id => Status.validated.id)
+      @rejected_tags  = TagsFacebook.where(:facebook_id => current_user.id, :status_id => Status.rejected.id)
     end
   end
 

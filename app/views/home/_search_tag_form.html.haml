@@ -4,7 +4,7 @@
 
 .ilb
   = form_tag tag_facebook_path, :class => 'tag_form' do 
-    - defined? from_facebook
+    - if defined? from_facebook
       - user = @users.find(from_facebook).first
       = label_tag 'user_select', "From #{user[0]}"
       = hidden_field :name => 'tag[user_identifier]', :value => user[1]

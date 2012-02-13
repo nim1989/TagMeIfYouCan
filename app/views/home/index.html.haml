@@ -1,5 +1,5 @@
 - if current_user
-  = debug current_user
+  = debug current_user.profile
   %h2 
     Hello 
     %fb:name{:uid => current_user.identifier, :useyou => 'false'}

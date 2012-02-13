@@ -19,8 +19,8 @@ $(document).ready(function() {
         if (data.query_string.length > 1) {
             $("#ajax_loader").show();
             xhr = $.ajax({
-                url     : "/search",
-                type    : "post",
+                url     : '/search',
+                type    : 'post',
                 data    : data,
                 dataType: "json",
                 success: function(results, b, c) {

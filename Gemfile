@@ -10,7 +10,6 @@ end
 
 group :development do
   gem 'mysql2'
-  gem 'thin'
 end
 
 gem 'jquery-rails'
@@ -19,6 +18,7 @@ gem 'heroku'
 gem 'rack-ssl'
 gem 'devise'
 gem 'fb_graph'
+gem 'thin'
 
 # Gems used only for assets and not required
 # in production environments by default.

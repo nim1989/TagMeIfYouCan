@@ -32,13 +32,13 @@ ActiveRecord::Schema.define(:version => 20120212193737) do
     t.string   "wikipedia_url"
   end
 
-  create_table "tags_users", :force => true do |t|
-    t.integer  "user_id"
+  create_table "tags_facebooks", :force => true do |t|
+    t.integer  "facebook_id"
     t.integer  "tag_id"
-    t.integer  "status_id",    :default => 1
-    t.datetime "created_at",                  :null => false
-    t.datetime "updated_at",                  :null => false
-    t.integer  "from_user_id"
+    t.integer  "status_id",        :default => 1
+    t.datetime "created_at",                      :null => false
+    t.datetime "updated_at",                      :null => false
+    t.integer  "from_facebook_id"
   end
 
   create_table "users", :force => true do |t|

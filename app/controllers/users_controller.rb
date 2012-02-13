@@ -24,10 +24,10 @@ class UsersController < ApplicationController
   end
 
   def accept_tag
-    @user = User.find(params[:id])
-    user_tag = TagsUser.where(:tag_id => params[:tag_id], :user_id => @user.id).first
-    user_tag.status = Status.validated
-    user_tag.save    
+    @user = Facebook.find(params[:id])
+    tag_facebook = TagsFcaebook.where(:tag_id => params[:tag_id], :facebook_id => @user.id).first
+    tag_facebook.status = Status.validated
+    tag_facebook.save    
     respond_to do |format|
       format.html { redirect_to user_path(@user) }
     end

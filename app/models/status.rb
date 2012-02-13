@@ -1,5 +1,5 @@
 class Status < ActiveRecord::Base
-  has_one :tags_user
+  has_one :tags_facebook
   
   def self.pending
     where(:name => 'pending').first

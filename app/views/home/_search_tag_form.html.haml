@@ -1,11 +1,15 @@
+- if current_user
+  - user = FbGraph::User.me(current_user.access_token)
+  - @users = user.friends.map{|user| [user.name, user.identifier] } 
+  = debug @users
+
+
 .ilb
   = form_tag tag_user_path('__user_id__'), :class => 'tag_form' do 
-    - if defined? user
-      = hidden_field 'tag', 'user_id', :value => user.id
-    - else
-      .ilb
-        = label_tag 'user_select', 'User'
-        = select_tag  'user_select', options_for_select(@users), :name => 'tag[user_id]'
+    = hidden_field 'tag', 'user_id', :value => current_user.identifier
+    .ilb
+      = label_tag 'user_select', 'User'
+      = select_tag  'user_select', options_for_select(@users), :name => 'tag[user_id]'
     .ilb
       - random = (rand * 1000).round
       = label_tag "query_string_#{random}", 'Tag'

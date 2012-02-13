@@ -2,13 +2,8 @@
   %h2 
     Hello 
     %fb:name{:uid => current_user.identifier, :useyou => 'false'}
+    %br/
+    = render 'search_tag_form'
 - else
   = link_to "Start", new_facebook_path 
 
-%br/
-= render 'search_tag_form'
-
-
-- if current_user
-  - user = FbGraph::User.me(current_user.access_token)
-  = debug user.friends

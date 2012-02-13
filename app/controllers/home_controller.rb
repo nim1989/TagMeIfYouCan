@@ -5,7 +5,7 @@ require 'json'
 class HomeController < ApplicationController
   
   def index
-    @users = User.all.map{|user| [user.username, user.id] } 
+    #@users = User.all.map{|user| [user.username, user.id] } 
   end
 
   def search

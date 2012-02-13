@@ -23,3 +23,6 @@
 Status.create(:name => 'validated')
 Status.create(:name => 'rejected')
 Status.create(:name => 'has_responded')
+if Status.pending.nil?
+  Status.create(:name => 'pending')
+end

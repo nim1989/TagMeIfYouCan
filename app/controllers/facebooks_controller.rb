@@ -19,7 +19,7 @@ class FacebooksController < ApplicationController
     end
 
     if tag.save
-      TagsFacebook.create(:tag => tag, :from_facebook_id => current_user.identifier, :facebook_id => user_to_tag.identifier, :status => Status.pending)
+      TagsFacebook.create(:tag => tag, :from_facebook_identifier => current_user.identifier, :facebook_identifier => user_to_tag.identifier, :status => Status.pending)
       respond_to do |format|
         format.html { redirect_to root_path }
       end    
@@ -31,7 +31,7 @@ class FacebooksController < ApplicationController
   end
   
   def accept_tag
-    tag_facebook = TagsFacebook.where(:tag_id => params[:tag_id], :facebook_id => current_user.identifier).first
+    tag_facebook = TagsFacebook.where(:tag_id => params[:tag_id], :facebook_identifier => current_user.identifier).first
     tag_facebook.status = Status.validated
     tag_facebook.save    
     respond_to do |format|
@@ -40,7 +40,7 @@ class FacebooksController < ApplicationController
   end
 
   def decline_tag
-    tag_facebook = TagsFacebook.where(:tag_id => params[:tag_id], :facebook_id => current_user.identifier).first
+    tag_facebook = TagsFacebook.where(:tag_id => params[:tag_id], :facebook_identifier => current_user.identifier).first
     user_tag.status = Status.rejected
     user_tag.save
     respond_to do |format|
@@ -49,7 +49,7 @@ class FacebooksController < ApplicationController
   end
 
   def return_tag
-    TagsFacebook.create(:tag_id => params[:tag_id], :from_facebook_id => current_user.identifier, :facebook_id => params[:to_user_id])
+    TagsFacebook.create(:tag_id => params[:tag_id], :from_facebook_identifier => current_user.identifier, :facebook_identifier => params[:to_facebook_identifier])
     respond_to do |format|
       format.html { redirect_to root_path }
     end

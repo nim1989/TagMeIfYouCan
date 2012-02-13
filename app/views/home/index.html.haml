@@ -15,7 +15,7 @@
         = link_to tag_facebook.tag.name, tag_facebook.tag.uri, :class => 'ilb'
         .ilb= button_to 'Accept', accept_tag_facebook_path(:tag_id => tag_facebook.tag.id)
         .ilb= button_to 'Decline', decline_tag_facebook_path(:tag_id => tag_facebook.tag.id)
-        .ilb= button_to "Return tag", return_tag_facebook_path(:tag_id => tag_facebook.tag.id, :to_facebook_id => tag_facebook.from_facebook.identifier)
+        .ilb= button_to "Return tag", return_tag_facebook_path(:tag_id => tag_facebook.tag.id, :to_facebook_identifier => tag_facebook.from_facebook.identifier)
         = render :partial => '/home/search_tag_form', :locals => {:from_facebook => tag_facebook.from_facebook.identifier}
   %h2 Tags validés
   %ul

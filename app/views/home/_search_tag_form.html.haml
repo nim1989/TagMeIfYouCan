@@ -4,8 +4,13 @@
 
 .ilb
   = form_tag tag_facebook_path, :class => 'tag_form' do 
-    = label_tag 'user_select', 'User'
-    = select_tag  'user_select', options_for_select(@users, (defined?(from_facebook) ? from_facebook : '')), :name => 'tag[user_identifier]'
+    - defined? from_facebook
+      - user = @users.find(from_facebook).first
+      = label_tag 'user_select', "From #{user[0]}"
+      = hidden_field :name => 'tag[user_identifier]', :value => user[1]
+    - else
+      = label_tag 'user_select', 'User'
+      = select_tag  'user_select', options_for_select(@users, (defined?(from_facebook) ? from_facebook : '')), :name => 'tag[user_identifier]'
     .ilb
       - random = (rand * 1000).round
       = label_tag "query_string_#{random}", 'Tag'

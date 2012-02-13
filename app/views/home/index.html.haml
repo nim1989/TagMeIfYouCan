@@ -8,10 +8,10 @@
   = link_to "Start", new_facebook_path 
 
 - if current_user
-  = debug tag_facebook.from_user
   %h2 Tags en attente
   %ul
     - @pending_tags.each do |tag_facebook|
+      = debug tag_facebook.from_user
       %li
         = link_to tag_facebook.tag.name, tag_facebook.tag.uri, :class => 'ilb'
         .ilb= button_to 'Accept', accept_tag_facebook_path(:tag_id => tag_facebook.tag.id)

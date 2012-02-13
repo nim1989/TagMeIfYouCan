@@ -31,7 +31,7 @@ class FacebooksController < ApplicationController
   end
   
   def accept_tag
-    tag_facebook = TagsFcaebook.where(:tag_id => params[:tag_id], :facebook_id => current_user.id).first
+    tag_facebook = TagsFacebook.where(:tag_id => params[:tag_id], :facebook_id => current_user.id).first
     tag_facebook.status = Status.validated
     tag_facebook.save    
     respond_to do |format|
@@ -40,7 +40,7 @@ class FacebooksController < ApplicationController
   end
 
   def decline_tag
-    tag_facebook = TagsFcaebook.where(:tag_id => params[:tag_id], :facebook_id => current_user.id).first
+    tag_facebook = TagsFacebook.where(:tag_id => params[:tag_id], :facebook_id => current_user.id).first
     user_tag.status = Status.rejected
     user_tag.save
     respond_to do |format|
@@ -49,8 +49,7 @@ class FacebooksController < ApplicationController
   end
 
   def return_tag
-    @user = User.find(params[:id])
-    TagsFcaebook.create(:tag_id => params[:tag_id], :from_facebook_id => current_user.id, :facebook_id => params[:to_user_id])
+    TagsFacebook.create(:tag_id => params[:tag_id], :from_facebook_id => current_user.id, :facebook_id => params[:to_user_id])
     respond_to do |format|
       format.html { redirect_to user_path(@user) }
     end

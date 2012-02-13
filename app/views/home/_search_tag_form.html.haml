@@ -5,8 +5,8 @@
 
 .ilb
   = form_tag tag_facebook_path('__user_id__'), :class => 'tag_form' do 
-      = label_tag 'user_select', 'User'
-      = select_tag  'user_select', options_for_select(@users), :name => 'tag[user_identifier]'
+    = label_tag 'user_select', 'User'
+    = select_tag  'user_select', options_for_select(@users), :name => 'tag[user_identifier]'
     .ilb
       - random = (rand * 1000).round
       = label_tag "query_string_#{random}", 'Tag'

@@ -22,4 +22,5 @@
   = text_field_tag "query_string_#{random}", '', :class => 'query_string', :name => 'query_string'
   %ul.results
   = hidden_field 'tag', "wikipedia_url_#{random}", :class => 'wikipedia_url', :name => 'tag[wikipedia_url]'
+  = hidden_field 'tag', "thumbnail_#{random}", :class => 'thumbnail', :name => 'tag[thumbnail]'
   = submit_tag 'Tag', {:class => 'uibutton large confirm'}

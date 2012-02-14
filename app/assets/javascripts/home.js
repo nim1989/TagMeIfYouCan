@@ -1,9 +1,10 @@
 $(document).ready(function() {
 
-    var fillUriInput = function(uri, uriName, wikipediaURL) {
+    var fillUriInput = function(uri, uriName, wikipediaURL, thumbnail) {
         $(this).find('.query_string').val(uriName);
         $(this).find('.query_string').attr('data-value', uri);
         $(this).find('.wikipedia_url').val(wikipediaURL);
+        $(this).find('.thumbnail').val(thumbnail);
         $(this).find('.results').html('');
     };
 
@@ -31,9 +32,8 @@ $(document).ready(function() {
                             uriName = result.uri.value.replace('http://dbpedia.org/resource/', '').replace(/_/g, ' ');
                             uriName = decodeURI(uriName);
                             var liTag = $('<li>' + uriName + '</li>');
-                            liTag.click(fillUriInput.bind(form_el, result.uri.value, uriName, result.page.value));
+                            liTag.click(fillUriInput.bind(form_el, result.uri.value, uriName, result.page.value, result.thumbnail.value));
                             $(form_el).find('.results').append(liTag);
-                            
                         }
                     });
                 }

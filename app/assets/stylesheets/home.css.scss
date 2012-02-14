@@ -23,11 +23,11 @@ ul.results {
     }
 }
 
-ul {
+ul.list {
   list-style: none;
   padding-left: 1em;
   display: table;
-  border-spacing: 3px;
+  border-spacing: 5px;
 }
 
 .tag_form {
@@ -51,13 +51,13 @@ input {
   border: 1px solid #D8DFEA;
   background: #EDEFF4;
   padding: 1em;
-  font-size: 11px;
+  font-size: 12px;
   display: inline-block;
   width: 15em;
 }
 
 .confirm_tag {
-  font-size: 11px;
+  font-size: 12px;
   display: table-row;
   > * {
     display: table-cell;

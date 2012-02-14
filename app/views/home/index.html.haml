@@ -1,10 +1,11 @@
 %h2 
-  Hello 
+  Bienvenue  
   %fb:name{:uid => current_user.identifier, :useyou => 'false'}
+  sur Tag Me If You Can
   %br/
 = render 'search_tag_form'
 %h2 Vous avez été taggé :
-%ul
+%ul.list
   - if @pending_tags.length == 0
     %li{:class => 'no_tag'} Aucun tag en attente
   - else 
@@ -16,9 +17,9 @@
         .ilb= button_to 'Accepter', accept_tag_facebook_path(:tag_id => tag_facebook.tag.id), :class => "uibutton confirm"
         .ilb= button_to 'Refuser', decline_tag_facebook_path(:tag_id => tag_facebook.tag.id), :class => "uibutton"
         .ilb= button_to "Retourner le tag", return_tag_facebook_path(:tag_id => tag_facebook.tag.id, :to_facebook_identifier => tag_facebook.from_facebook.identifier), :class => "uibutton"
-        = render :partial => '/home/search_tag_form', :locals => {:from_facebook => tag_facebook.from_facebook.identifier}
+        - render :partial => '/home/search_tag_form', :locals => {:from_facebook => tag_facebook.from_facebook.identifier}
 %h2 Mes tags validés
-%ul
+%ul.list
   - if @validated_tags.length == 0
     %li{:class => 'no_tag'} Aucun tag validé
   - else 
@@ -26,7 +27,7 @@
       %li
         = link_to tag_facebook.tag.name, tag_facebook.tag.wikipedia_url
 %h2 Mes tags refusés
-%ul
+%ul.list
   - if @rejected_tags.length == 0
     %li{:class => 'no_tag'} Aucun tag refusé
   - else 

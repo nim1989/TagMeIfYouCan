@@ -3,27 +3,36 @@
     Hello 
     %fb:name{:uid => current_user.identifier, :useyou => 'false'}
     %br/
-    = render 'search_tag_form'
+  = render 'search_tag_form'
 - else
   = link_to "Start", new_facebook_path 
 
 - if current_user
   %h2 Tags en attente
   %ul
-    - @pending_tags.each do |tag_facebook|
-      %li
-        = link_to tag_facebook.tag.name, tag_facebook.tag.uri, :class => 'ilb'
-        .ilb= button_to 'Accept', accept_tag_facebook_path(:tag_id => tag_facebook.tag.id), :class => "uibutton confirm"
-        .ilb= button_to 'Decline', decline_tag_facebook_path(:tag_id => tag_facebook.tag.id), :class => "uibutton"
-        .ilb= button_to "Return tag", return_tag_facebook_path(:tag_id => tag_facebook.tag.id, :to_facebook_identifier => tag_facebook.from_facebook.identifier), :class => "uibutton"
-        = render :partial => '/home/search_tag_form', :locals => {:from_facebook => tag_facebook.from_facebook.identifier}
+    - if @pending_tags.length == 0
+      %li Aucun tag en attente
+    - else 
+      - @pending_tags.each do |tag_facebook|
+        %li
+          = link_to tag_facebook.tag.name, tag_facebook.tag.uri, :class => 'ilb'
+          .ilb= button_to 'Accept', accept_tag_facebook_path(:tag_id => tag_facebook.tag.id), :class => "uibutton confirm"
+          .ilb= button_to 'Decline', decline_tag_facebook_path(:tag_id => tag_facebook.tag.id), :class => "uibutton"
+          .ilb= button_to "Return tag", return_tag_facebook_path(:tag_id => tag_facebook.tag.id, :to_facebook_identifier => tag_facebook.from_facebook.identifier), :class => "uibutton"
+          = render :partial => '/home/search_tag_form', :locals => {:from_facebook => tag_facebook.from_facebook.identifier}
   %h2 Tags validés
   %ul
-    - @validated_tags.each do |tag_facebook|
-      %li
-        = link_to tag_facebook.tag.name, tag_facebook.tag.uri
+    - if @validated_tags.length == 0
+      %li Aucun tag validé
+    - else 
+      - @validated_tags.each do |tag_facebook|
+        %li
+          = link_to tag_facebook.tag.name, tag_facebook.tag.uri
   %h2 Tags refusé
   %ul
-    - @rejected_tags.each do |tag_facebook|
-      %li
-        = link_to tag_facebook.tag.name, tag_facebook.tag.uri
+    - if @rejected_tags.length == 0
+      %li Aucun tag refusé
+    - else 
+      - @rejected_tags.each do |tag_facebook|
+        %li
+          = link_to tag_facebook.tag.name, tag_facebook.tag.uri

@@ -5,7 +5,8 @@ TagMeIfYouCan::Application.routes.draw do
 
   resources :users
     
-  match 'search' => 'home#search'
+  match 'search'         => 'home#search'
+  match 'you_might_like' => 'home#you_might_like'
 
   # Connect Site
   resource :facebook, :except => :create do

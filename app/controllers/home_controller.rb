@@ -17,7 +17,7 @@ class HomeController < ApplicationController
   end
 
   def search
-    query_string = params[:query_string]#.replace(' ', '_')
+    query_string = params[:query_string]
     query_string = query_string.downcase
     query = <<-QUERY
         SELECT DISTINCT ?uri, ?page, ?thumbnail WHERE {
@@ -41,6 +41,31 @@ class HomeController < ApplicationController
       format.html{ @results }
       format.json{ render :json => @results.to_json }
     end
+  end
+  
+  def you_might_like
+    query = <<-QUERY    
+      select distinct ?new_game, ?label where {
+        <#{params[:uri]}> dcterms:subject ?category.
+        ?new_category skos:related ?category.
+        ?new_game dcterms:subject ?new_category.
+        ?new_game rdfs:label ?label.
+        FILTER(lang(?label) = 'en')
+      }
+    QUERY
+    params = {:query => query, 
+              :format => "application/sparql-results+json",
+              'default-graph-uri' => "http://dbpedia.org"}
+    postData = Net::HTTP.post_form(URI.parse('http://dbpedia.org/sparql'), params)
+    begin
+      @results = JSON.parse(postData.body)["results"]["bindings"]
+    rescue
+      @results = []
+    end
+    respond_to do |format|
+      format.json{ render :json => @results.to_json }
+    end
+    
   end
 end
 

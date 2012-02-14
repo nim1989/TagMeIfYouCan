@@ -48,5 +48,19 @@ $(document).ready(function() {
     });
     $("select").chosen({no_results_text: "No results matched"});
 
+    $('#YouMightLike').click(function() {
+        $.ajax({
+            url     : '/you_might_like.json',
+            type    : 'post',
+            data    :  {
+                uri: 'http://dbpedia.org/resource/American_football'
+            },
+            dataType: "json",
+            success: function(results, b, c) {
+                var random = parseInt(Math.random() * results.length);
+                alert(results[random].label.value);
+            }
+        });
+    });
 });
 

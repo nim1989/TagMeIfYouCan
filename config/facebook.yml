@@ -1,0 +1,11 @@
+development: &defaults
+  client_id: 252030558198465
+  client_secret: b6024f4418eec1cb9d4accc50634a582
+  scope: user_about_me,read_friendlists
+  canvas_url: http://tagmeifyoucan.herokuapp.com/
+
+test:
+  <<: *defaults
+
+production:
+  <<: *defaults

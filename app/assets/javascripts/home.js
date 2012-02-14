@@ -3,7 +3,7 @@ $(document).ready(function() {
     var fillUriInput = function(uri, uriName, wikipediaURL) {
         $(this).find('.query_string').val(uriName);
         $(this).find('.query_string').attr('data-value', uri);
-        $(this).find('.tag_wikipedia_url').val(wikipediaURL);
+        $(this).find('.wikipedia_url').val(wikipediaURL);
         $(this).find('.results').html('');
     };
 
@@ -19,8 +19,8 @@ $(document).ready(function() {
         if (data.query_string.length > 1) {
             $("#ajax_loader").show();
             xhr = $.ajax({
-                url     : "/search",
-                type    : "post",
+                url     : '/search',
+                type    : 'post',
                 data    : data,
                 dataType: "json",
                 success: function(results, b, c) {
@@ -45,9 +45,12 @@ $(document).ready(function() {
     
     $('.tag_form').submit(function(){
         $(this).find('.query_string').val($(this).find('.query_string').attr('data-value'));
-        $(this).attr('action', $(this).attr('action').replace('__user_id__', $('[name="tag[user_id]"]').val()));
     });
+
     $("select").chosen({no_results_text: "No results matched"});
-});
+
 
 // FB.login(function(res){ console.log(res) }, {scope:'friends_about_me'})
+
+});
+

@@ -1,56 +1,6 @@
 require 'cgi'
 class UsersController < ApplicationController
 
-  def tag
-    user = User.find(params[:id])
-    # Prevent from duplicating a tag
-    tag = Tag.where(:uri => params[:query_string]).first
-    if tag.nil?
-      name = CGI.unescape(params[:query_string].gsub('_', ' ').gsub('http://dbpedia.org/resource/', ' '))
-      tag = Tag.new(:uri => params[:query_string], :name => name, :wikipedia_url => params[:tag][:wikipedia_url])
-    end
-    if tag.save
-      user.tags_users << TagsUser.create(:tag => tag)
-      respond_to do |format|
-        format.html { redirect_to root_path }
-        format.json { render json: @users }
-      end    
-    else
-      respond_to do |format|
-        format.html { redirect_to root_path, :notice => 'You have to choose a tag' }
-        format.json { render json: @users }
-      end    
-    end
-  end
-
-  def accept_tag
-    @user = User.find(params[:id])
-    user_tag = TagsUser.where(:tag_id => params[:tag_id], :user_id => @user.id).first
-    user_tag.status = Status.validated
-    user_tag.save    
-    respond_to do |format|
-      format.html { redirect_to user_path(@user) }
-    end
-  end
-
-  def decline_tag
-    @user = User.find(params[:id])
-    user_tag = TagsUser.where(:tag_id => params[:tag_id], :user_id => @user.id).first
-    user_tag.status = Status.rejected
-    user_tag.save
-    respond_to do |format|
-      format.html { redirect_to user_path(@user) }
-    end
-  end
-
-  def return_tag
-    @user = User.find(params[:id])
-    TagsUser.create(:tag_id => params[:tag_id], :user_id => params[:to_user_id])
-    respond_to do |format|
-      format.html { redirect_to user_path(@user) }
-    end
-  end
-
   # GET /users
   # GET /users.json
   def index

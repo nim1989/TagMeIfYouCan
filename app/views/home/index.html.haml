@@ -1,23 +1,29 @@
-= render 'search_tag_form'
+- if current_user
+  %h2 
+    Hello 
+    %fb:name{:uid => current_user.identifier, :useyou => 'false'}
+    %br/
+    = render 'search_tag_form'
+- else
+  = link_to "Start", new_facebook_path 
 
-
-#fb-root
-%script
-  window.fbAsyncInit = function() {
-  FB.init({
-  appId      : '242629845814737', // App ID
-  channelUrl : '//tagmeifyoucan.heroku.com/channel.html', // Channel File
-  status     : true, // check login status
-  cookie     : true, // enable cookies to allow the server to access the session
-  xfbml      : true  // parse XFBML
-  });
-
-  // Additional initialization code here
-  };
-  // Load the SDK Asynchronously
-  (function(d){
-  var js, id = 'facebook-jssdk'; if (d.getElementById(id)) {return;}
-  js = d.createElement('script'); js.id = id; js.async = true;
-  js.src = "//connect.facebook.net/en_US/all.js";
-  d.getElementsByTagName('head')[0].appendChild(js);
-  }(document));
+- if current_user
+  %h2 Tags en attente
+  %ul
+    - @pending_tags.each do |tag_facebook|
+      %li
+        = link_to tag_facebook.tag.name, tag_facebook.tag.uri, :class => 'ilb'
+        .ilb= button_to 'Accept', accept_tag_facebook_path(:tag_id => tag_facebook.tag.id)
+        .ilb= button_to 'Decline', decline_tag_facebook_path(:tag_id => tag_facebook.tag.id)
+        .ilb= button_to "Return tag", return_tag_facebook_path(:tag_id => tag_facebook.tag.id, :to_facebook_identifier => tag_facebook.from_facebook.identifier)
+        = render :partial => '/home/search_tag_form', :locals => {:from_facebook => tag_facebook.from_facebook.identifier}
+  %h2 Tags validés
+  %ul
+    - @validated_tags.each do |tag_facebook|
+      %li
+        = link_to tag_facebook.tag.name, tag_facebook.tag.uri
+  %h2 Tags refusé
+  %ul
+    - @rejected_tags.each do |tag_facebook|
+      %li
+        = link_to tag_facebook.tag.name, tag_facebook.tag.uri

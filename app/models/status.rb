@@ -1,5 +1,7 @@
 class Status < ActiveRecord::Base
-  has_one :tags_user
+  has_one :tags_facebook
+  
+  validates :name, :uniqueness => true
   
   def self.pending
     where(:name => 'pending').first

@@ -1,7 +1,6 @@
 class Tag < ActiveRecord::Base
-  has_many :tags_users
-  has_many :users, :through => :tags_users
+  has_many :tags_facebooks
+  has_many :facebooks, :through => :tags_facebooks, :foreign_key => "facebook_identifier"
   
   validates :uri, :presence => true
-
 end

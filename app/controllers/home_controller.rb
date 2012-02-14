@@ -5,7 +5,11 @@ require 'json'
 class HomeController < ApplicationController
   
   def index
-    @users = User.all.map{|user| [user.username, user.id] } 
+    if !current_user.nil?
+      @pending_tags   = TagsFacebook.where(:facebook_identifier => current_user.identifier, :status_id => Status.pending.id)
+      @validated_tags = TagsFacebook.where(:facebook_identifier => current_user.identifier, :status_id => Status.validated.id)
+      @rejected_tags  = TagsFacebook.where(:facebook_identifier => current_user.identifier, :status_id => Status.rejected.id)
+    end
   end
 
   def search

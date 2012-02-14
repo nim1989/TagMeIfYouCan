@@ -1,14 +1,30 @@
 !!!
-%html
+%html{'xmlns:fb' => 'http://www.facebook.com/2008/fbml'}
   %head
     %title TagMeIfYouCan
+
     = stylesheet_link_tag    "application"
     = stylesheet_link_tag    "chosen/chosen"
     = javascript_include_tag "application"
     = javascript_include_tag "chosen/chosen.jquery.min"
+    = stylesheet_link_tag    'application'
+    = javascript_include_tag 'application'
+    %meta{:property => 'fb:app_id', :content => Facebook.config[:client_id]}
     = csrf_meta_tags
   %body
+    #fb-root
     #notice= flash[:notice]
     = yield
+
+
+    = javascript_include_tag 'http://connect.facebook.net/en_US/all.js'
+    :javascript
+      FB.init({
+        appId: "#{Facebook.config[:client_id]}",
+        cookie: true,
+        xfbml: true,
+        oauth: true
+      });
+    
   #ajax_loader
     = image_tag 'ajax-loader.gif'

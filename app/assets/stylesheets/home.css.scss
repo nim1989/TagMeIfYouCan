@@ -1,6 +1,10 @@
-input[type=text] {
-    width : 20em;
+h2 {
+  background-color: #F2F2F2;
+  padding: 4px 6px 5px;
+  border-top: solid 1px #E2E2E2;
+  font-size: 14px;
 }
+
 ul.results {
     font-family : Helvetica, Arial; 
     font-size   :1.2em;
@@ -24,7 +28,13 @@ ul.results {
     }
 }
 
+.tag_form {
+  padding: 1em;
+  background-color: #f2f2f2;
+}
 
-.ilb {
-    display: inline-block;
+input {
+  border: 1px solid #BDC7D8;
+  box-shadow: none;
+  padding: 4px 6px 5px;
 }

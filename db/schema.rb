@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120212193737) do
+ActiveRecord::Schema.define(:version => 20120214131732) do
 
   create_table "facebooks", :force => true do |t|
     t.string   "identifier",   :limit => 20
@@ -33,12 +33,12 @@ ActiveRecord::Schema.define(:version => 20120212193737) do
   end
 
   create_table "tags_facebooks", :force => true do |t|
-    t.integer  "facebook_identifier"
+    t.string   "facebook_identifier"
     t.integer  "tag_id"
     t.integer  "status_id",                :default => 1
     t.datetime "created_at",                              :null => false
     t.datetime "updated_at",                              :null => false
-    t.integer  "from_facebook_identifier"
+    t.string   "from_facebook_identifier"
   end
 
   create_table "users", :force => true do |t|

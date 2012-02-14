@@ -8,7 +8,10 @@
     - if defined? from_facebook
       - @users.reject!{|user| user[1] != from_facebook}
       - user = @users.first
-      = label_tag 'user_select', "From #{user[0]}"
+      From
+      %fb:name{:uid => user[1], :useyou => 'false'}
+      %fb:profile-pic{:uid => user[1]}
+      - # label_tag 'user_select', "From #{user[0]}"
       = hidden_field 'username', "username_#{random}", :name => 'tag[user_identifier]', :value => from_facebook
     - else
       = label_tag 'user_select', 'User'

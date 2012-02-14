@@ -9,6 +9,10 @@ class HomeController < ApplicationController
       @pending_tags   = TagsFacebook.where(:facebook_identifier => current_user.identifier, :status_id => Status.pending.id)
       @validated_tags = TagsFacebook.where(:facebook_identifier => current_user.identifier, :status_id => Status.validated.id)
       @rejected_tags  = TagsFacebook.where(:facebook_identifier => current_user.identifier, :status_id => Status.rejected.id)
+    else
+      respond_to do |format|
+        format.html{ redirect_to new_facebook_path }
+      end    
     end
   end
 
@@ -16,11 +20,11 @@ class HomeController < ApplicationController
     query_string = params[:query_string]#.replace(' ', '_')
     query = <<-QUERY
         SELECT DISTINCT ?uri, ?page WHERE {
-          ?uri rdf:type <http://dbpedia.org/ontology/Sport>.
+
           ?uri rdfs:label ?label.
           ?uri foaf:page ?page
           FILTER(regex(fn:lower-case(?label), fn:lower-case("#{query_string}")))
-        }
+        } LIMIT 20
       QUERY
     params = {:query => query, 
              :format => "application/sparql-results+json",

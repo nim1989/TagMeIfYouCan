@@ -10,10 +10,9 @@
   
   = label_tag 'user_select', 'Tagger'
   
-  = select_tag  'user_select', options_for_select(@users, (defined?(from_facebook) ? from_facebook : '')), :name => 'tag[user_identifier]'
+  = select_tag  'user_select', options_for_select(@users), :name => 'tag[user_identifier]'
   
   = text_field_tag "query_string", '', :class => 'query_string', :name => 'query_string'
-  
   
   %ul.results
   = hidden_field 'tag', "wikipedia_url", :class => 'wikipedia_url', :name => 'tag[wikipedia_url]'

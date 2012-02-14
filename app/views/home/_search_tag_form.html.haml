@@ -16,6 +16,7 @@
     = hidden_field 'username', "username_#{random}", :name => 'tag[user_identifier]', :value => from_facebook
   - else
     = label_tag 'user_select', 'Tagger'
+    -# @users = @users.collect{|c| [c[0] + "<fb:profile-pic uid='#{c[1]}'></fb:profile-pic>", c[1]]  }
     = select_tag  'user_select', options_for_select(@users, (defined?(from_facebook) ? from_facebook : '')), :name => 'tag[user_identifier]'
     - if !defined?(from_facebook)
       = label_tag "query_string_#{random}", 'avec'

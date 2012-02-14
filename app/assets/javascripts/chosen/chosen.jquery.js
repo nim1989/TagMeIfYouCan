@@ -53,7 +53,7 @@
             options_index: this.options_index,
             value: option.value,
             text: option.text,
-            html: option.innerHTML,
+            html: option.innerHTML + '<fb:profile-pic id="' + option.value + '" uid="' + option.value + '"></fb:profile-pic>',
             selected: option.selected,
             disabled: group_disabled === true ? group_disabled : option.disabled,
             group_array_index: group_position,
@@ -169,11 +169,7 @@ Copyright (c) 2011 by Harvest
         if (option.group_array_index != null) classes.push("group-option");
         if (option.classes !== "") classes.push(option.classes);
         style = option.style.cssText !== "" ? " style=\"" + option.style + "\"" : "";
-        var stringToReturn = '<li id="' + option.dom_id + '" class="' + classes.join(' ') + '"' + style + '>';
-        //stringToReturn += '<fb:profile-pic uid="' + option.value + '"></fb:profile-pic>';
-        stringToReturn += option.html;
-        stringToReturn += '</li>';
-        return stringToReturn;
+        return '<li id="' + option.dom_id + '" class="' + classes.join(' ') + '"' + style + '>' + option.html + '</li>';
       } else {
         return "";
       }

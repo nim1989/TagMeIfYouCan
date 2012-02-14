@@ -31,6 +31,7 @@ class FacebooksController < ApplicationController
   end
   
   def accept_tag
+    retrieve_tag_info(params[:tag_id])
     tag_facebook = TagsFacebook.where(:tag_id => params[:tag_id], :facebook_identifier => current_user.identifier).first
     tag_facebook.status = Status.validated
     tag_facebook.save    
@@ -40,6 +41,7 @@ class FacebooksController < ApplicationController
   end
 
   def decline_tag
+    retrieve_tag_info(params[:tag_id])
     tag_facebook = TagsFacebook.where(:tag_id => params[:tag_id], :facebook_identifier => current_user.identifier).first
     tag_facebook.status = Status.rejected
     tag_facebook.save
@@ -49,6 +51,7 @@ class FacebooksController < ApplicationController
   end
 
   def return_tag
+    retrieve_tag_info(params[:tag_id])
     TagsFacebook.create(:tag_id => params[:tag_id], :from_facebook_identifier => current_user.identifier, :facebook_identifier => params[:to_facebook_identifier])
     respond_to do |format|
       format.html { redirect_to root_path }
@@ -87,7 +90,17 @@ class FacebooksController < ApplicationController
   end
 
   private
-
+  
+  def retrieve_tag_info tag_id
+    tag = Tag.find(tag_id)
+    if tag.thumbnail.empty?
+      tag.retrieve_thumbnail
+    end
+    if tag.wikipedia_url.empty?
+      tag.retrieve_wikipedia_url
+    end
+  end  
+  
   def oauth2_error(e)
     flash[:error] = {
       :title => e.response[:error][:type],

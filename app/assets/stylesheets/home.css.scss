@@ -23,11 +23,11 @@ ul.results {
     }
 }
 
-ul {
+ul.list {
   list-style: none;
   padding-left: 1em;
   display: table;
-  border-spacing: 3px;
+  border-spacing: 5px;
 }
 
 .tag_form {
@@ -51,13 +51,13 @@ input {
   border: 1px solid #D8DFEA;
   background: #EDEFF4;
   padding: 1em;
-  font-size: 11px;
+  font-size: 12px;
   display: inline-block;
   width: 15em;
 }
 
 .confirm_tag {
-  font-size: 11px;
+  font-size: 12px;
   display: table-row;
   > * {
     display: table-cell;
@@ -72,4 +72,37 @@ input {
   font-weight: bold;
   color: #3B5998;
   text-decoration: none;
+}
+
+.img_tag {
+  height: 75px; 
+  width: 75px; 
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  display: block;
+  margin: auto;
+  -webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+#validate_tag {
+  display: block;
+  li {
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+    > a {
+      display: inline-block;
+      max-width: 75px;
+      margin: 5px;
+      font-size: 11px;
+      text-decoration: none;
+      color: #3B5998;
+    }
+    > a:hover {
+      text-decoration: underline;
+    }
+  }
 }

@@ -19,12 +19,13 @@
         .ilb= button_to "Retourner le tag", return_tag_facebook_path(:tag_id => tag_facebook.tag.id, :to_facebook_identifier => tag_facebook.from_facebook.identifier), :class => "uibutton"
         - render :partial => '/home/search_tag_form', :locals => {:from_facebook => tag_facebook.from_facebook.identifier}
 %h2 Mes tags validés
-%ul.list
+%ul#validate_tag.list
   - if @validated_tags.length == 0
     %li{:class => 'no_tag'} Aucun tag validé
   - else 
     - @validated_tags.each do |tag_facebook|
       %li
+        %div.img_tag{:style => "background-image: url(#{tag_facebook.tag.thumbnail})"} &nbsp;
         = link_to tag_facebook.tag.name, tag_facebook.tag.wikipedia_url
 %h2 Mes tags refusés
 %ul.list

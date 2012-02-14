@@ -18,33 +18,36 @@ class HomeController < ApplicationController
 
   def search
     query_string = params[:query_string]#.replace(' ', '_')
+    query_string = query_string.downcase
     query = <<-QUERY
-        SELECT DISTINCT ?uri, ?page WHERE {
+        SELECT DISTINCT ?uri, ?page, ?thumbnail WHERE {
           ?uri rdf:type <http://dbpedia.org/ontology/Sport>.
           ?uri rdfs:label ?label.
-          ?uri foaf:page ?page
-          FILTER(regex(fn:lower-case(?label), fn:lower-case("#{query_string}")))
+          ?uri foaf:page ?page.
+          ?uri dbpedia-owl:thumbnail ?thumbnail.
+          FILTER(regex(fn:lower-case(?label), "#{query_string}"))
         } LIMIT 20
       QUERY
     params = {:query => query, 
              :format => "application/sparql-results+json",
              'default-graph-uri' => "http://dbpedia.org"}
-
     postData = Net::HTTP.post_form(URI.parse('http://dbpedia.org/sparql'), params)
-    
     begin
       @results = JSON.parse(postData.body)["results"]["bindings"]
     rescue
       @results = []
     end
-    
     respond_to do |format|
       format.html{ @results }
       format.json{ render :json => @results.to_json }
     end
   end
-
 end
+
+# Suggestion
+# dbpprop:olympic
+# dcterms:subject
+
 
 # select distinct ?uri, ?sc, ?rank where 
 #  { 

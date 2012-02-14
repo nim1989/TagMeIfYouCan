@@ -15,7 +15,7 @@ class FacebooksController < ApplicationController
     tag = Tag.where(:uri => params[:query_string]).first
     if tag.nil?
       name = CGI.unescape(params[:query_string].gsub('_', ' ').gsub('http://dbpedia.org/resource/', ' '))
-      tag = Tag.new(:uri => params[:query_string], :name => name, :wikipedia_url => params[:tag][:wikipedia_url])
+      tag = Tag.new(:uri => params[:query_string], :name => name, :wikipedia_url => params[:tag][:wikipedia_url], :thumbnail => params[:tag][:thumbnail])
     end
 
     if tag.save
@@ -41,8 +41,8 @@ class FacebooksController < ApplicationController
 
   def decline_tag
     tag_facebook = TagsFacebook.where(:tag_id => params[:tag_id], :facebook_identifier => current_user.identifier).first
-    user_tag.status = Status.rejected
-    user_tag.save
+    tag_facebook.status = Status.rejected
+    tag_facebook.save
     respond_to do |format|
       format.html { redirect_to root_path }
     end

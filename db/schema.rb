@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120214131732) do
+ActiveRecord::Schema.define(:version => 20120214161636) do
 
   create_table "facebooks", :force => true do |t|
     t.string   "identifier",   :limit => 20
@@ -30,6 +30,7 @@ ActiveRecord::Schema.define(:version => 20120214131732) do
     t.datetime "created_at",    :null => false
     t.datetime "updated_at",    :null => false
     t.string   "wikipedia_url"
+    t.string   "thumbnail"
   end
 
   create_table "tags_facebooks", :force => true do |t|

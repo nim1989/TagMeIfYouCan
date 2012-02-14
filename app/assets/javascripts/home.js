@@ -46,11 +46,7 @@ $(document).ready(function() {
     $('.tag_form').submit(function(){
         $(this).find('.query_string').val($(this).find('.query_string').attr('data-value'));
     });
-
-    //$("select").chosen({no_results_text: "No results matched"});
-
-
-// FB.login(function(res){ console.log(res) }, {scope:'friends_about_me'})
+    $("select").chosen({no_results_text: "No results matched"});
 
 });
 

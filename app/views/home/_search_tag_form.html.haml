@@ -1,6 +1,7 @@
 - if current_user
   - user = FbGraph::User.me(current_user.access_token)
   - @users = user.friends.map{|user| [user.name, user.identifier] } 
+  - @users.sort!{|user1, user2| user1[0] <=> user2[0] }
 
 - random = (rand * 1000).round
 

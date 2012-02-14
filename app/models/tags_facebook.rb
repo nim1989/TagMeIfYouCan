@@ -4,7 +4,7 @@ class TagsFacebook < ActiveRecord::Base
   belongs_to :status
   belongs_to :from_facebook, :class_name => 'Facebook', :foreign_key => "from_facebook_identifier"
 
-  validates :facebook     , :presence => true
-  validates :from_facebook, :presence => true
+  validates :facebook_identifier     , :presence => true
+  validates :from_facebook_identifier, :presence => true
 
 end

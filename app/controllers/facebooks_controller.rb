@@ -19,7 +19,10 @@ class FacebooksController < ApplicationController
     end
 
     if tag.save
-      TagsFacebook.create(:tag => tag, :from_facebook_identifier => current_user.identifier, :facebook_identifier => user_to_tag.identifier, :status => Status.pending)
+      tf = TagsFacebook.create(:tag => tag, :from_facebook_identifier => current_user.identifier, :facebook_identifier => user_to_tag.identifier, :status => Status.pending)
+      puts "--------------------------------------------------------------- DEBUG"
+      puts tf.errors
+      puts tf
       respond_to do |format|
         format.html { redirect_to root_path }
       end    

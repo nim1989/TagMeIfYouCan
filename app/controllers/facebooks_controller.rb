@@ -15,19 +15,14 @@ class FacebooksController < ApplicationController
     tag = Tag.where(:uri => params[:query_string]).first
     if tag.nil?
       name = CGI.unescape(params[:query_string].gsub('_', ' ').gsub('http://dbpedia.org/resource/', ' '))
-      tag = Tag.new(:uri => params[:query_string], :name => name, :wikipedia_url => params[:tag][:wikipedia_url], :thumbnail => params[:tag][:thumbnail])
+      tag = Tag.create(:uri => params[:query_string], :name => name, :wikipedia_url => params[:tag][:wikipedia_url], :thumbnail => params[:tag][:thumbnail])
+      tag.generate_director      
     end
 
-    if tag.save
-      TagsFacebook.create(:tag => tag, :from_facebook_identifier => current_user.identifier, :facebook_identifier => user_to_tag.identifier, :status => Status.pending)
-      respond_to do |format|
-        format.html { redirect_to root_path }
-      end    
-    else
-      respond_to do |format|
-        format.html { redirect_to root_path, :notice => 'You have to choose a tag' }
-      end    
-    end
+    TagsFacebook.create(:tag => tag, :from_facebook_identifier => current_user.identifier, :facebook_identifier => user_to_tag.identifier, :status => Status.pending)
+    respond_to do |format|
+      format.html { redirect_to root_path }
+    end    
   end
   
   def accept_tag

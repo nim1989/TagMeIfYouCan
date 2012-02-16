@@ -15,9 +15,13 @@ class HomeController < ApplicationController
       end    
     end
   end
+  
+  def infos
+
+  end
 
   def search_movie
-    movies = Movie.where("lower(label) LIKE '#{params[:query_string]}%'")
+    movies = Movie.where("lower(label) LIKE '%#{params[:query_string]}%'")
     respond_to do |format|
       format.json{ render :json => movies.to_json }
     end

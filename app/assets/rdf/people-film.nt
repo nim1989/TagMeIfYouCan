@@ -42,10 +42,261 @@
 <http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/like> <http://dbpedia.org/resource/Spiders_on_a_Web> .
 <http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/like> <http://dbpedia.org/resource/Strange_Invaders_%28animated_short_film%29> .
 <http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/like> <http://dbpedia.org/resource/War_of_the_Worlds_%282005_film%29> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/like> <http://dbpedia.org/resource/Mission:_Impossible_III> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/like> <http://dbpedia.org/resource/Minority_Report_%28film%29> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/like> <http://dbpedia.org/resource/Mission:_Impossible_%E2%80%93_Ghost_Protocol> .
+<http://www.facebook.com/100000023494269> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/935956> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/5307766> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/9500821> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/18604813> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/504296726> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/509209356> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/511195784> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/521939382> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/530416256> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/540023917> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/543770253> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/544005369> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/549520479> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/549896464> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/550397450> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/550988465> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/551092893> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/555783448> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/559861902> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/561502657> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/562836155> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/566784824> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/568053174> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/575234250> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/582227290> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/595084456> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/599134716> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/599518646> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/613365331> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/616958282> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/619251519> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/619801518> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/622393059> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/624473765> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/629424105> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/629610234> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/632455035> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/638645316> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/645435927> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/646656760> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/650340813> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/655568267> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/656480908> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/656758307> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/662423741> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/663162389> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/663892236> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/664871923> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/665504400> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/673034702> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/673257369> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/674566041> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/675326119> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/678008027> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/679371863> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/686188957> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/688012758> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/690084794> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/700373403> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/704830357> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/707068921> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/708737173> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/723241188> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/728134113> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/731896316> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/733878693> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/736893415> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/752035497> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/768840320> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/771022717> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/779029279> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/779080406> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/788519602> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/795149375> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/804572519> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/817824392> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/819395272> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/827670250> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/832400293> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/834118723> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/849224081> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/896040091> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/1000995120> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/1004236096> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/1004863404> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/1008293681> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/1048808121> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/1060506549> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/1089126684> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/1104264881> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/1106717189> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/1126682236> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/1130682344> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/1143181819> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/1147482312> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/1152953064> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/1156014326> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/1164120840> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/1167572827> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/1184347450> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/1188482431> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/1189374418> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/1192620761> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/1197363485> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/1199840268> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/1206030485> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/1206902480> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/1208003382> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/1208714183> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/1209552556> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/1211771501> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/1212351918> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/1216206320> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/1226324366> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/1228063014> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/1249243290> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/1249932844> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/1252045397> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/1265717055> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/1269815273> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/1290204481> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/1297728459> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/1305180669> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/1318917548> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/1328592921> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/1348456091> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/1349617924> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/1351972221> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/1356360692> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/1356473080> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/1356720463> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/1395600784> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/1399530164> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/1453794553> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/1483150652> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/1485253057> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/1490919139> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/1510808620> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/1537721189> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/1544280293> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/1548510061> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/1559772516> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/1571310334> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/1571311107> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/1575585711> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/1588808133> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/1588963749> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/1680077624> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/1726617307> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/1726749716> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/1728581661> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/1799672419> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/100000022924145> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/100000054912494> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/100000144940766> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/100000163629620> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/100000207476392> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/100000225392132> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/100000225568507> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/100000247983251> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/100000255564478> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/100000271158398> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/100000275675317> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/100000310571412> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/100000434589513> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/100000489952255> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/100000489956215> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/100000568525419> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/100000571614489> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/100000626381083> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/100000666098598> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/100000670143289> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/100000678121216> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/100000689337752> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/100000728783628> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/100000752905700> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/100000791404457> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/100000969852080> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/100001298797872> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/100001327767301> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/100001332893354> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/100001474952781> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/100001488929210> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/100001801861209> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/100001809115776> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/100001935401028> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/100002426733465> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/100003021277357> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/100003272396566> .
 <http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/like> <http://dbpedia.org/resource/Spiders_on_a_Web> .
 <http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/like> <http://dbpedia.org/resource/Strange_Invaders_%28animated_short_film%29> .
 <http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/like> <http://dbpedia.org/resource/War_of_the_Worlds_%282005_film%29> .
 <http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/dislike> <http://dbpedia.org/resource/Spiders_on_a_Web> .
+<http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/dislike> <http://dbpedia.org/resource/Minority_Report_%28film%29> .
+<http://www.facebook.com/834118723> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/531559626> .
+<http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/540023917> .
+<http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/543770253> .
+<http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/544005369> .
+<http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/550988465> .
+<http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/568053174> .
+<http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/575234250> .
+<http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/579504433> .
+<http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/582307935> .
+<http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/619251519> .
+<http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/622393059> .
+<http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/632455035> .
+<http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/646656760> .
+<http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/673034702> .
+<http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/678008027> .
+<http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/700373403> .
+<http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/704830357> .
+<http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/707068921> .
+<http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/708737173> .
+<http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/769880205> .
+<http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/771022717> .
+<http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/779080406> .
+<http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/809987235> .
+<http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/811987566> .
+<http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/817301691> .
+<http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/817824392> .
+<http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/852099838> .
+<http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/1089126684> .
+<http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/1128770992> .
+<http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/1189374418> .
+<http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/1206902480> .
+<http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/1228063014> .
+<http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/1254882742> .
+<http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/1305180669> .
+<http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/1328592921> .
+<http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/1338944766> .
+<http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/1356360692> .
+<http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/1381683411> .
+<http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/1403754121> .
+<http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/1408026976> .
+<http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/1417164268> .
+<http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/1485253057> .
+<http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/1496348261> .
+<http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/1624581347> .
+<http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/100000023494269> .
+<http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/100000255564478> .
+<http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/100000271158398> .
+<http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/100000568525419> .
+<http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/100000571614489> .
+<http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/100000626381083> .
+<http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/100000666098598> .
+<http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/100000670143289> .
+<http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/100000728783628> .
+<http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/100000969852080> .
+<http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/100001474952781> .
+<http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/100001488929210> .
 <http://dbpedia.org/resource/Strange_Invaders_%28animated_short_film%29> <http://www.w3.org/2000/01/rdf-schema#comment> "Strange Invaders is a 2002 short animated film by animator Cordell Barker. It tells the story of Roger and Doris, a couple who lead a quiet life. When a child crashes into their living room, the couple are initially enthralled. However, the child (referred to in the credits only as \"It\") becomes increasingly destructive and proceeds to ransack their home and ruin their lives. Things become increasingly bizarre until Roger realises the true nature of It."@en .
 <http://dbpedia.org/resource/Strange_Invaders_%28animated_short_film%29> <http://www.w3.org/2000/01/rdf-schema#label> "Strange Invaders (animated short film)"@en .
 <http://dbpedia.org/resource/Strange_Invaders_%28animated_short_film%29> <http://dbpedia.org/property/released> "2002"^^<http://www.w3.org/2001/XMLSchema#int> .
@@ -492,3 +743,495 @@
 <http://dbpedia.org/resource/Mission:_Impossible_%E2%80%93_Ghost_Protocol> <http://dbpedia.org/property/director> <http://dbpedia.org/resource/Brad_Bird> .
 <http://dbpedia.org/resource/Mission:_Impossible_%E2%80%93_Ghost_Protocol> <http://xmlns.com/foaf/0.1/homepage> <http://www.missionimpossible.com/> .
 <http://dbpedia.org/resource/Mission:_Impossible_%E2%80%93_Ghost_Protocol> <http://dbpedia.org/ontology/wikiPageExternalLink> <http://www.missionimpossible.com/> .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://dbpedia.org/ontology/thumbnail> <http://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/MissionImpossiblePoster.jpg/200px-MissionImpossiblePoster.jpg> .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://dbpedia.org/ontology/Work/runtime> "110.0"^^<http://dbpedia.org/datatype/minute> .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://purl.org/dc/terms/subject> <http://dbpedia.org/resource/Category:Films_shot_in_the_Czech_Republic> .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://purl.org/dc/terms/subject> <http://dbpedia.org/resource/Category:Films_shot_in_Virginia> .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://purl.org/dc/terms/subject> <http://dbpedia.org/resource/Category:Films_based_on_television_series> .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://purl.org/dc/terms/subject> <http://dbpedia.org/resource/Category:Films_set_in_London> .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://purl.org/dc/terms/subject> <http://dbpedia.org/resource/Category:Rail_transport_films> .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://purl.org/dc/terms/subject> <http://dbpedia.org/resource/Category:1990s_action_films> .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://purl.org/dc/terms/subject> <http://dbpedia.org/resource/Category:Cruise/Wagner_Productions> .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://purl.org/dc/terms/subject> <http://dbpedia.org/resource/Category:English-language_films> .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://purl.org/dc/terms/subject> <http://dbpedia.org/resource/Category:1996_films> .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://purl.org/dc/terms/subject> <http://dbpedia.org/resource/Category:American_spy_films> .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://purl.org/dc/terms/subject> <http://dbpedia.org/resource/Category:Paramount_films> .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://purl.org/dc/terms/subject> <http://dbpedia.org/resource/Category:Mission:_Impossible> .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://purl.org/dc/terms/subject> <http://dbpedia.org/resource/Category:Films_set_in_Virginia> .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://purl.org/dc/terms/subject> <http://dbpedia.org/resource/Category:Films_shot_anamorphically> .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://purl.org/dc/terms/subject> <http://dbpedia.org/resource/Category:American_action_thriller_films> .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://purl.org/dc/terms/subject> <http://dbpedia.org/resource/Category:Films_directed_by_Brian_De_Palma> .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://purl.org/dc/terms/subject> <http://dbpedia.org/resource/Category:Films_set_in_Prague> .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://dbpedia.org/property/budget> "8.0E7"^^<http://dbpedia.org/datatype/usDollar> .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://umbel.org/umbel/rc/Movie_CW> .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Film> .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/CreativeWork> .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Work> .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Movie> .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://www.w3.org/2000/01/rdf-schema#comment> "Misi\u00F3n: Imposible es una pel\u00EDcula basada en la serie de televisi\u00F3n Misi\u00F3n Imposible creada por Bruce Geller. Fue dirigida por Brian De Palma y protagonizada por Tom Cruise como Ethan Hunt. La pel\u00EDcula fue la tercera m\u00E1s exitosa del a\u00F1o."@es .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://www.w3.org/2000/01/rdf-schema#comment> "Mission: Impossible \u2013 pierwszy film bazuj\u0105cy na serialu telewizyjnym Mission: Impossible. Film zosta\u0142 wyre\u017Cyserowany przez Briana De Palm\u0119, a g\u0142\u00F3wn\u0105 rol\u0119 zagra\u0142 w nim Tom Cruise jako Ethan Hunt."@pl .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://www.w3.org/2000/01/rdf-schema#comment> "Mission: Impossible er en amerikansk actionthriller fra 1996, regissert av Brian De Palma. Dette er den f\u00F8rste filmen i filmserien basert p\u00E5 TV-serien Mission: Impossible."@no .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://www.w3.org/2000/01/rdf-schema#comment> "Mission impossible est un film am\u00E9ricain de Brian De Palma, sorti le 23 octobre 1996, et dont les acteurs principaux sont Tom Cruise, Jean Reno, et Emmanuelle B\u00E9art. Ce film est le premier opus de la saga cin\u00E9matographique inspir\u00E9e par la s\u00E9rie t\u00E9l\u00E9vis\u00E9e Mission impossible."@fr .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://www.w3.org/2000/01/rdf-schema#comment> "\u00AB\u041C\u0438\u0301\u0441\u0441\u0438\u044F \u043D\u0435\u0432\u044B\u043F\u043E\u043B\u043D\u0438\u0301\u043C\u0430\u00BB\u00A0\u2014 \u0430\u043C\u0435\u0440\u0438\u043A\u0430\u043D\u0441\u043A\u0438\u0439 \u043F\u0440\u0438\u043A\u043B\u044E\u0447\u0435\u043D\u0447\u0435\u0441\u043A\u0438\u0439 \u0431\u043E\u0435\u0432\u0438\u043A 1996 \u0433\u043E\u0434\u0430, \u0441\u043D\u044F\u0442\u044B\u0439 \u0440\u0435\u0436\u0438\u0441\u0441\u0451\u0440\u043E\u043C \u0411\u0440\u0430\u0439\u0430\u043D\u043E\u043C \u0414\u0435 \u041F\u0430\u043B\u044C\u043C\u0430."@ru .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://www.w3.org/2000/01/rdf-schema#comment> "F\u00F6r TV-serien fr\u00E5n 1966 med samma namn, se P\u00E5 farligt uppdrag. F\u00F6r TV-serien fr\u00E5n 1988 med samma namn, se Farligt uppdrag. Mall:Filmfakta Mission: Impossible \u00E4r en amerikansk action fr\u00E5n 1996 i regi av Brian De Palma med Tom Cruise i huvudrollen som Ethan Hunt. Filmen hade Sverigepremi\u00E4r den 13 september 1996."@sv .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://www.w3.org/2000/01/rdf-schema#comment> "\u300E\u30DF\u30C3\u30B7\u30E7\u30F3:\u30A4\u30F3\u30DD\u30C3\u30B7\u30D6\u30EB\u300F\uFF08Mission:Impossible\uFF09\u306F1996\u5E74\u306E\u30A2\u30E1\u30EA\u30AB\u6620\u753B\u3002"@ja .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://www.w3.org/2000/01/rdf-schema#comment> "Mission: Impossible ist ein US-Agententhriller von Regisseur Brian De Palma mit Tom Cruise und Jon Voight aus dem Jahre 1996, der auf der Fernsehserie Kobra, \u00FCbernehmen Sie bzw. deren Ableger In geheimer Mission basiert."@de .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://www.w3.org/2000/01/rdf-schema#comment> "Vaarallinen teht\u00E4v\u00E4 on toimintaelokuva, joka pohjautuu Vaarallinen teht\u00E4v\u00E4 -televisiosarjaan. Elokuvassa Tom Cruise n\u00E4yttelee Ethan Hunt -nimist\u00E4 agenttia. Huntin oma organisaatio ep\u00E4ilee h\u00E4nt\u00E4 vakoojaksi, joten h\u00E4nen t\u00E4ytyy etsi\u00E4 oikea vakooja ja puhdistaa maineensa. Elokuva sai ensi-iltansa vuonna 1996. Jatko-osia on tehty kaksi: Vaarallinen teht\u00E4v\u00E4 II ja Vaarallinen teht\u00E4v\u00E4 III ."@fi .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://www.w3.org/2000/01/rdf-schema#comment> "Mission: Impossible is a 1996 action thriller directed by Brian De Palma and starring Tom Cruise. Following on from the television series of the same name, the plot follows a new agent, Ethan Hunt and his mission to uncover the mole within the CIA who has framed him for the murders of his entire IMF team. Work on the script had begun early with filmmaker Sydney Pollack on board, before De Palma, Steven Zaillian, David Koepp, and Robert Towne were brought in."@en .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://www.w3.org/2000/01/rdf-schema#comment> "Mission: Impossible \u00E9 um filme dos Estados Unidos de 1996, baseado na s\u00E9rie hom\u00F4nima de TV dos anos 60. Foi dirigido por Brian De Palma e teve Tom Cruise como o protagonista Ethan Hunt, com Jon Voight interpretando Jim Phelps (o mesmo nome do personagem principal da s\u00E9rie). Foi a terceira maior bilheteria do ano, com US$457.7 milh\u00F5es mundialmente. http://www. boxofficemojo. com/yearly/chart/?view2=worldwide&amp;yr=1996&amp;p=. htm"@pt .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://www.w3.org/2000/01/rdf-schema#comment> "Mission: Impossible \u00E8 un film del 1996 diretto da Brian De Palma. La pellicola \u00E8 ispirata alla omonima serie televisiva nata dalla mente di Bruce Geller nel 1966. Due membri degli U2, Larry Mullen e Adam Clayton hanno registrato una loro versione della canzone portante nel film. La pellicola si \u00E8 rivelato uno dei maggiori incassi al botteghino nell'anno 1996, piazzandosi al terzo posto."@it .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://www.w3.org/2000/01/rdf-schema#comment> "\u300A\u4E0D\u53EF\u80FD\u7684\u4EFB\u52D9\u300B (Mission Impossible)\uFF0C\u53C8\u79F0\u8C0D\u4E2D\u8C0D\u3001\u804C\u4E1A\u7279\u5DE5\u961F\u3002\u662F\u4E00\u90E81996\u5E74\u52D5\u4F5C\u7247\uFF0C\u6539\u7DE8\u81EA\u96FB\u8996\u5F71\u96C6\u300A\u8C0D\u4E2D\u8C0D\u300B\u7684\u96FB\u5F71\u3002\u7531\u5E03\u840A\u6069\u00B7\u72C4\u00B7\u5E15\u746A\u5C0E\u6F14\u548C\u6C64\u59C6\u00B7\u514B\u9C81\u65AF\u4E3B\u6F14\u3002\u9019\u9F63\u96FB\u5F71\u65BC\u7576\u5E74\u53D6\u5F97\u7B2C\u4E09\u9AD8\u7684\u7968\u623F\u6536\u5165\u3002"@zh .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://www.w3.org/2000/01/rdf-schema#comment> "Mission: Impossible is een Amerikaanse film uit 1996 met Tom Cruise. Hij speelt een geheime agent die bij de IMF (the Impossible Mission Force) werkt. De film werd geregisseerd door Brian De Palma, en is gebaseerd op de gelijknamige televisieserie uit de jaren '70. De film bracht een bedrag van 457 miljoen dollar op en was daarmee een enorm succes."@nl .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://www.w3.org/2000/01/rdf-schema#label> "Miss\u00E3o Imposs\u00EDvel"@pt .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://www.w3.org/2000/01/rdf-schema#label> "Vaarallinen teht\u00E4v\u00E4"@fi .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://www.w3.org/2000/01/rdf-schema#label> "\u041C\u0438\u0441\u0441\u0438\u044F \u043D\u0435\u0432\u044B\u043F\u043E\u043B\u043D\u0438\u043C\u0430"@ru .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://www.w3.org/2000/01/rdf-schema#label> "\u8077\u696D\u7279\u5DE5\u968A"@zh .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://www.w3.org/2000/01/rdf-schema#label> "Mission: Impossible (film)"@no .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://www.w3.org/2000/01/rdf-schema#label> "Mission impossible (film)"@fr .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://www.w3.org/2000/01/rdf-schema#label> "Mission: Impossible I"@nl .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://www.w3.org/2000/01/rdf-schema#label> "Mission: Impossible"@it .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://www.w3.org/2000/01/rdf-schema#label> "Mission: Impossible"@sv .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://www.w3.org/2000/01/rdf-schema#label> "Mission: Impossible"@pl .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://www.w3.org/2000/01/rdf-schema#label> "\u30DF\u30C3\u30B7\u30E7\u30F3:\u30A4\u30F3\u30DD\u30C3\u30B7\u30D6\u30EB"@ja .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://www.w3.org/2000/01/rdf-schema#label> "Mission: Impossible (film)"@en .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://www.w3.org/2000/01/rdf-schema#label> "Misi\u00F3n: Imposible"@es .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://www.w3.org/2000/01/rdf-schema#label> "Mission: Impossible (Film)"@de .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://dbpedia.org/property/wikiPageUsesTemplate> <http://dbpedia.org/resource/Template:IMDb_title> .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://dbpedia.org/property/wikiPageUsesTemplate> <http://dbpedia.org/resource/Template:Rotten-tomatoes> .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://dbpedia.org/property/wikiPageUsesTemplate> <http://dbpedia.org/resource/Template:Metacritic_film> .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://dbpedia.org/property/wikiPageUsesTemplate> <http://dbpedia.org/resource/Template:Mojo_title> .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://dbpedia.org/property/wikiPageUsesTemplate> <http://dbpedia.org/resource/Template:Infobox_film> .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://dbpedia.org/ontology/abstract> "\u300A\u4E0D\u53EF\u80FD\u7684\u4EFB\u52D9\u300B (Mission Impossible)\uFF0C\u53C8\u79F0\u8C0D\u4E2D\u8C0D\u3001\u804C\u4E1A\u7279\u5DE5\u961F\u3002\u662F\u4E00\u90E81996\u5E74\u52D5\u4F5C\u7247\uFF0C\u6539\u7DE8\u81EA\u96FB\u8996\u5F71\u96C6\u300A\u8C0D\u4E2D\u8C0D\u300B\u7684\u96FB\u5F71\u3002\u7531\u5E03\u840A\u6069\u00B7\u72C4\u00B7\u5E15\u746A\u5C0E\u6F14\u548C\u6C64\u59C6\u00B7\u514B\u9C81\u65AF\u4E3B\u6F14\u3002\u9019\u9F63\u96FB\u5F71\u65BC\u7576\u5E74\u53D6\u5F97\u7B2C\u4E09\u9AD8\u7684\u7968\u623F\u6536\u5165\u3002"@zh .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://dbpedia.org/ontology/abstract> "F\u00F6r TV-serien fr\u00E5n 1966 med samma namn, se P\u00E5 farligt uppdrag. F\u00F6r TV-serien fr\u00E5n 1988 med samma namn, se Farligt uppdrag. Mall:Filmfakta Mission: Impossible \u00E4r en amerikansk action fr\u00E5n 1996 i regi av Brian De Palma med Tom Cruise i huvudrollen som Ethan Hunt. Filmen hade Sverigepremi\u00E4r den 13 september 1996."@sv .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://dbpedia.org/ontology/abstract> "Mission: Impossible \u2013 pierwszy film bazuj\u0105cy na serialu telewizyjnym Mission: Impossible. Film zosta\u0142 wyre\u017Cyserowany przez Briana De Palm\u0119, a g\u0142\u00F3wn\u0105 rol\u0119 zagra\u0142 w nim Tom Cruise jako Ethan Hunt."@pl .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://dbpedia.org/ontology/abstract> "Mission: Impossible \u00E9 um filme dos Estados Unidos de 1996, baseado na s\u00E9rie hom\u00F4nima de TV dos anos 60. Foi dirigido por Brian De Palma e teve Tom Cruise como o protagonista Ethan Hunt, com Jon Voight interpretando Jim Phelps (o mesmo nome do personagem principal da s\u00E9rie). Foi a terceira maior bilheteria do ano, com US$457.7 milh\u00F5es mundialmente. http://www. boxofficemojo. com/yearly/chart/?view2=worldwide&amp;yr=1996&amp;p=. htm"@pt .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://dbpedia.org/ontology/abstract> "Mission: Impossible ist ein US-Agententhriller von Regisseur Brian De Palma mit Tom Cruise und Jon Voight aus dem Jahre 1996, der auf der Fernsehserie Kobra, \u00FCbernehmen Sie bzw. deren Ableger In geheimer Mission basiert."@de .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://dbpedia.org/ontology/abstract> "Mission: Impossible er en amerikansk actionthriller fra 1996, regissert av Brian De Palma. Dette er den f\u00F8rste filmen i filmserien basert p\u00E5 TV-serien Mission: Impossible."@no .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://dbpedia.org/ontology/abstract> "Vaarallinen teht\u00E4v\u00E4 on toimintaelokuva, joka pohjautuu Vaarallinen teht\u00E4v\u00E4 -televisiosarjaan. Elokuvassa Tom Cruise n\u00E4yttelee Ethan Hunt -nimist\u00E4 agenttia. Huntin oma organisaatio ep\u00E4ilee h\u00E4nt\u00E4 vakoojaksi, joten h\u00E4nen t\u00E4ytyy etsi\u00E4 oikea vakooja ja puhdistaa maineensa. Elokuva sai ensi-iltansa vuonna 1996. Jatko-osia on tehty kaksi: Vaarallinen teht\u00E4v\u00E4 II ja Vaarallinen teht\u00E4v\u00E4 III ."@fi .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://dbpedia.org/ontology/abstract> "Mission impossible est un film am\u00E9ricain de Brian De Palma, sorti le 23 octobre 1996, et dont les acteurs principaux sont Tom Cruise, Jean Reno, et Emmanuelle B\u00E9art. Ce film est le premier opus de la saga cin\u00E9matographique inspir\u00E9e par la s\u00E9rie t\u00E9l\u00E9vis\u00E9e Mission impossible."@fr .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://dbpedia.org/ontology/abstract> "\u00AB\u041C\u0438\u0301\u0441\u0441\u0438\u044F \u043D\u0435\u0432\u044B\u043F\u043E\u043B\u043D\u0438\u0301\u043C\u0430\u00BB\u00A0\u2014 \u0430\u043C\u0435\u0440\u0438\u043A\u0430\u043D\u0441\u043A\u0438\u0439 \u043F\u0440\u0438\u043A\u043B\u044E\u0447\u0435\u043D\u0447\u0435\u0441\u043A\u0438\u0439 \u0431\u043E\u0435\u0432\u0438\u043A 1996 \u0433\u043E\u0434\u0430, \u0441\u043D\u044F\u0442\u044B\u0439 \u0440\u0435\u0436\u0438\u0441\u0441\u0451\u0440\u043E\u043C \u0411\u0440\u0430\u0439\u0430\u043D\u043E\u043C \u0414\u0435 \u041F\u0430\u043B\u044C\u043C\u0430."@ru .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://dbpedia.org/ontology/abstract> "Mission: Impossible \u00E8 un film del 1996 diretto da Brian De Palma. La pellicola \u00E8 ispirata alla omonima serie televisiva nata dalla mente di Bruce Geller nel 1966. Due membri degli U2, Larry Mullen e Adam Clayton hanno registrato una loro versione della canzone portante nel film. La pellicola si \u00E8 rivelato uno dei maggiori incassi al botteghino nell'anno 1996, piazzandosi al terzo posto."@it .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://dbpedia.org/ontology/abstract> "\u300E\u30DF\u30C3\u30B7\u30E7\u30F3:\u30A4\u30F3\u30DD\u30C3\u30B7\u30D6\u30EB\u300F\uFF08Mission:Impossible\uFF09\u306F1996\u5E74\u306E\u30A2\u30E1\u30EA\u30AB\u6620\u753B\u3002"@ja .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://dbpedia.org/ontology/abstract> "Mission: Impossible is een Amerikaanse film uit 1996 met Tom Cruise. Hij speelt een geheime agent die bij de IMF (the Impossible Mission Force) werkt. De film werd geregisseerd door Brian De Palma, en is gebaseerd op de gelijknamige televisieserie uit de jaren '70. De film bracht een bedrag van 457 miljoen dollar op en was daarmee een enorm succes. Hoewel men niet negatief was over de film werd de film werd bekritiseerd vanwege Tom Cruise, zijn personage zou een te grote rol spelen in het verhaal. In de originele televisieserie draait het meer om het team."@nl .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://dbpedia.org/ontology/abstract> "Misi\u00F3n: Imposible es una pel\u00EDcula basada en la serie de televisi\u00F3n Misi\u00F3n Imposible creada por Bruce Geller. Fue dirigida por Brian De Palma y protagonizada por Tom Cruise como Ethan Hunt. La pel\u00EDcula fue la tercera m\u00E1s exitosa del a\u00F1o."@es .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://dbpedia.org/ontology/abstract> "Mission: Impossible is a 1996 action thriller directed by Brian De Palma and starring Tom Cruise. Following on from the television series of the same name, the plot follows a new agent, Ethan Hunt and his mission to uncover the mole within the CIA who has framed him for the murders of his entire IMF team. Work on the script had begun early with filmmaker Sydney Pollack on board, before De Palma, Steven Zaillian, David Koepp, and Robert Towne were brought in. In fact, the film went into pre-production without a shooting script. De Palma came up with some action sequences, but neither Koepp nor Towne were satisfied with the story that leads up to these events. U2 band members Larry Mullen, Jr. and Adam Clayton produced their own version of the original theme song. The song went into top ten charts around the world and was nominated for a Grammy Award for Best Pop Instrumental Performance. The movie was the third highest grossing of the year and was followed by two sequels, Mission: Impossible II (2000) and Mission: Impossible III (2006), with a fourth installment, Mission: Impossible \u2013 Ghost Protocol, due in 2011."@en .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://dbpedia.org/ontology/starring> <http://dbpedia.org/resource/Tom_Cruise> .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://dbpedia.org/ontology/starring> <http://dbpedia.org/resource/Jean_Reno> .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://dbpedia.org/ontology/starring> <http://dbpedia.org/resource/Marcel_Iure%C5%9F> .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://dbpedia.org/ontology/starring> <http://dbpedia.org/resource/Jon_Voight> .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://dbpedia.org/ontology/starring> <http://dbpedia.org/resource/Kristin_Scott_Thomas> .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://dbpedia.org/ontology/starring> <http://dbpedia.org/resource/Ving_Rhames> .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://dbpedia.org/ontology/starring> <http://dbpedia.org/resource/Vanessa_Redgrave> .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://dbpedia.org/ontology/starring> <http://dbpedia.org/resource/Emmanuelle_B%C3%A9art> .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://dbpedia.org/property/screenplay> <http://dbpedia.org/resource/Robert_Towne> .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://dbpedia.org/property/screenplay> "David Koepp"@en .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://dbpedia.org/property/starring> <http://dbpedia.org/resource/Tom_Cruise> .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://dbpedia.org/property/starring> <http://dbpedia.org/resource/Emmanuelle_B%C3%A9art> .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://dbpedia.org/property/starring> <http://dbpedia.org/resource/Jon_Voight> .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://dbpedia.org/property/starring> <http://dbpedia.org/resource/Ving_Rhames> .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://dbpedia.org/property/starring> <http://dbpedia.org/resource/Kristin_Scott_Thomas> .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://dbpedia.org/property/starring> <http://dbpedia.org/resource/Vanessa_Redgrave> .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://dbpedia.org/property/starring> <http://dbpedia.org/resource/Jean_Reno> .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://dbpedia.org/property/starring> <http://dbpedia.org/resource/Marcel_Iure%C5%9F> .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://dbpedia.org/property/producer> <http://dbpedia.org/resource/Tom_Cruise> .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://dbpedia.org/property/producer> <http://dbpedia.org/resource/Paul_Hitchcock> .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://dbpedia.org/property/producer> "Elias Badra"@en .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://dbpedia.org/property/producer> <http://dbpedia.org/resource/Paula_Wagner> .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://dbpedia.org/property/id> "missionimpossible"@en .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://dbpedia.org/property/id> "mission_impossible"@en .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://dbpedia.org/property/id> "117060"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://dbpedia.org/property/music> "Danny ElfmanMain theme:Lalo Schifrin"@en .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://dbpedia.org/property/runtime> "6600.0"^^<http://dbpedia.org/datatype/second> .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://dbpedia.org/property/gross> "4.57696359E8"^^<http://dbpedia.org/datatype/usDollar> .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://dbpedia.org/property/language> "English"@en .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://dbpedia.org/property/editing> <http://dbpedia.org/resource/Paul_Hirsch_%28film_editor%29> .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://dbpedia.org/property/distributor> <http://dbpedia.org/resource/Paramount_Pictures> .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://dbpedia.org/ontology/editing> <http://dbpedia.org/resource/Paul_Hirsch_%28film_editor%29> .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://dbpedia.org/property/cinematography> <http://dbpedia.org/resource/Stephen_H._Burum> .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://dbpedia.org/property/caption> "Theatrical release poster"@en .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://dbpedia.org/ontology/wikiPageExternalLink> <http://www.tomcruise.com/tom-cruise-mission-impossible-movie.html> .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://dbpedia.org/ontology/writer> <http://dbpedia.org/resource/Robert_Towne> .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://dbpedia.org/ontology/writer> <http://dbpedia.org/resource/David_Koepp> .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://dbpedia.org/property/studio> <http://dbpedia.org/resource/Cruise/Wagner_Productions> .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://dbpedia.org/property/title> "Mission: Impossible"@en .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://xmlns.com/foaf/0.1/page> <http://en.wikipedia.org/wiki/Mission:_Impossible_%28film%29> .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://dbpedia.org/property/story> <http://dbpedia.org/resource/Steven_Zaillian> .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://dbpedia.org/property/story> <http://dbpedia.org/resource/David_Koepp> .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://dbpedia.org/ontology/producer> <http://dbpedia.org/resource/Paula_Wagner> .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://dbpedia.org/ontology/producer> <http://dbpedia.org/resource/Paul_Hitchcock> .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://dbpedia.org/ontology/producer> <http://dbpedia.org/resource/Tom_Cruise> .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://xmlns.com/foaf/0.1/name> "Mission: Impossible"@en .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://dbpedia.org/property/wordnet_type> <http://www.w3.org/2006/03/wn/wn20/instances/synset-movie-noun-1> .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://dbpedia.org/ontology/budget> "8.0E7"^^<http://dbpedia.org/datatype/usDollar> .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://dbpedia.org/property/released> "1996-05-22"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://dbpedia.org/ontology/director> <http://dbpedia.org/resource/Brian_De_Palma> .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://dbpedia.org/property/name> "Mission: Impossible"@en .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://dbpedia.org/ontology/runtime> "6600"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://dbpedia.org/ontology/distributor> <http://dbpedia.org/resource/Paramount_Pictures> .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://www.w3.org/2002/07/owl#sameAs> <http://rdf.freebase.com/ns/m/035w2k> .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://dbpedia.org/property/followedBy> "Mission: Impossible II"@en .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://xmlns.com/foaf/0.1/depiction> <http://upload.wikimedia.org/wikipedia/commons/e/e1/MissionImpossiblePoster.jpg> .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://dbpedia.org/property/director> <http://dbpedia.org/resource/Brian_De_Palma> .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://dbpedia.org/ontology/cinematography> <http://dbpedia.org/resource/Stephen_H._Burum> .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://dbpedia.org/ontology/gross> "4.57696359E8"^^<http://dbpedia.org/datatype/usDollar> .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://dbpedia.org/property/country> "United States"@en .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://dbpedia.org/ontology/releaseDate> "1996-05-22"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://dbpedia.org/ontology/musicComposer> <http://dbpedia.org/resource/Lalo_Schifrin> .
+<http://dbpedia.org/resource/Mission:_Impossible_%28film%29> <http://dbpedia.org/ontology/musicComposer> <http://dbpedia.org/resource/Danny_Elfman> .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://dbpedia.org/ontology/editing> <http://dbpedia.org/resource/Maryann_Brandon> .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://dbpedia.org/ontology/editing> <http://dbpedia.org/resource/Mary_Jo_Markey> .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://dbpedia.org/ontology/abstract> "Mission: Impossible III to trzeci film bazuj\u0105cy na serialu telewizyjnym Impossible. Rol\u0119 g\u0142\u00F3wn\u0105 zagra\u0142 Tom Cruise. Innymi gwiazdami w filmie s\u0105 Philip Seymour Hoffman, Ving Rhames, Michelle Monaghan, Billy Crudup, Keri Russell, Jonathan Rhys-Meyers, Maggie Q, Sasha Alexander, Simon Pegg oraz Laurence Fishburne. Film wyre\u017Cyserowany zosta\u0142 przez producenta seriali Agentka o stu twarzach i Zagubieni, J.J. Abramsa. Pierwszy raz film pokazany zosta\u0142 26 kwietnia 2006 na festiwalu Tribeca Film Festival, a w kinach ameryka\u0144skich od 5 maja 2006. Niespodziank\u0105 by\u0142o pokazanie filmu w Stanach Zjednoczonych p\u00F3\u017Aniej, ni\u017C w innych krajach na \u015Bwiecie, gdzie film wy\u015Bwietlany by\u0142 od 3 lub 4 maja. Zdj\u0119cia rozpocz\u0119to w Rzymie w czerwcu 2005. Inne lokacje, w kt\u00F3rych kr\u0119cony by\u0142 film to Berlin, W\u0142ochy, Szanghaj, Xitang, Wirginia i Kalifornia."@pl .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://dbpedia.org/ontology/abstract> "Mission: Impossible III \u00E4r en amerikansk action fr\u00E5n 2006 i regi av J.J. Abrams med Tom Cruise i huvudrollen som Ethan Hunt. Filmen hade Sverigepremi\u00E4r den 5 maj 2006."@sv .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://dbpedia.org/ontology/abstract> "\u300EM:i:III\u300F\uFF08\u30DF\u30C3\u30B7\u30E7\u30F3:\u30A4\u30F3\u30DD\u30C3\u30B7\u30D6\u30EB3\u3001Mission: Impossible III\uFF09\u306F\u30012006\u5E74\u306E\u30A2\u30E1\u30EA\u30AB\u6620\u753B\u3002\u30C8\u30E0\u30FB\u30AF\u30EB\u30FC\u30BA\u4E3B\u6F14\u306E\u300E\u30DF\u30C3\u30B7\u30E7\u30F3:\u30A4\u30F3\u30DD\u30C3\u30B7\u30D6\u30EB\u300F\u30B7\u30EA\u30FC\u30BA\u306E3\u4F5C\u76EE\u3002"@ja .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://dbpedia.org/ontology/abstract> "\u00AB\u041C\u0438\u0301\u0441\u0441\u0438\u044F \u043D\u0435\u0432\u044B\u043F\u043E\u043B\u043D\u0438\u0301\u043C\u0430 3\u00BB \u00A0\u2014 \u043F\u0440\u0438\u043A\u043B\u044E\u0447\u0435\u043D\u0447\u0435\u0441\u043A\u0438\u0439 \u0431\u043E\u0435\u0432\u0438\u043A 2006 \u0433\u043E\u0434\u0430 \u0440\u0435\u0436\u0438\u0441\u0441\u0451\u0440\u0430 \u0414\u0436\u0435\u0439 \u0414\u0436\u0435\u0439 \u0410\u0431\u0440\u0430\u043C\u0441\u0430. \u0418\u0441\u043F\u043E\u043B\u043D\u0438\u0442\u0435\u043B\u0435\u043C \u0433\u043B\u0430\u0432\u043D\u043E\u0439 \u0440\u043E\u043B\u0438, \u0430 \u0442\u0430\u043A\u0436\u0435 \u043E\u0434\u043D\u0438\u043C \u0438\u0437 \u043F\u0440\u043E\u0434\u044E\u0441\u0435\u0440\u043E\u0432 \u043A\u0430\u0440\u0442\u0438\u043D\u044B, \u044F\u0432\u043B\u044F\u0435\u0442\u0441\u044F \u0422\u043E\u043C \u041A\u0440\u0443\u0437, \u0441\u044B\u0433\u0440\u0430\u0432\u0448\u0438\u0439 \u0441\u043F\u0435\u0446\u0438\u0430\u043B\u044C\u043D\u043E\u0433\u043E \u0430\u0433\u0435\u043D\u0442\u0430 \u0418\u0442\u0430\u043D\u0430 \u0425\u0430\u043D\u0442\u0430. \u0412 \u0444\u0438\u043B\u044C\u043C\u0435 \u0442\u0430\u043A\u0436\u0435 \u0441\u043D\u044F\u043B\u0438\u0441\u044C \u0424\u0438\u043B\u0438\u043F \u0421\u0435\u0439\u043C\u0443\u0440 \u0425\u043E\u0444\u0444\u043C\u0430\u043D, \u0412\u0438\u043D\u0433 \u0420\u044D\u0439\u043C\u0441, \u041C\u0438\u0448\u0435\u043B\u044C \u041C\u043E\u043D\u0430\u0433\u0430\u043D, \u0411\u0438\u043B\u043B\u0438 \u041A\u0440\u0430\u0434\u0430\u043F, \u041B\u043E\u0443\u0440\u0435\u043D\u0441 \u0424\u0438\u0448\u0431\u043E\u0440\u043D \u0438 \u0414\u0436\u043E\u043D\u0430\u0442\u0430\u043D \u0420\u0438\u0441-\u041C\u0430\u0439\u0435\u0440\u0441. \u042F\u0432\u043B\u044F\u0435\u0442\u0441\u044F \u043F\u0440\u043E\u0434\u043E\u043B\u0436\u0435\u043D\u0438\u0435\u043C \u0431\u043E\u0435\u0432\u0438\u043A\u043E\u0432 \u00AB\u041C\u0438\u0441\u0441\u0438\u044F \u043D\u0435\u0432\u044B\u043F\u043E\u043B\u043D\u0438\u043C\u0430\u00BB \u0438 \u00AB\u041C\u0438\u0441\u0441\u0438\u044F \u043D\u0435\u0432\u044B\u043F\u043E\u043B\u043D\u0438\u043C\u0430 2\u00BB \u041F\u0440\u0435\u043C\u044C\u0435\u0440\u0430 \u0444\u0438\u043B\u044C\u043C\u0430 \u0441\u043E\u0441\u0442\u043E\u044F\u043B\u0430\u0441\u044C 24 \u0430\u043F\u0440\u0435\u043B\u044F 2006 \u0433\u043E\u0434\u0430 \u0432 \u0418\u0442\u0430\u043B\u0438\u0438, \u0430 3, 4 \u0438 5 \u043C\u0430\u044F \u043A\u0430\u0440\u0442\u0438\u043D\u0430 \u0432\u044B\u0448\u043B\u0430 \u0432 \u0448\u0438\u0440\u043E\u043A\u0438\u0439 \u043F\u0440\u043E\u043A\u0430\u0442 \u0432 \u0431\u043E\u043B\u044C\u0448\u0438\u043D\u0441\u0442\u0432\u0435 \u0441\u0442\u0440\u0430\u043D \u043C\u0438\u0440\u0430: \u0432 \u0420\u043E\u0441\u0441\u0438\u0438 \u0438 \u0413\u0435\u0440\u043C\u0430\u043D\u0438\u0438\u00A0\u2014 4 \u043C\u0430\u044F, \u0432 \u0421\u0428\u0410\u00A0\u2014 5 \u043C\u0430\u044F. \u0417\u0430 \u043F\u0435\u0440\u0432\u044B\u0439 \u0443\u0438\u043A\u0435\u043D\u0434 \u043F\u0440\u043E\u043A\u0430\u0442\u0430 \u0432 \u0421\u0428\u0410 \u0444\u0438\u043B\u044C\u043C \u0441\u043E\u0431\u0440\u0430\u043B \u043F\u043E\u0447\u0442\u0438 48 \u043C\u0438\u043B\u043B\u0438\u043E\u043D\u043E\u0432 \u0434\u043E\u043B\u043B\u0430\u0440\u043E\u0432, \u0430 \u043E\u0431\u0449\u0435\u043C\u0438\u0440\u043E\u0432\u044B\u0435 \u0441\u0431\u043E\u0440\u044B \u0441\u043E\u0441\u0442\u0430\u0432\u0438\u043B\u0438 \u043E\u043A\u043E\u043B\u043E 398 \u043C\u0438\u043B\u043B\u0438\u043E\u043D\u043E\u0432 \u0434\u043E\u043B\u043B\u0430\u0440\u043E\u0432. \u0412 2011 \u0433\u043E\u0434\u0443 (\u043E\u0440\u0438\u0435\u043D\u0442\u0438\u0440\u043E\u0432\u043E\u0447\u043D\u043E \u0432 \u0434\u0435\u043A\u0430\u0431\u0440\u0435) \u043D\u0430\u043C\u0435\u0447\u0430\u0435\u0442\u0441\u044F \u0432\u044B\u0445\u043E\u0434 \u0447\u0435\u0442\u0432\u0451\u0440\u0442\u043E\u0433\u043E \u0444\u0438\u043B\u044C\u043C\u0430 \u043F\u043E\u0434 \u043D\u0430\u0437\u0432\u0430\u043D\u0438\u0435\u043C \u00AB\u041C\u0438\u0441\u0441\u0438\u044F \u043D\u0435\u0432\u044B\u043F\u043E\u043B\u043D\u0438\u043C\u0430 4\u00BB."@ru .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://dbpedia.org/ontology/abstract> "Mission impossible 3 est un film am\u00E9ricain de J.J. Abrams sorti le Mod\u00E8le:Date aux \u00C9tats-Unis, avec Tom Cruise, Ving Rhames, Michelle Monaghan et Keri Russell. En France, le film est sorti le Mod\u00E8le:Date. Ce film est le troisi\u00E8me opus de la saga cin\u00E9matographique inspir\u00E9e par la s\u00E9rie t\u00E9l\u00E9vis\u00E9e Mission impossible."@fr .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://dbpedia.org/ontology/abstract> "Mission: Impossible III is a 2006 action film, the third based on the spy-themed television series Mission: Impossible starring Tom Cruise who reprises his role of IMF agent Ethan Hunt. The film was directed by J. J. Abrams, and was his first film as a director. It was first released on April 26, 2006 at the Tribeca Film Festival, and widely released in the United States on May 5, 2006."@en .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://dbpedia.org/ontology/abstract> "Mission Impossible III is een Amerikaanse film van J.J. Abrams, en het derde deel uit de Mission Impossible-reeks. De film kwam op 3 mei 2006 uit in de bioscopen, en werd spectaculair ge\u00EFntroduceerd met reclamecampagnes. Veronica wijdde zelfs een programma aan deze film, waarin enkele dames op zoek gaan naar Tom Cruise. De film werd opgenomen in Berlijn, Itali\u00EB, Shanghai, Xitang, Virginia en Californi\u00EB. Mission: Impossible III was de eerste film die werd geregisseerd door J.J. Abrams. De film had een budget van 150 miljoen dollar, en J.J. Abrams had daarmee veruit het grootste budget ooit als beginnend filmregisseur."@nl .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://dbpedia.org/ontology/abstract> "Misi\u00F3n: Imposible III es la tercera pel\u00EDcula de la saga Misi\u00F3n: Imposible, estrenada en 2006 y dirigida por J. J. Abrams."@es .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://dbpedia.org/ontology/abstract> "M:I III - vaarallinen teht\u00E4v\u00E4 III on kolmas elokuva, joka pohjautuu Vaarallinen teht\u00E4v\u00E4 -televisiosarjaan. Tom Cruise jatkaa Impossible Mission Forcen Ethan Hunt -nimisen\u00E4 agenttina. Muita elokuvan n\u00E4yttelij\u00F6it\u00E4 ovat Philip Seymour Hoffman, Ving Rhames, Michelle Monaghan, Billy Crudup, Keri Russell, Jonathan Rhys-Meyers, Maggie Q, Sasha Alexander, Simon Pegg ja Laurence Fishburne. Elokuva sai ensi-iltansa vuonna 2006."@fi .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://dbpedia.org/ontology/abstract> "Miss\u00E3o Imposs\u00EDvel III \u00E9 o terceiro filme baseado na s\u00E9rie de televis\u00E3o Mission: Impossible, lan\u00E7ado em 2006 e realizado por J.J. Abrams, com Tom Cruise retomando o personagem principal dos dois anteriores filmes, Ethan Hunt."@pt .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://dbpedia.org/ontology/abstract> "\u300A\u4E0D\u53EF\u80FD\u7684\u4EFB\u52D93\u300B\uFF08Template:Lang-en\uFF0C\u7C21\u7A31Template:Lang\uFF09\u662F\u4E0D\u53EF\u80FD\u7684\u4EFB\u52D9\u7CFB\u5217\u7684\u7B2C\u4E09\u90E8\u96FB\u5F71\u3002\u6E6F\u00B7\u544A\u9B6F\u65AF\u7E7C\u7E8C\u98FE\u6F14IMF\uFF08\u4E0D\u53EF\u80FD\u4EFB\u52A1\u60C5\u62A5\u5C40\uFF09\u7279\u5DE5\u4F0A\u68EE\u00B7\u676D\u7279\uFF08Ethan Hunt\uFF09\uFF0C\u5176\u4ED6\u6F14\u54E1\u5305\u62EC\u83F2\u6069\u00B7\u745E\u6469\u65AF\uFF08Ving Rhames\uFF09\u3001\u5F37\u7D0D\u68EE\u00B7\u745E\u9EA5\u723E\u65AF\uFF08Jonathan Rhys-Meyers\uFF09\u3001\u871C\u96EA\u5152\u00B7\u6469\u7D0D\u6F22\uFF08Michelle Monaghan\uFF09\u3001\u83F2\u5C14\u00B7\u897F\u6469\u00B7\u970D\u592B\u66FC\u3001\u52DE\u502B\u65AF\u00B7\u8CBB\u8A31\u6CE2\u6069\uFF08Laurence Fishburne\uFF09\u3001\u51F1\u8389\u00B7\u7F85\u7D20\uFF08Keri Russell\uFF09\u3001\u838E\u590F\u00B7\u4E9E\u6B77\u5C71\u5FB7\uFF08Sasha Alexander\uFF09\u53CA\u5E2D\u8499\u00B7\u73EE\u5409\uFF08Simon Pegg\uFF09\u3002 \u8077\u696D\u7279\u5DE5\u968A3\u7531\u96FB\u8996\u9023\u7E8C\u5287\u300A\u96D9\u9762\u5973\u9593\u8ADC\u300B\u7684\u539F\u4F5C\u8005\u53CA\u300A\u8FF7\u5931\u300B\u76E3\u88FD\u5091\u5F17\u745E\u00B7\u4E9E\u67CF\u62C9\u7F55\uFF08J. J. Abrams\uFF09\u57F7\u5C0E\u3002\u6839\u64DA\u672C\u7247\u767C\u884C\u5546\u6D3E\u62C9\u8499\u7684\u8CC7\u6599\uFF0C\u96FB\u5F71\u57282006\u5E744\u670826\u65E5\u65BC\u7FE0\u8C9D\u5361\u96FB\u5F71\u7BC0\u9996\u6620\u3002\u6B64\u96FB\u5F71\u57282005\u5E747\u6708\u65BC\u610F\u5927\u5229\u7F85\u99AC\u958B\u59CB\u62CD\u651D\uFF0C\u4E26\u4E00\u76F4\u4FDD\u6301\u9AD8\u5EA6\u6A5F\u5BC6\uFF0C\u7121\u8AD6\u5287\u60C5\u6216\u89D2\u8272\u8CC7\u6599\uFF0C\u5916\u9593\u6240\u77E5\u751A\u5C11\u3002\u90E8\u4EFD\u5916\u666F\u5247\u5728\u5FB7\u570B\u67CF\u6797\u3001\u610F\u5927\u5229\u3001\u4E2D\u570B\u4E0A\u6D77\u3001\u897F\u5858\u3001\u7F8E\u570B\u5F17\u5409\u5C3C\u4E9E\u5DDE\u53CA\u52A0\u5DDE\u7B49\u5730\u62CD\u651D\u3002"@zh .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://dbpedia.org/ontology/abstract> "Mission: Impossible III er den tredje filmen basert p\u00E5 TV-serien Mission: Impossible. Tom Cruise har hovedrollen som agent \u00ABEthan Hunt\u00BB fra \u00ABImpossible Missions Force\u00BB, en rolle han ogs\u00E5 hadde i de to foreg\u00E5ende filmene. Filmen hadde verdenspremiere 26. april 2006 p\u00E5 Tribeca Film Festival, men ble utgitt 3. , 4. eller 5. mai i resten av verden. Mission: Impossible III var den f\u00F8rste spillefilmen som ble utgitt p\u00E5 alle tre DVD-formatene samtidig: Vanlig DVD, Bluray og HD DVD."@no .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://dbpedia.org/ontology/abstract> "Mission: Impossible III ist ein Agententhriller von Regisseur J. J. Abrams aus dem Jahr 2006 mit Tom Cruise in der Hauptrolle. Es ist die Fortsetzung der Filme Mission: Impossible aus dem Jahr 1996 und Mission: Impossible II aus dem Jahr 2000."@de .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://dbpedia.org/ontology/abstract> "Mission: Impossible III \u00E8 un film del 2006, diretto da J.J. Abrams. La pellicola \u00E8 il sequel di Mission: Impossible di Brian De Palma e Mission: Impossible II di John Woo. \u00C8 uscito nelle sale negli Stati Uniti d'America e in Italia il 5 maggio 2006."@it .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://dbpedia.org/property/editing> <http://dbpedia.org/resource/Maryann_Brandon> .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://dbpedia.org/property/editing> <http://dbpedia.org/resource/Mary_Jo_Markey> .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://dbpedia.org/ontology/thumbnail> <http://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Mi_III.jpg/200px-Mi_III.jpg> .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://dbpedia.org/property/starring> <http://dbpedia.org/resource/Jonathan_Rhys_Meyers> .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://dbpedia.org/property/starring> <http://dbpedia.org/resource/Keri_Russell> .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://dbpedia.org/property/starring> <http://dbpedia.org/resource/Simon_Pegg> .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://dbpedia.org/property/starring> <http://dbpedia.org/resource/Maggie_Q> .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://dbpedia.org/property/starring> <http://dbpedia.org/resource/Billy_Crudup> .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://dbpedia.org/property/starring> <http://dbpedia.org/resource/Tom_Cruise> .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://dbpedia.org/property/starring> <http://dbpedia.org/resource/Eddie_Marsan> .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://dbpedia.org/property/starring> <http://dbpedia.org/resource/Michelle_Monaghan> .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://dbpedia.org/property/starring> <http://dbpedia.org/resource/Ving_Rhames> .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://dbpedia.org/property/starring> <http://dbpedia.org/resource/Laurence_Fishburne> .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://purl.org/dc/terms/subject> <http://dbpedia.org/resource/Category:Films_shot_in_Italy> .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://purl.org/dc/terms/subject> <http://dbpedia.org/resource/Category:Sequel_films> .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://purl.org/dc/terms/subject> <http://dbpedia.org/resource/Category:Films_shot_in_Washington,_D.C.> .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://purl.org/dc/terms/subject> <http://dbpedia.org/resource/Category:American_spy_films> .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://purl.org/dc/terms/subject> <http://dbpedia.org/resource/Category:Mission:_Impossible> .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://purl.org/dc/terms/subject> <http://dbpedia.org/resource/Category:Films_shot_in_China> .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://purl.org/dc/terms/subject> <http://dbpedia.org/resource/Category:Films_based_on_television_series> .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://purl.org/dc/terms/subject> <http://dbpedia.org/resource/Category:Paramount_films> .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://purl.org/dc/terms/subject> <http://dbpedia.org/resource/Category:Films_set_in_Shanghai> .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://purl.org/dc/terms/subject> <http://dbpedia.org/resource/Category:Films_shot_in_California> .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://purl.org/dc/terms/subject> <http://dbpedia.org/resource/Category:Films_shot_anamorphically> .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://purl.org/dc/terms/subject> <http://dbpedia.org/resource/Category:Films_shot_in_Rome> .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://purl.org/dc/terms/subject> <http://dbpedia.org/resource/Category:2000s_action_films> .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://purl.org/dc/terms/subject> <http://dbpedia.org/resource/Category:Films_directed_by_J._J._Abrams> .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://purl.org/dc/terms/subject> <http://dbpedia.org/resource/Category:2006_films> .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://purl.org/dc/terms/subject> <http://dbpedia.org/resource/Category:Directorial_debut_films> .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://purl.org/dc/terms/subject> <http://dbpedia.org/resource/Category:English-language_films> .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://purl.org/dc/terms/subject> <http://dbpedia.org/resource/Category:Films_set_in_Rome> .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://purl.org/dc/terms/subject> <http://dbpedia.org/resource/Category:Films_shot_in_Virginia> .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://purl.org/dc/terms/subject> <http://dbpedia.org/resource/Category:Films_shot_in_Los_Angeles,_California> .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://purl.org/dc/terms/subject> <http://dbpedia.org/resource/Category:American_action_thriller_films> .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://purl.org/dc/terms/subject> <http://dbpedia.org/resource/Category:Films_shot_in_Germany> .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://www.w3.org/2000/01/rdf-schema#comment> "Mission: Impossible III is a 2006 action film, the third based on the spy-themed television series Mission: Impossible starring Tom Cruise who reprises his role of IMF agent Ethan Hunt. The film was directed by J. J. Abrams, and was his first film as a director. It was first released on April 26, 2006 at the Tribeca Film Festival, and widely released in the United States on May 5, 2006."@en .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://www.w3.org/2000/01/rdf-schema#comment> "\u00AB\u041C\u0438\u0301\u0441\u0441\u0438\u044F \u043D\u0435\u0432\u044B\u043F\u043E\u043B\u043D\u0438\u0301\u043C\u0430 3\u00BB \u00A0\u2014 \u043F\u0440\u0438\u043A\u043B\u044E\u0447\u0435\u043D\u0447\u0435\u0441\u043A\u0438\u0439 \u0431\u043E\u0435\u0432\u0438\u043A 2006 \u0433\u043E\u0434\u0430 \u0440\u0435\u0436\u0438\u0441\u0441\u0451\u0440\u0430 \u0414\u0436\u0435\u0439 \u0414\u0436\u0435\u0439 \u0410\u0431\u0440\u0430\u043C\u0441\u0430. \u0418\u0441\u043F\u043E\u043B\u043D\u0438\u0442\u0435\u043B\u0435\u043C \u0433\u043B\u0430\u0432\u043D\u043E\u0439 \u0440\u043E\u043B\u0438, \u0430 \u0442\u0430\u043A\u0436\u0435 \u043E\u0434\u043D\u0438\u043C \u0438\u0437 \u043F\u0440\u043E\u0434\u044E\u0441\u0435\u0440\u043E\u0432 \u043A\u0430\u0440\u0442\u0438\u043D\u044B, \u044F\u0432\u043B\u044F\u0435\u0442\u0441\u044F \u0422\u043E\u043C \u041A\u0440\u0443\u0437, \u0441\u044B\u0433\u0440\u0430\u0432\u0448\u0438\u0439 \u0441\u043F\u0435\u0446\u0438\u0430\u043B\u044C\u043D\u043E\u0433\u043E \u0430\u0433\u0435\u043D\u0442\u0430 \u0418\u0442\u0430\u043D\u0430 \u0425\u0430\u043D\u0442\u0430. \u0412 \u0444\u0438\u043B\u044C\u043C\u0435 \u0442\u0430\u043A\u0436\u0435 \u0441\u043D\u044F\u043B\u0438\u0441\u044C \u0424\u0438\u043B\u0438\u043F \u0421\u0435\u0439\u043C\u0443\u0440 \u0425\u043E\u0444\u0444\u043C\u0430\u043D, \u0412\u0438\u043D\u0433 \u0420\u044D\u0439\u043C\u0441, \u041C\u0438\u0448\u0435\u043B\u044C \u041C\u043E\u043D\u0430\u0433\u0430\u043D, \u0411\u0438\u043B\u043B\u0438 \u041A\u0440\u0430\u0434\u0430\u043F, \u041B\u043E\u0443\u0440\u0435\u043D\u0441 \u0424\u0438\u0448\u0431\u043E\u0440\u043D \u0438 \u0414\u0436\u043E\u043D\u0430\u0442\u0430\u043D \u0420\u0438\u0441-\u041C\u0430\u0439\u0435\u0440\u0441."@ru .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://www.w3.org/2000/01/rdf-schema#comment> "Mission: Impossible III \u00E4r en amerikansk action fr\u00E5n 2006 i regi av J.J. Abrams med Tom Cruise i huvudrollen som Ethan Hunt. Filmen hade Sverigepremi\u00E4r den 5 maj 2006."@sv .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://www.w3.org/2000/01/rdf-schema#comment> "\u300A\u4E0D\u53EF\u80FD\u7684\u4EFB\u52D93\u300B\uFF08Template:Lang-en\uFF0C\u7C21\u7A31Template:Lang\uFF09\u662F\u4E0D\u53EF\u80FD\u7684\u4EFB\u52D9\u7CFB\u5217\u7684\u7B2C\u4E09\u90E8\u96FB\u5F71\u3002\u6E6F\u00B7\u544A\u9B6F\u65AF\u7E7C\u7E8C\u98FE\u6F14IMF\uFF08\u4E0D\u53EF\u80FD\u4EFB\u52A1\u60C5\u62A5\u5C40\uFF09\u7279\u5DE5\u4F0A\u68EE\u00B7\u676D\u7279\uFF08Ethan Hunt\uFF09\uFF0C\u5176\u4ED6\u6F14\u54E1\u5305\u62EC\u83F2\u6069\u00B7\u745E\u6469\u65AF\uFF08Ving Rhames\uFF09\u3001\u5F37\u7D0D\u68EE\u00B7\u745E\u9EA5\u723E\u65AF\uFF08Jonathan Rhys-Meyers\uFF09\u3001\u871C\u96EA\u5152\u00B7\u6469\u7D0D\u6F22\uFF08Michelle Monaghan\uFF09\u3001\u83F2\u5C14\u00B7\u897F\u6469\u00B7\u970D\u592B\u66FC\u3001\u52DE\u502B\u65AF\u00B7\u8CBB\u8A31\u6CE2\u6069\uFF08Laurence Fishburne\uFF09\u3001\u51F1\u8389\u00B7\u7F85\u7D20\uFF08Keri Russell\uFF09\u3001\u838E\u590F\u00B7\u4E9E\u6B77\u5C71\u5FB7\uFF08Sasha Alexander\uFF09\u53CA\u5E2D\u8499\u00B7\u73EE\u5409\uFF08Simon Pegg\uFF09\u3002 \u8077\u696D\u7279\u5DE5\u968A3\u7531\u96FB\u8996\u9023\u7E8C\u5287\u300A\u96D9\u9762\u5973\u9593\u8ADC\u300B\u7684\u539F\u4F5C\u8005\u53CA\u300A\u8FF7\u5931\u300B\u76E3\u88FD\u5091\u5F17\u745E\u00B7\u4E9E\u67CF\u62C9\u7F55\uFF08J. J. Abrams\uFF09\u57F7\u5C0E\u3002\u6839\u64DA\u672C\u7247\u767C\u884C\u5546\u6D3E\u62C9\u8499\u7684\u8CC7\u6599\uFF0C\u96FB\u5F71\u57282006\u5E744\u670826\u65E5\u65BC\u7FE0\u8C9D\u5361\u96FB\u5F71\u7BC0\u9996\u6620\u3002\u6B64\u96FB\u5F71\u57282005\u5E747\u6708\u65BC\u610F\u5927\u5229\u7F85\u99AC\u958B\u59CB\u62CD\u651D\uFF0C\u4E26\u4E00\u76F4\u4FDD\u6301\u9AD8\u5EA6\u6A5F\u5BC6\uFF0C\u7121\u8AD6\u5287\u60C5\u6216\u89D2\u8272\u8CC7\u6599\uFF0C\u5916\u9593\u6240\u77E5\u751A\u5C11\u3002\u90E8\u4EFD\u5916\u666F\u5247\u5728\u5FB7\u570B\u67CF\u6797\u3001\u610F\u5927\u5229\u3001\u4E2D\u570B\u4E0A\u6D77\u3001\u897F\u5858\u3001\u7F8E\u570B\u5F17\u5409\u5C3C\u4E9E\u5DDE\u53CA\u52A0\u5DDE\u7B49\u5730\u62CD\u651D\u3002"@zh .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://www.w3.org/2000/01/rdf-schema#comment> "Mission: Impossible III ist ein Agententhriller von Regisseur J. J. Abrams aus dem Jahr 2006 mit Tom Cruise in der Hauptrolle. Es ist die Fortsetzung der Filme Mission: Impossible aus dem Jahr 1996 und Mission: Impossible II aus dem Jahr 2000."@de .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://www.w3.org/2000/01/rdf-schema#comment> "M:I III - vaarallinen teht\u00E4v\u00E4 III on kolmas elokuva, joka pohjautuu Vaarallinen teht\u00E4v\u00E4 -televisiosarjaan. Tom Cruise jatkaa Impossible Mission Forcen Ethan Hunt -nimisen\u00E4 agenttina. Muita elokuvan n\u00E4yttelij\u00F6it\u00E4 ovat Philip Seymour Hoffman, Ving Rhames, Michelle Monaghan, Billy Crudup, Keri Russell, Jonathan Rhys-Meyers, Maggie Q, Sasha Alexander, Simon Pegg ja Laurence Fishburne. Elokuva sai ensi-iltansa vuonna 2006."@fi .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://www.w3.org/2000/01/rdf-schema#comment> "\u300EM:i:III\u300F\uFF08\u30DF\u30C3\u30B7\u30E7\u30F3:\u30A4\u30F3\u30DD\u30C3\u30B7\u30D6\u30EB3\u3001Mission: Impossible III\uFF09\u306F\u30012006\u5E74\u306E\u30A2\u30E1\u30EA\u30AB\u6620\u753B\u3002\u30C8\u30E0\u30FB\u30AF\u30EB\u30FC\u30BA\u4E3B\u6F14\u306E\u300E\u30DF\u30C3\u30B7\u30E7\u30F3:\u30A4\u30F3\u30DD\u30C3\u30B7\u30D6\u30EB\u300F\u30B7\u30EA\u30FC\u30BA\u306E3\u4F5C\u76EE\u3002"@ja .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://www.w3.org/2000/01/rdf-schema#comment> "Misi\u00F3n: Imposible III es la tercera pel\u00EDcula de la saga Misi\u00F3n: Imposible, estrenada en 2006 y dirigida por J. J. Abrams."@es .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://www.w3.org/2000/01/rdf-schema#comment> "Mission: Impossible III er den tredje filmen basert p\u00E5 TV-serien Mission: Impossible. Tom Cruise har hovedrollen som agent \u00ABEthan Hunt\u00BB fra \u00ABImpossible Missions Force\u00BB, en rolle han ogs\u00E5 hadde i de to foreg\u00E5ende filmene. Filmen hadde verdenspremiere 26. april 2006 p\u00E5 Tribeca Film Festival, men ble utgitt 3. , 4. eller 5. mai i resten av verden. Mission: Impossible III var den f\u00F8rste spillefilmen som ble utgitt p\u00E5 alle tre DVD-formatene samtidig: Vanlig DVD, Bluray og HD DVD."@no .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://www.w3.org/2000/01/rdf-schema#comment> "Mission impossible 3 est un film am\u00E9ricain de J.J. Abrams sorti le Mod\u00E8le:Date aux \u00C9tats-Unis, avec Tom Cruise, Ving Rhames, Michelle Monaghan et Keri Russell. En France, le film est sorti le Mod\u00E8le:Date. Ce film est le troisi\u00E8me opus de la saga cin\u00E9matographique inspir\u00E9e par la s\u00E9rie t\u00E9l\u00E9vis\u00E9e Mission impossible."@fr .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://www.w3.org/2000/01/rdf-schema#comment> "Miss\u00E3o Imposs\u00EDvel III \u00E9 o terceiro filme baseado na s\u00E9rie de televis\u00E3o Mission: Impossible, lan\u00E7ado em 2006 e realizado por J.J. Abrams, com Tom Cruise retomando o personagem principal dos dois anteriores filmes, Ethan Hunt."@pt .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://www.w3.org/2000/01/rdf-schema#comment> "Mission: Impossible III to trzeci film bazuj\u0105cy na serialu telewizyjnym Impossible. Rol\u0119 g\u0142\u00F3wn\u0105 zagra\u0142 Tom Cruise. Innymi gwiazdami w filmie s\u0105 Philip Seymour Hoffman, Ving Rhames, Michelle Monaghan, Billy Crudup, Keri Russell, Jonathan Rhys-Meyers, Maggie Q, Sasha Alexander, Simon Pegg oraz Laurence Fishburne. Film wyre\u017Cyserowany zosta\u0142 przez producenta seriali Agentka o stu twarzach i Zagubieni, J.J. Abramsa."@pl .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://www.w3.org/2000/01/rdf-schema#comment> "Mission Impossible III is een Amerikaanse film van J.J. Abrams, en het derde deel uit de Mission Impossible-reeks. De film kwam op 3 mei 2006 uit in de bioscopen, en werd spectaculair ge\u00EFntroduceerd met reclamecampagnes. Veronica wijdde zelfs een programma aan deze film, waarin enkele dames op zoek gaan naar Tom Cruise. De film werd opgenomen in Berlijn, Itali\u00EB, Shanghai, Xitang, Virginia en Californi\u00EB. Mission: Impossible III was de eerste film die werd geregisseerd door J.J. Abrams."@nl .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://www.w3.org/2000/01/rdf-schema#comment> "Mission: Impossible III \u00E8 un film del 2006, diretto da J.J. Abrams. La pellicola \u00E8 il sequel di Mission: Impossible di Brian De Palma e Mission: Impossible II di John Woo. \u00C8 uscito nelle sale negli Stati Uniti d'America e in Italia il 5 maggio 2006."@it .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://www.w3.org/2000/01/rdf-schema#label> "Vaarallinen teht\u00E4v\u00E4 III"@fi .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://www.w3.org/2000/01/rdf-schema#label> "Mission: Impossible III"@no .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://www.w3.org/2000/01/rdf-schema#label> "Mission: Impossible III"@nl .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://www.w3.org/2000/01/rdf-schema#label> "Miss\u00E3o Imposs\u00EDvel III"@pt .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://www.w3.org/2000/01/rdf-schema#label> "\u30DF\u30C3\u30B7\u30E7\u30F3:\u30A4\u30F3\u30DD\u30C3\u30B7\u30D6\u30EB3"@ja .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://www.w3.org/2000/01/rdf-schema#label> "Mission: Impossible III"@sv .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://www.w3.org/2000/01/rdf-schema#label> "Misi\u00F3n: Imposible III"@es .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://www.w3.org/2000/01/rdf-schema#label> "Mission: Impossible III"@pl .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://www.w3.org/2000/01/rdf-schema#label> "Mission impossible 3"@fr .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://www.w3.org/2000/01/rdf-schema#label> "Mission: Impossible III"@it .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://www.w3.org/2000/01/rdf-schema#label> "\u041C\u0438\u0441\u0441\u0438\u044F \u043D\u0435\u0432\u044B\u043F\u043E\u043B\u043D\u0438\u043C\u0430 3"@ru .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://www.w3.org/2000/01/rdf-schema#label> "\u4E0D\u53EF\u80FD\u7684\u4EFB\u52D93"@zh .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://www.w3.org/2000/01/rdf-schema#label> "Mission: Impossible III"@en .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://www.w3.org/2000/01/rdf-schema#label> "Mission: Impossible III"@de .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Movie> .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Work> .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/CreativeWork> .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Film> .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://umbel.org/umbel/rc/Movie_CW> .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://dbpedia.org/property/music> "Michael GiacchinoMain Theme:Lalo Schifrin"@en .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://xmlns.com/foaf/0.1/depiction> <http://upload.wikimedia.org/wikipedia/commons/4/4c/Mi_III.jpg> .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://dbpedia.org/property/runtime> "7560.0"^^<http://dbpedia.org/datatype/second> .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://dbpedia.org/property/wikiPageUsesTemplate> <http://dbpedia.org/resource/Template:Infobox_film> .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://dbpedia.org/ontology/wikiPageExternalLink> <http://hollywoodgothique.com/missionimpossible32006.html> .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://dbpedia.org/ontology/wikiPageExternalLink> <http://www.missionimpossible.com/> .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://dbpedia.org/ontology/wikiPageExternalLink> <http://www.soundtrack.net/features/article/?id=188> .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://dbpedia.org/ontology/wikiPageExternalLink> <http://www.cinemareview.com/production.asp?prodid=3405> .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://dbpedia.org/ontology/wikiPageExternalLink> <http://www.xdafied.com.au/movies/reviews/13.html> .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://dbpedia.org/property/writer> <http://dbpedia.org/resource/Alex_Kurtzman> .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://dbpedia.org/property/writer> "J. J. Abrams"@en .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://dbpedia.org/property/writer> <http://dbpedia.org/resource/Roberto_Orci> .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://dbpedia.org/ontology/starring> <http://dbpedia.org/resource/Tom_Cruise> .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://dbpedia.org/ontology/starring> <http://dbpedia.org/resource/Keri_Russell> .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://dbpedia.org/ontology/starring> <http://dbpedia.org/resource/Eddie_Marsan> .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://dbpedia.org/ontology/starring> <http://dbpedia.org/resource/Simon_Pegg> .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://dbpedia.org/ontology/starring> <http://dbpedia.org/resource/Jonathan_Rhys_Meyers> .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://dbpedia.org/ontology/starring> <http://dbpedia.org/resource/Maggie_Q> .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://dbpedia.org/ontology/starring> <http://dbpedia.org/resource/Laurence_Fishburne> .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://dbpedia.org/ontology/starring> <http://dbpedia.org/resource/Michelle_Monaghan> .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://dbpedia.org/ontology/starring> <http://dbpedia.org/resource/Billy_Crudup> .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://dbpedia.org/ontology/starring> <http://dbpedia.org/resource/Ving_Rhames> .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://dbpedia.org/ontology/country> <http://dbpedia.org/resource/United_States> .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://dbpedia.org/ontology/country> <http://dbpedia.org/resource/Germany> .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://dbpedia.org/ontology/releaseDate> "2006-05-04"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://dbpedia.org/ontology/releaseDate> "2006-05-05"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://dbpedia.org/property/budget> "1.5E8"^^<http://dbpedia.org/datatype/usDollar> .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://dbpedia.org/property/producer> <http://dbpedia.org/resource/Tom_Cruise> .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://dbpedia.org/property/producer> <http://dbpedia.org/resource/Paula_Wagner> .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://dbpedia.org/property/followedBy> "Mission: Impossible \u2013 Ghost Protocol"@en .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://dbpedia.org/property/studio> "MI 3 Film"@en .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://dbpedia.org/property/studio> <http://dbpedia.org/resource/Cruise/Wagner_Productions> .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://dbpedia.org/property/studio> <http://dbpedia.org/resource/Bad_Robot_Productions> .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://dbpedia.org/property/director> <http://dbpedia.org/resource/J._J._Abrams> .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://dbpedia.org/property/gross> "3.97850012E8"^^<http://dbpedia.org/datatype/usDollar> .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://dbpedia.org/ontology/producer> <http://dbpedia.org/resource/Tom_Cruise> .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://dbpedia.org/ontology/producer> <http://dbpedia.org/resource/Paula_Wagner> .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://dbpedia.org/property/released> "2006-05-04"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://dbpedia.org/property/released> "United Kingdom & Australia:"@en .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://dbpedia.org/property/released> "United States:"@en .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://dbpedia.org/property/released> "2006-05-05"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://dbpedia.org/property/name> "Mission: Impossible III"@en .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://dbpedia.org/ontology/musicComposer> <http://dbpedia.org/resource/Michael_Giacchino> .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://dbpedia.org/ontology/musicComposer> <http://dbpedia.org/resource/Lalo_Schifrin> .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://dbpedia.org/ontology/Work/runtime> "126.0"^^<http://dbpedia.org/datatype/minute> .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://dbpedia.org/property/cinematography> <http://dbpedia.org/resource/Daniel_Mindel> .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://dbpedia.org/ontology/writer> <http://dbpedia.org/resource/J._J._Abrams> .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://dbpedia.org/ontology/writer> <http://dbpedia.org/resource/Alex_Kurtzman> .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://dbpedia.org/ontology/writer> <http://dbpedia.org/resource/Roberto_Orci> .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://dbpedia.org/ontology/distributor> <http://dbpedia.org/resource/Paramount_Pictures> .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://dbpedia.org/property/caption> "Mission: Impossible III poster"@en .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://dbpedia.org/ontology/gross> "3.97850012E8"^^<http://dbpedia.org/datatype/usDollar> .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://dbpedia.org/property/language> "English"@en .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://xmlns.com/foaf/0.1/page> <http://en.wikipedia.org/wiki/Mission:_Impossible_III> .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://dbpedia.org/property/distributor> <http://dbpedia.org/resource/Paramount_Pictures> .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://dbpedia.org/property/precededBy> "Mission: Impossible II"@en .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://dbpedia.org/property/country> "Germany"@en .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://dbpedia.org/property/country> "United States"@en .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://dbpedia.org/ontology/cinematography> <http://dbpedia.org/resource/Daniel_Mindel> .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://dbpedia.org/ontology/runtime> "7560"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://dbpedia.org/property/wordnet_type> <http://www.w3.org/2006/03/wn/wn20/instances/synset-movie-noun-1> .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://www.w3.org/2002/07/owl#sameAs> <http://rdf.freebase.com/ns/m/06fqlk> .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://www.w3.org/2002/07/owl#sameAs> <http://data.linkedmdb.org/resource/film/3214> .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://xmlns.com/foaf/0.1/name> "Mission: Impossible III"@en .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://dbpedia.org/ontology/director> <http://dbpedia.org/resource/J._J._Abrams> .
+<http://dbpedia.org/resource/Mission:_Impossible_III> <http://dbpedia.org/ontology/budget> "1.5E8"^^<http://dbpedia.org/datatype/usDollar> .
+<http://www.facebook.com/935956> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/5307766> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/9500821> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/18604813> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/504296726> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/509209356> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/511195784> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/521939382> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/530416256> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/540023917> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/543770253> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/544005369> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/549520479> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/549896464> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/550397450> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/550988465> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/551092893> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/555783448> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/559861902> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/561502657> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/562836155> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/566784824> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/568053174> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/575234250> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/582227290> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/595084456> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/599134716> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/599518646> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/613365331> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/616958282> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/619251519> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/619801518> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/622393059> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/624473765> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/629424105> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/629610234> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/632455035> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/638645316> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/645435927> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/646656760> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/650340813> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/655568267> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/656480908> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/656758307> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/662423741> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/663162389> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/663892236> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/664871923> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/665504400> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/673034702> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/673257369> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/674566041> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/675326119> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/678008027> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/679371863> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/686188957> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/688012758> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/690084794> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/700373403> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/704830357> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/707068921> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/708737173> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/723241188> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/728134113> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/731896316> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/733878693> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/736893415> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/752035497> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/768840320> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/771022717> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/779029279> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/779080406> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/788519602> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/795149375> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/804572519> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/817824392> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/819395272> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/827670250> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/832400293> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/849224081> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/896040091> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/1000995120> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/1004236096> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/1004863404> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/1008293681> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/1048808121> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/1060506549> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/1089126684> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/1104264881> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/1106717189> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/1126682236> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/1130682344> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/1143181819> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/1147482312> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/1152953064> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/1156014326> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/1164120840> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/1167572827> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/1184347450> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/1188482431> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/1189374418> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/1192620761> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/1197363485> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/1199840268> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/1206030485> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/1206902480> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/1208003382> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/1208714183> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/1209552556> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/1211771501> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/1212351918> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/1216206320> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/1226324366> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/1228063014> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/1249243290> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/1249932844> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/1252045397> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/1265717055> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/1269815273> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/1290204481> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/1297728459> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/1305180669> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/1318917548> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/1328592921> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/1348456091> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/1349617924> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/1351972221> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/1356360692> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/1356473080> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/1356720463> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/1395600784> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/1399530164> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/1453794553> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/1483150652> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/1485253057> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/1490919139> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/1510808620> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/1537721189> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/1544280293> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/1548510061> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/1559772516> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/1571310334> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/1571311107> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/1575585711> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/1588808133> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/1588963749> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/1680077624> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/1726617307> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/1726749716> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/1728581661> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/1799672419> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/100000022924145> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/100000054912494> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/100000144940766> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/100000163629620> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/100000207476392> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/100000225392132> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/100000225568507> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/100000247983251> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/100000255564478> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/100000271158398> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/100000275675317> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/100000310571412> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/100000434589513> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/100000489952255> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/100000489956215> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/100000568525419> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/100000571614489> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/100000626381083> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/100000666098598> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/100000670143289> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/100000678121216> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/100000689337752> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/100000728783628> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/100000752905700> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/100000791404457> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/100000969852080> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/100001298797872> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/100001327767301> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/100001332893354> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/100001474952781> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/100001488929210> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/100001801861209> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/100001809115776> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/100001935401028> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/100002426733465> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/100003021277357> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/100003272396566> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/531559626> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/579504433> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/582307935> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/769880205> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/809987235> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/811987566> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/817301691> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/852099838> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/1128770992> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/1254882742> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/1338944766> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/1381683411> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/1403754121> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/1408026976> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/1417164268> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/1496348261> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/1624581347> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .

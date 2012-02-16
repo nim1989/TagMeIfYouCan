@@ -135,3 +135,18 @@ ul#results {
         border-top      : 1px solid #3B5998;
     }
 }
+
+ul#results_for_people {
+    list-style: none;
+    .person {
+        display: inline-block;
+        width: 75px;
+    }
+    .movies {
+        display: inline-block;
+        .movie {
+            display: inline-block;
+            vertical-align: top;
+        }
+    }
+}

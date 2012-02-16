@@ -13,27 +13,35 @@ class HomeController < ApplicationController
       respond_to do |format|
         format.html{ redirect_to new_facebook_path }
       end
-    end
-    @pending_tags   = TagsFacebook.where(:facebook_identifier => current_user.identifier, :status_id => Status.pending.id).order("created_at DESC")
-    @validated_tags = TagsFacebook.where(:facebook_identifier => current_user.identifier, :status_id => Status.validated.id).order("created_at DESC")
-    @rejected_tags  = TagsFacebook.where(:facebook_identifier => current_user.identifier, :status_id => Status.rejected.id).order("created_at DESC")
-
-    # Remove duplicate tags
-    @validated_tags.uniq!{ |tag_facebook| tag_facebook.tag.uri }
-    @rejected_tags.uniq!{ |tag_facebook| tag_facebook.tag.uri }
+    else
+        @pending_tags   = TagsFacebook.where(:facebook_identifier => current_user.identifier, :status_id => Status.pending.id).order("created_at DESC")
+        @validated_tags = TagsFacebook.where(:facebook_identifier => current_user.identifier, :status_id => Status.validated.id).order("created_at DESC")
+        @rejected_tags  = TagsFacebook.where(:facebook_identifier => current_user.identifier, :status_id => Status.rejected.id).order("created_at DESC")
     
-    graph = RDF::Graph.load("app/assets/rdf/people-film.nt")
-    query = RDF::Query.new do
-        pattern [:movie, RDF::URI.new("http://dbpedia.org/property/director"), :director]
-    end
+        # Remove duplicate tags
+        @validated_tags.uniq!{ |tag_facebook| tag_facebook.tag.uri }
+        @rejected_tags.uniq!{ |tag_facebook| tag_facebook.tag.uri }
         
-    @movies = []
-    @directors = []
-    query.execute(graph).each do |solution|
-        @movies << solution.movie
-        @directors << solution.director
+        graph = RDF::Graph.load("app/assets/rdf/people-film.nt")
+        query = RDF::Query.new do
+            pattern [:l, RDF::URI.new("http://dbpedia.org/property/director"), :director]
+        end
+        @directors = []
+        query.execute(graph).each do |solution|
+            @directors << solution.director
+        end
+        @directors = @directors.collect{ |director| [director.to_s.gsub('http://dbpedia.org/resource/','').gsub('_', ' '), director.to_s]}
+        
+        query2 = RDF::Query.new do
+            pattern [:l, RDF::URI.new("http://dbpedia.org/ontology/starring"), :actor]
+        end
+        @actors = []
+        query2.execute(graph).each do |solution|
+            @actors << solution.actor
+        end
+        @actors = @actors.collect{ |actor| [actor.to_s.gsub('http://dbpedia.org/resource/','').gsub('_', ' '), actor.to_s]}
+        
     end
-    @directors = @directors.collect{ |director| [director.to_s.gsub('http://dbpedia.org/resource/','').gsub('_', ' '), director.to_s]}
   end
   
   def get_infos
@@ -46,14 +54,51 @@ class HomeController < ApplicationController
     end
     query = RDF::Query.new do
         pattern [:movie, RDF::URI.new("http://dbpedia.org/property/director"), RDF::URI.new(director)]
+        pattern [:movie, RDF::URI.new("http://dbpedia.org/ontology/thumbnail"), :movie_thumb]
+        pattern [:movie, RDF::URI.new("http://dbpedia.org/property/name"), :movie_name]
+        pattern [:movie, RDF::FOAF.page, :wikipedia_url]
         pattern [:pers, foaf, :movie]
     end
+    @pers = {}
+    query.execute(graph).each do |solution|
+        @pers[solution.pers.to_s.gsub('http://www.facebook.com/', '')] = [] if @pers[solution.pers.to_s.gsub('http://www.facebook.com/', '')].nil?
+        @pers[solution.pers.to_s.gsub('http://www.facebook.com/', '')] << {:thumbnail => solution.movie_thumb.to_s,
+                                                                           :wikipedia_url => solution.wikipedia_url.to_s,
+                                                                           :movie_name => solution.movie_name.to_s} #solution.movie
+    end
+    respond_to do |format|
+        format.json { render :json => @pers.to_json }
+    end
+
+  end
+  
+  def get_infos_actors
+    graph = RDF::Graph.load("app/assets/rdf/people-film.nt")
+    actors = params[:actors]
+    if params[:like] == 'false'
+        foaf = RDF::FOAF.dislike
+    else 
+        foaf = RDF::FOAF.like    
+    end
+    query = RDF::Query.new do
+        actors.each_with_index do |actor, idx|
+            pattern [:movie, RDF::URI.new("http://dbpedia.org/ontology/starring"), RDF::URI.new(actor)]
+        end
+    end
+    
+    
+    @movies = []
+    query.execute(graph).each do |solution|
+        @movies << solution.movie
+    end
+    debugger
+    
     @pers = []
     query.execute(graph).each do |solution|
         @pers << solution.pers.to_s.gsub('http://www.facebook.com/', '')
     end
     respond_to do |format|
-        format.json { render :json => @pers.to_json }
+        format.json { render :json => @pers.uniq!.to_json }
     end
 
   end

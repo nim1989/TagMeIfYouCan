@@ -19,11 +19,19 @@ include RDF
 # end
 
 
-graph = RDF::Graph.load("films.nt")
+graph = RDF::Graph.load("people-film.nt")
 query = RDF::Query.new do
-    pattern [RDF::URI.new('http://dbpedia.org/resource/Grand_Canary_%28film%29'), RDF.type, :type]
+#Meme réalisateur
+#    pattern [:movie, RDF::URI.new("http://dbpedia.org/property/director"), RDF::URI.new('http://dbpedia.org/resource/Steven_Spielberg')]
+
+#Meme Acteur
+#    pattern [:movie, RDF::URI.new("http://dbpedia.org/ontology/starring"), RDF::URI.new('http://dbpedia.org/resource/Tom_Cruise')]
+
+
+    #pattern [:movie, RDF::URI.new("http://purl.org/dc/terms/subject"), :cat]
+                pattern [:pers, RDF::FOAF.like, :movie]
 end
 
 query.execute(graph).each do |solution|
-  puts solution.type
+  puts solution.pers + ' / ' + solution.movie
 end

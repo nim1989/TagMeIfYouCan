@@ -98,6 +98,30 @@ $(document).ready(function() {
         return false;
     });
     
+
+    /****************************************************************************************** Infos */
+    $('#search_directors').click(function() {
+        $.ajax({
+            url     : '/home/get_infos',
+            type    : 'post',
+            data    :  {
+                like:       $('#like_true').is(':checked'),
+                directors:  $('#directors').val()
+            },
+            dataType: "json",
+            success: function(results, b, c) {
+                $('#results_for_people').empty();
+                _.each(results, function(facebook_id) {
+                    var person = $('<div class="person"></div>')
+                    person.append($('<fb:name uid="' + facebook_id + '"></fb:name>'));
+                    person.append($('<fb:profile-pic uid="' + facebook_id + '"></fb:profile-pic>'));
+                    $('#results_for_people').append(person);
+                });
+                FB.XFBML.parse(document.getElementById('results_for_people'));
+            }
+        });
+        return false;
+    });
     
 });
 

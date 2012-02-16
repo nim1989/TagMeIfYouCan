@@ -32,7 +32,7 @@ class FacebooksController < ApplicationController
   def accept_tag
     tag = Tag.find(params[:tag_id])
     write_in_rdf(current_user.identifier, true, tag.uri)
-    tag_facebook = TagsFacebook.where(:tag_id => params[:tag_id], :facebook_identifier => current_user.identifier).first
+    tag_facebook = TagsFacebook.where(:tag_id => params[:tag_id], :facebook_identifier => current_user.identifier).order("created_at DESC").first
     tag_facebook.status = Status.validated
     tag_facebook.save    
     respond_to do |format|
@@ -41,9 +41,10 @@ class FacebooksController < ApplicationController
   end
 
   def decline_tag
+    tag = Tag.find(params[:tag_id])
     write_in_rdf(current_user.identifier, false, tag.uri)
     
-    tag_facebook = TagsFacebook.where(:tag_id => params[:tag_id], :facebook_identifier => current_user.identifier).first
+    tag_facebook = TagsFacebook.where(:tag_id => params[:tag_id], :facebook_identifier => current_user.identifier).order("created_at DESC").first
     tag_facebook.status = Status.rejected
     tag_facebook.save
     respond_to do |format|

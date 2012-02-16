@@ -40,3 +40,26 @@
         = link_to tag_facebook.tag.name, tag_facebook.tag.wikipedia_url
 
 %button#YouMightLike.uibutton YouMightLike
+
+%h2 Trouver des gens
+
+= form_tag home_get_infos_path, :class => 'tag_form' do 
+  
+  %p Tous les utilisateurs qui
+
+  = label_tag 'like_true', 'ont accepté les tag'  
+  = radio_button_tag('like', 'true', true, :name => 'like')
+  = label_tag 'like_false', 'n\'ont pas accepté les tags'
+  = radio_button_tag('like', 'false', false, :name => 'like')
+
+  = #select_tag 'like', options_for_select(like), :name => 'like'
+  
+  = label_tag 'directors', 'des films de'
+  
+  = select_tag 'directors', options_for_select(@directors.uniq!), :name => 'directors'
+  
+  = submit_tag 'Chercher', :id => 'search_directors'
+
+
+
+#results_for_people

@@ -53,7 +53,7 @@
             options_index: this.options_index,
             value: option.value,
             text: option.text,
-            html: option.innerHTML + '<fb:profile-pic id="' + option.value + '" uid="' + option.value + '"></fb:profile-pic>',
+            html: option.innerHTML,
             selected: option.selected,
             disabled: group_disabled === true ? group_disabled : option.disabled,
             group_array_index: group_position,

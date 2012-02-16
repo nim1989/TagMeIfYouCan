@@ -1,10 +1,21 @@
-- like = [['n\'aiment pas', 0], ['aiment', 1]]
-= form_tag root_path, :class => 'tag_form' do 
+- like = [['n\'aiment pas', false], ['aiment', true]]
+= form_tag home_get_infos_path, :class => 'tag_form' do 
   
-  = label_tag 'like', 'Tous les utilisateurs qui '
+  %p Tous les utilisateurs qui
+
+  = label_tag 'like_true', 'ont accepté les tag'  
+  = radio_button_tag('like', 'true', true, :name => 'like')
+  = label_tag 'like_false', 'n\'ont pas accepté les tags'
+  = radio_button_tag('like', 'false', false, :name => 'like')
+
+  = #select_tag 'like', options_for_select(like), :name => 'like'
   
-  = select_tag 'like', options_for_select(like), :name => 'like'
+  = label_tag 'directors', 'des films de'
   
-  = label_tag 'directors', 'les films de'
+  = select_tag 'directors', options_for_select(@directors.uniq!), :name => 'directors'
   
-  = text_field_tag 'directors'
+  = submit_tag 'Chercher', :id => 'search_directors'
+
+
+
+#results_for_people

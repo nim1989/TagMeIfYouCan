@@ -1,8 +1,8 @@
 h2 {
   background-color: #F2F2F2;
-  padding: 4px 6px 5px;
-  border-top: solid 1px #E2E2E2;
-  font-size: 14px;
+  padding         : 4px 6px 5px;
+  border-top      : solid 1px #E2E2E2;
+  font-size       : 14px;
 }
 
 ul.results {
@@ -24,9 +24,9 @@ ul.results {
 }
 
 ul.list {
-  list-style: none;
-  padding-left: 1em;
-  display: table;
+  list-style    : none;
+  padding-left  : 1em;
+  display       : table;
   border-spacing: 5px;
 }
 
@@ -40,27 +40,28 @@ ul.list {
 }
 
 input {
-  border: 1px solid #BDC7D8;
+  border    : 1px solid #BDC7D8;
   box-shadow: none;
-  padding: 4px 6px 5px;
-  font-size: 13px;
-  margin: 0;
+  padding   : 4px 6px 5px;
+  font-size : 13px;
+  margin    : 0;
+
 }
 
 .no_tag {
-  border: 1px solid #D8DFEA;
+  border    : 1px solid #D8DFEA;
   background: #EDEFF4;
-  padding: 1em;
-  font-size: 12px;
-  display: inline-block;
-  width: 15em;
+  padding   : 1em;
+  font-size : 12px;
+  display   : inline-block;
+  width     : 15em;
 }
 
 .confirm_tag {
   font-size: 12px;
-  display: table-row;
+  display  : table-row;
   > * {
-    display: table-cell;
+    display       : table-cell;
     vertical-align: middle;
   }
   .tag_form {
@@ -69,37 +70,38 @@ input {
 }
 
 .fb_link {
-  font-weight: bold;
-  color: #3B5998;
+  font-weight    : bold;
+  color          : #3B5998;
   text-decoration: none;
 }
 
 .img_tag {
   height: 75px; 
   width: 75px; 
-  background-repeat: no-repeat;
+  background-repeat  : no-repeat;
   background-position: 50% 50%;
-  display: block;
-  margin: auto;
-  -webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+  display            : block;
+  margin             : auto;
+  -webkit-background-size : cover;
+	-moz-background-size    : cover;
+	-o-background-size      : cover;
+	background-size         : cover;
 }
 
 #validate_tag {
   display: block;
   li {
-    text-align: center;
-    display: inline-block;
+    text-align    : center;
+    display       : inline-block;
     vertical-align: top;
     > a {
-      display: inline-block;
-      max-width: 75px;
-      margin: 5px;
-      font-size: 11px;
+      display        : inline-block;
+      max-width      : 75px;
+      margin         : 5px;
+      font-size      : 11px;
       text-decoration: none;
-      color: #3B5998;
+      color          : #3B5998;
+
     }
     > a:hover {
       text-decoration: underline;

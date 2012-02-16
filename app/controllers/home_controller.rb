@@ -101,7 +101,7 @@ class HomeController < ApplicationController
     end
     respond_to do |format|
       format.json{ render :json => @results.to_json }
-    end    
+    end
   end
 end
 

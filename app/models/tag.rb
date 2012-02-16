@@ -3,6 +3,39 @@ class Tag < ActiveRecord::Base
   has_many :facebooks, :through => :tags_facebooks, :foreign_key => "facebook_identifier"
   
   validates :uri, :presence => true
+
+  def retrieve_info    
+    tag.retrieve_thumbnail if self.thumbnail.empty?    
+    tag.retrieve_wikipedia_url if self.wikipedia_url.empty?
+
+    # Append RDF information to people-movie.nt
+    query = <<-QUERY
+        CONSTRUCT {
+            <#{self.uri}> ?property ?object.
+        } WHERE {
+            <#{self.uri}> ?property ?object.
+        }
+      QUERY
+    params = {:query => query, 
+             :format => "application/sparql-results+json",
+             'default-graph-uri' => "http://dbpedia.org"}
+
+    postData = Net::HTTP.post_form(URI.parse('http://dbpedia.org/sparql'), params)
+
+    begin  
+        graph = RDF::Graph.load('app/assets/rdf/people-film.nt', :format => :ntriples)
+        triple_writer = RDF::NTriples::Writer.new
+        triple = [RDF::URI.new("http://www.facebook.com/" + identifier), node, tag_uri]
+        RDF::Writer.open('app/assets/rdf/people-film.nt') do |writer|
+            if !graph.has_triple?(triple)
+                graph << triple
+            end
+            writer << graph
+        end
+    rescue
+        puts "An error occured - No such file" 
+    end
+  end
   
   def generate_director
     query = <<-QUERY

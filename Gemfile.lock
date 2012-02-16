@@ -33,6 +33,7 @@ GEM
     archive-tar-minitar (0.5.2)
     arel (3.0.0)
     attr_required (0.0.3)
+    backports (2.3.0)
     bcrypt-ruby (3.0.1)
     builder (3.0.0)
     coffee-rails (3.2.2)
@@ -56,6 +57,7 @@ GEM
     fb_graph (2.4.0)
       httpclient (>= 2.2.0.2)
       rack-oauth2 (>= 0.14.0)
+    ffi (1.0.11)
     haml (3.1.4)
     heroku (2.19.2)
       launchy (>= 0.3.2)
@@ -114,6 +116,11 @@ GEM
       rdoc (~> 3.4)
       thor (~> 0.14.6)
     rake (0.9.2.2)
+    rdf (0.3.5)
+      addressable (>= 2.2.6)
+    rdf-raptor (0.4.1)
+      ffi (>= 1.0)
+      rdf (~> 0.3.0)
     rdoc (3.12)
       json (~> 1.4)
     rest-client (1.6.7)
@@ -161,6 +168,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  backports
   coffee-rails
   devise
   fb_graph
@@ -171,6 +179,8 @@ DEPENDENCIES
   pg
   rack-ssl
   rails (= 3.2.1)
+  rdf
+  rdf-raptor
   ruby-debug19
   sass-rails
   thin

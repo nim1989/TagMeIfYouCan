@@ -1,4 +1,7 @@
 require 'rack/oauth2'
+require 'rdf'
+require 'rdf/ntriples'
+include RDF
 
 class FacebooksController < ApplicationController
   before_filter :require_authentication, :only => :destroy
@@ -16,6 +19,7 @@ class FacebooksController < ApplicationController
     if tag.nil?
       name = CGI.unescape(params[:query_string].gsub('_', ' ').gsub('http://dbpedia.org/resource/', ' '))
       tag = Tag.create(:uri => params[:query_string], :name => name, :wikipedia_url => params[:tag][:wikipedia_url], :thumbnail => params[:tag][:thumbnail])
+      tag.retrieve_info      
       tag.generate_director      
     end
 
@@ -26,7 +30,8 @@ class FacebooksController < ApplicationController
   end
   
   def accept_tag
-    retrieve_tag_info(params[:tag_id])
+    tag = Tag.find(params[:tag_id])
+    write_in_rdf(current_user.identifier, true, tag.uri)
     tag_facebook = TagsFacebook.where(:tag_id => params[:tag_id], :facebook_identifier => current_user.identifier).first
     tag_facebook.status = Status.validated
     tag_facebook.save    
@@ -36,7 +41,8 @@ class FacebooksController < ApplicationController
   end
 
   def decline_tag
-    retrieve_tag_info(params[:tag_id])
+    write_in_rdf(current_user.identifier, false, tag.uri)
+    
     tag_facebook = TagsFacebook.where(:tag_id => params[:tag_id], :facebook_identifier => current_user.identifier).first
     tag_facebook.status = Status.rejected
     tag_facebook.save
@@ -46,7 +52,6 @@ class FacebooksController < ApplicationController
   end
 
   def return_tag
-    retrieve_tag_info(params[:tag_id])
     TagsFacebook.create(:tag_id => params[:tag_id], :from_facebook_identifier => current_user.identifier, :facebook_identifier => params[:to_facebook_identifier])
     respond_to do |format|
       format.html { redirect_to root_path }
@@ -70,7 +75,6 @@ class FacebooksController < ApplicationController
 
   # handle Normal OAuth flow: callback
   def create
-    debugger
     client = Facebook.auth(callback_facebook_url).client
     client.authorization_code = params[:code]
     access_token = client.access_token!
@@ -86,8 +90,28 @@ class FacebooksController < ApplicationController
 
   private
   
-  def retrieve_tag_info tag_id
-    tag = Tag.find(tag_id)
+  def write_in_rdf(identifier, like = true, tag_uri)
+    if like
+        node = RDF::FOAF.like
+    else
+        node = RDF::FOAF.dislike
+    end
+    begin  
+        graph = RDF::Graph.load('app/assets/rdf/people-film.nt', :format => :ntriples)
+        triple_writer = RDF::NTriples::Writer.new
+        triple = [RDF::URI.new("http://www.facebook.com/" + identifier), node, tag_uri]
+        RDF::Writer.open('app/assets/rdf/people-film.nt') do |writer|
+            if !graph.has_triple?(triple)
+                graph << triple
+            end
+            writer << graph
+        end
+    rescue
+        puts "An error occured - No such file" 
+    end
+  end
+  
+  def retrieve_tag_info tag
     if tag.thumbnail.empty?
       tag.retrieve_thumbnail
     end

@@ -12,6 +12,12 @@ group :development do
   gem 'mysql2'
 end
 
+
+# RDF
+gem 'rdf'
+gem 'backports'
+gem 'rdf-raptor'
+
 gem 'jquery-rails'
 gem 'haml'
 gem 'heroku'

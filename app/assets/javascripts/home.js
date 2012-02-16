@@ -5,7 +5,7 @@ $(document).ready(function() {
         $(this).find('.query_string').attr('data-value', uri);
         $(this).find('.wikipedia_url').val(wikipediaURL);
         $(this).find('.thumbnail').val(thumbnail);
-        $(this).find('.results').html('');
+        $('#results').html('');
     };
 
 
@@ -18,53 +18,29 @@ $(document).ready(function() {
         var data = {query_string: val};
         var form_el = $(this).closest('.tag_form');
         if (data.query_string.length > 1) {
+            $('#results').css('visibility', 'visible');
             $("#ajax_loader").show();
-            /*************************************************************************** Query DBPedia*/
-            if ($('#from_dbpedia').is(':checked')) {
-                xhr = $.ajax({
-                    url     : '/search',
-                    type    : 'post',
-                    data    : data,
-                    dataType: "json",
-                    success: function(results, b, c) {
-                        $("#ajax_loader").hide();   
-                        $(form_el).find('.results').empty();
-                        _.each(results, function(result){
-                            if (result.uri) {
-                                uriName = result.uri.value.replace('http://dbpedia.org/resource/', '').replace(/_/g, ' ');
-                                uriName = decodeURI(uriName);
-                                var liTag = $('<li>' + uriName + '</li>');
-                                liTag.click(fillUriInput.bind(form_el, result.uri.value, uriName, result.page.value, result.thumbnail.value));
-                                $(form_el).find('.results').append(liTag);
-                            }
-                        });
-                    }
-                });
-            /*************************************************************************** Query Movie DB*/
-            } else {
-                xhr = $.ajax({
-                    url     : '/search_movie.json',
-                    type    : 'post',
-                    data    : data,
-                    dataType: "json",
-                    success: function(results, b, c) {
-                        $("#ajax_loader").hide();   
-                        $(form_el).find('.results').empty();
-                        _.each(results, function(result){
-                            if (result.uri) {
-                                uriName = result.uri.replace('http://dbpedia.org/resource/', '').replace(/_/g, ' ');
-                                uriName = decodeURI(uriName);
-                                var liTag = $('<li>' + uriName + '</li>');
-                                liTag.click(fillUriInput.bind(form_el, result.uri, uriName, '', ''));
-                                $(form_el).find('.results').append(liTag);
-                            }
-                        });
-                    }
-                });
-            }
-
+            xhr = $.ajax({
+                url     : '/search_movie.json',
+                type    : 'post',
+                data    : data,
+                dataType: "json",
+                success: function(results, b, c) {
+                    $("#ajax_loader").hide();   
+                    $('#results').empty();
+                    _.each(results, function(result){
+                        if (result.uri) {
+                            uriName = result.uri.replace('http://dbpedia.org/resource/', '').replace(/_/g, ' ');
+                            uriName = decodeURI(uriName);
+                            var liTag = $('<li>' + uriName + '</li>');
+                            liTag.click(fillUriInput.bind(form_el, result.uri, uriName, '', ''));
+                            $('#results').append(liTag);
+                        }
+                    });
+                }
+            });
         } else {
-            $(form_el).find('.results').empty();
+            $('#results').empty();
         }
     });
     

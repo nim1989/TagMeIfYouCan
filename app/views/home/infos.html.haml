@@ -1,0 +1,10 @@
+- like = [['n\'aiment pas', 0], ['aiment', 1]]
+= form_tag root_path, :class => 'tag_form' do 
+  
+  = label_tag 'like', 'Tous les utilisateurs qui '
+  
+  = select_tag 'like', options_for_select(like), :name => 'like'
+  
+  = label_tag 'directors', 'les films de'
+  
+  = text_field_tag 'directors'

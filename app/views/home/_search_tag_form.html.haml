@@ -3,25 +3,20 @@
   - @users = user.friends.map{|user| [user.name, user.identifier] } 
   - @users.sort!{|user1, user2| user1[0] <=> user2[0] }
 
-- random = (rand * 1000).round
+= label_tag 'from_dbpedia', 'Chercher sur DBPedia'
+= check_box_tag 'from_dbpedia'
 
 = form_tag tag_facebook_path, :class => 'tag_form' do 
-  - if defined? from_facebook
-    - @users.reject!{|user| user[1] != from_facebook}
-    - user = @users.first
-    - # label_tag 'user_select', "From #{user[0]}"
-    Tagger avec
-    -#%fb:name{:uid => user[1], :useyou => 'false'}
-    -#%fb:profile-pic{:uid => user[1]}
-    = hidden_field 'username', "username_#{random}", :name => 'tag[user_identifier]', :value => from_facebook
-  - else
-    = label_tag 'user_select', 'Tagger'
-    -# @users = @users.collect{|c| [c[0] + "<fb:profile-pic uid='#{c[1]}'></fb:profile-pic>", c[1]]  }
-    = select_tag  'user_select', options_for_select(@users, (defined?(from_facebook) ? from_facebook : '')), :name => 'tag[user_identifier]'
-    - if !defined?(from_facebook)
-      = label_tag "query_string_#{random}", 'avec'
-  = text_field_tag "query_string_#{random}", '', :class => 'query_string', :name => 'query_string'
+  
+  = label_tag 'user_select', 'Tagger'
+  
+  = select_tag  'user_select', options_for_select(@users), :name => 'tag[user_identifier]'
+  
+  = text_field_tag "query_string", '', :class => 'query_string', :name => 'query_string'
+  
   %ul.results
-  = hidden_field 'tag', "wikipedia_url_#{random}", :class => 'wikipedia_url', :name => 'tag[wikipedia_url]'
-  = hidden_field 'tag', "thumbnail_#{random}", :class => 'thumbnail', :name => 'tag[thumbnail]'
+  = hidden_field 'tag', "wikipedia_url", :class => 'wikipedia_url', :name => 'tag[wikipedia_url]'
+  = hidden_field 'tag', "thumbnail", :class => 'thumbnail', :name => 'tag[thumbnail]'
   = submit_tag 'Tag', {:class => 'uibutton large confirm'}
+  %button#suggest.uibutton.large Suggérer
+  #suggest_box

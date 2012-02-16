@@ -20,6 +20,8 @@
 # User.create(:username => 'Aurelien', :password => 'password', :email => 'aurelien@mail.com')
 # User.create(:username => 'Cyril',    :password => 'password', :email => 'cyril@mail.com')
 
+require File.dirname(__FILE__) + '/seed_movie.rb'
+
 Status.create(:name => 'validated')
 Status.create(:name => 'rejected')
 Status.create(:name => 'has_responded')

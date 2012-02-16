@@ -9,6 +9,7 @@ TagMeIfYouCan::Application.routes.draw do
   match 'search_movie'   => 'home#search_movie'
   match 'you_might_like' => 'home#you_might_like'
   match 'he_might_like'  => 'home#he_might_like'
+  match 'infos'           => 'home#infos'
 
   # Connect Site
   resource :facebook, :except => :create do

@@ -5,8 +5,8 @@ class Tag < ActiveRecord::Base
   validates :uri, :presence => true
 
   def retrieve_info    
-    tag.retrieve_thumbnail if self.thumbnail.empty?    
-    tag.retrieve_wikipedia_url if self.wikipedia_url.empty?
+    self.retrieve_thumbnail if self.thumbnail.empty?    
+    self.retrieve_wikipedia_url if self.wikipedia_url.empty?
 
     # Append RDF information to people-movie.nt
     query = <<-QUERY
@@ -17,23 +17,16 @@ class Tag < ActiveRecord::Base
         }
       QUERY
     params = {:query => query, 
-             :format => "application/sparql-results+json",
+             :format => "text/plain",
              'default-graph-uri' => "http://dbpedia.org"}
 
     postData = Net::HTTP.post_form(URI.parse('http://dbpedia.org/sparql'), params)
 
-    begin  
-        graph = RDF::Graph.load('app/assets/rdf/people-film.nt', :format => :ntriples)
-        triple_writer = RDF::NTriples::Writer.new
-        triple = [RDF::URI.new("http://www.facebook.com/" + identifier), node, tag_uri]
-        RDF::Writer.open('app/assets/rdf/people-film.nt') do |writer|
-            if !graph.has_triple?(triple)
-                graph << triple
-            end
-            writer << graph
-        end
+    begin
+      File.open('app/assets/rdf/people-film.nt', 'a') do |file| 
+        file.puts postData.body
+      end
     rescue
-        puts "An error occured - No such file" 
     end
   end
   

@@ -6,6 +6,7 @@ $(document).ready(function() {
         $(this).find('.wikipedia_url').val(wikipediaURL);
         $(this).find('.thumbnail').val(thumbnail);
         $('#results').html('');
+        $('#results').css('visibility', 'hidden');
     };
 
 
@@ -37,6 +38,19 @@ $(document).ready(function() {
                             $('#results').append(liTag);
                         }
                     });
+/*
+                    $('#query_string').keydown(function(evt) {
+                        switch (evt.keyCode) {
+                            case 38:
+                                $('#results').
+                                break;
+                            case 40:
+                                break;
+                            case 13:
+                                break;
+                          }
+                    });
+*/
                 }
             });
         } else {

@@ -13,7 +13,7 @@
       %li.confirm_tag
         %fb:profile-pic{:uid => tag_facebook.from_facebook_identifier}
         %fb:name{:uid => tag_facebook.from_facebook_identifier, :useyou => 'false'}
-        vous a taggé avec 
+        %p vous a taggé avec 
         = link_to tag_facebook.tag.name, tag_facebook.tag.wikipedia_url, :class => 'ilb'
         .ilb= button_to 'Accepter', accept_tag_facebook_path(:tag_id => tag_facebook.tag.id), :class => "uibutton confirm"
         .ilb= button_to 'Refuser', decline_tag_facebook_path(:tag_id => tag_facebook.tag.id), :class => "uibutton"
@@ -30,7 +30,7 @@
         = link_to tag_facebook.tag.name, tag_facebook.tag.wikipedia_url
 
 %h2 Mes tags refusés
-%ul#not_validate_tag
+%ul#not_validate_tag.list
   - if @rejected_tags.length == 0
     %li{:class => 'no_tag'} Aucun tag refusé
   - else 

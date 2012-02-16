@@ -90,6 +90,7 @@ class FacebooksController < ApplicationController
             
             friends.each do |friend|
                 graph << [RDF::URI.new("http://www.facebook.com/" + user.identifier), RDF::FOAF.knows, RDF::URI.new("http://www.facebook.com/" + friend.identifier)]
+                graph << [RDF::URI.new("http://www.facebook.com/" + friend.identifier), RDF.type, RDF::FOAF.person]
             end
             
             writer << graph

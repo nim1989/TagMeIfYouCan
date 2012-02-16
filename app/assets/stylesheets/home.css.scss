@@ -5,24 +5,6 @@ h2 {
   font-size       : 14px;
 }
 
-ul.results {
-  padding: 0;
-    li {
-        display         : block;
-        color           : black;
-        background-color: lightgrey;
-        padding-top     : 0.3em;
-        padding-bottom  : 0.3em;
-        padding-left    : 1.3em;
-        padding-right   : 1.3em;
-    }
-    li:hover {
-        cursor          : pointer;
-        color           : white;
-        background-color: gray; 
-    }
-}
-
 ul.list {
   list-style    : none;
   padding-left  : 1em;
@@ -40,7 +22,7 @@ ul.list {
 }
 
 input {
-  border    : 1px solid #BDC7D8;
+  border    : 1px solid #AAA;
   box-shadow: none;
   padding   : 4px 6px 5px;
   font-size : 13px;
@@ -107,4 +89,48 @@ input {
       text-decoration: underline;
     }
   }
+}
+
+#query_and_result {
+    position: relative;
+    width: 156px;
+}
+
+#query_string {
+    display: block;
+    width: 142px;
+}
+
+
+ul#results {
+    width             : 154px;
+    position          : absolute;
+    overflow          : auto;
+    max-height        : 400px;
+    margin-top        : 0;
+    left              : 0;
+    padding           : 0;
+    background-color  : white;
+    border            : 1px solid #AAA;
+    border-top        : none;
+    -webkit-box-shadow: 0 4px 5px rgba(0,0,0,.15);
+    -moz-box-shadow   : 0 4px 5px rgba(0,0,0,.15);
+    -o-box-shadow     : 0 4px 5px rgba(0,0,0,.15);
+    box-shadow        : 0 4px 5px rgba(0,0,0,.15);
+    z-index           : 999;
+    visibility        : hidden;
+    li {
+        line-height     : 15px;
+        padding         : 5px 6px;
+        display         : block;
+        color           : black;
+        border-bottom   : 1px solid transparent;
+        border-top      : 1px solid transparent;
+    }
+    li:hover {
+        cursor          : pointer;
+        background-color: #6D84B4;
+        border-bottom   : 1px solid #3B5998;
+        border-top      : 1px solid #3B5998;
+    }
 }

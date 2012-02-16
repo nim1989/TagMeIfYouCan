@@ -99,7 +99,7 @@ class FacebooksController < ApplicationController
     begin  
         graph = RDF::Graph.load('app/assets/rdf/people-film.nt', :format => :ntriples)
         triple_writer = RDF::NTriples::Writer.new
-        triple = [RDF::URI.new("http://www.facebook.com/" + identifier), node, tag_uri]
+        triple = [RDF::URI.new("http://www.facebook.com/" + identifier), node, RDF::URI.new(tag_uri)]
         RDF::Writer.open('app/assets/rdf/people-film.nt') do |writer|
             if !graph.has_triple?(triple)
                 graph << triple

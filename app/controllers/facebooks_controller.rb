@@ -80,6 +80,24 @@ class FacebooksController < ApplicationController
     access_token = client.access_token!
     user = FbGraph::User.me(access_token).fetch
     authenticate Facebook.identify(user)
+    
+    friends = user.friends
+    # Defining facebook people as fb_person
+    begin
+        graph = RDF::Graph.load('app/assets/rdf/people-film.nt', :format => :ntriples)
+        RDF::Writer.open('app/assets/rdf/people-film.nt') do |writer|
+            graph << [RDF::URI.new("http://www.facebook.com/" + user.identifier), RDF.type, RDF::FOAF.person]
+            
+            friends.each do |friend|
+                graph << [RDF::URI.new("http://www.facebook.com/" + user.identifier), RDF::FOAF.knows, RDF::URI.new("http://www.facebook.com/" + friend.identifier)]
+            end
+            
+            writer << graph
+        end
+    rescue
+        puts "An error occured - No such file" 
+    end
+
     redirect_to root_url
   end
 
@@ -98,7 +116,6 @@ class FacebooksController < ApplicationController
     end
     begin  
         graph = RDF::Graph.load('app/assets/rdf/people-film.nt', :format => :ntriples)
-        triple_writer = RDF::NTriples::Writer.new
         triple = [RDF::URI.new("http://www.facebook.com/" + identifier), node, RDF::URI.new(tag_uri)]
         RDF::Writer.open('app/assets/rdf/people-film.nt') do |writer|
             if !graph.has_triple?(triple)

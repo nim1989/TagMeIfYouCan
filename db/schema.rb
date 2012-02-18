@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120218152152) do
+ActiveRecord::Schema.define(:version => 20120218163257) do
 
   create_table "facebooks", :force => true do |t|
     t.string   "identifier",   :limit => 20
@@ -29,6 +29,8 @@ ActiveRecord::Schema.define(:version => 20120218152152) do
     t.string   "wikipedia_url"
     t.string   "thumbnail"
   end
+
+  add_index "movies", ["label"], :name => "index_movies_on_label"
 
   create_table "statuses", :force => true do |t|
     t.string "name"

@@ -1,11 +1,11 @@
-%h2.title 
+%h1.title 
   %fb:profile-pic{:uid => current_user.identifier, :size => "square" }
   Bienvenue  
   %fb:name{:uid => current_user.identifier, :useyou => 'false'}
   sur Tag Me If You Can
   %br/
 = render 'search_tag_form'
-%h2 Vous avez été taggé :
+%h3 Les tags avec lesquels j'ai été taggé
 %ul.list
   - if @pending_tags.length == 0
     %li{:class => 'no_tag'} Aucun tag en attente
@@ -20,7 +20,7 @@
         .ilb= button_to 'Refuser', decline_tag_facebook_path(:tag_id => tag_facebook.tag.id), :class => "uibutton"
         .ilb= button_to "Retourner le tag", return_tag_facebook_path(:tag_id => tag_facebook.tag.id, :to_facebook_identifier => tag_facebook.from_facebook.identifier), :class => "uibutton"
         - render :partial => '/home/search_tag_form', :locals => {:from_facebook => tag_facebook.from_facebook.identifier}
-%h2 Mes tags validés
+%h3 Les tags que j'ai validé
 %ul#validate_tag.list
   - if @validated_tags.length == 0
     %li{:class => 'no_tag'} Aucun tag validé
@@ -30,7 +30,7 @@
         %div.img_tag{:style => "background-image: url(#{tag_facebook.tag.thumbnail})"} &nbsp;
         = link_to tag_facebook.tag.name, tag_facebook.tag.wikipedia_url
 
-%h2 Mes tags refusés
+%h3 Les tags que j'ai refusé
 %ul#not_validate_tag.list
   - if @rejected_tags.length == 0
     %li{:class => 'no_tag'} Aucun tag refusé
@@ -39,8 +39,6 @@
       %li
         %div.img_tag{:style => "background-image: url(#{tag_facebook.tag.thumbnail})"} &nbsp;
         = link_to tag_facebook.tag.name, tag_facebook.tag.wikipedia_url
-
-%button#YouMightLike.uibutton YouMightLike
 
 %h2 Trouver des gens en fonction des réalisateur
 
@@ -52,8 +50,6 @@
   = radio_button_tag('like', 'true', true, :name => 'like')
   = label_tag 'like_false', 'n\'ont pas accepté les tags'
   = radio_button_tag('like', 'false', false, :name => 'like')
-
-  = #select_tag 'like', options_for_select(like), :name => 'like'
   
   = label_tag 'directors', 'des films de'
   

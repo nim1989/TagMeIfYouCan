@@ -11,7 +11,7 @@
   - else 
     - @pending_tags.each do |tag_facebook|
       %li.confirm_tag
-        %fb:profile-pic{:uid => tag_facebook.from_facebook_identifier}
+        %fb:profile-pic{:uid => tag_facebook.from_facebook_identifier, :size => "square" }
         %fb:name{:uid => tag_facebook.from_facebook_identifier, :useyou => 'false'}
         %p vous a taggé avec 
         = link_to tag_facebook.tag.name, tag_facebook.tag.wikipedia_url, :class => 'ilb'

@@ -114,7 +114,7 @@ $(document).ready(function() {
                 _.each(results, function(movie_object, facebook_id) {
                     var li = $('<li></li>')
                     var person = $('<div></div>').addClass('person');
-                    person.append($('<fb:profile-pic uid="' + facebook_id + '"></fb:profile-pic>'));
+                    person.append($('<fb:profile-pic size="square" uid="' + facebook_id + '"></fb:profile-pic>'));
                     person.append($('<fb:name uid="' + facebook_id + '"></fb:name>'));
                     var movies = $('<div></div>').addClass('movies');
                     _.each(movie_object, function(movie) {

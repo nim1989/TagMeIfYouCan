@@ -19,8 +19,7 @@ class FacebooksController < ApplicationController
     if tag.nil?
       name = CGI.unescape(params[:query_string].gsub('_', ' ').gsub('http://dbpedia.org/resource/', ' '))
       tag = Tag.create(:uri => params[:query_string], :name => name, :wikipedia_url => params[:tag][:wikipedia_url], :thumbnail => params[:tag][:thumbnail])
-      tag.retrieve_info      
-      tag.generate_director      
+      tag.retrieve_info
     end
 
     TagsFacebook.create(:tag => tag, :from_facebook_identifier => current_user.identifier, :facebook_identifier => user_to_tag.identifier, :status => Status.pending)
@@ -30,23 +29,17 @@ class FacebooksController < ApplicationController
   end
   
   def accept_tag
-    tag = Tag.find(params[:tag_id])
-    write_in_rdf(current_user.identifier, true, tag.uri)
     tag_facebook = TagsFacebook.where(:tag_id => params[:tag_id], :facebook_identifier => current_user.identifier).order("created_at DESC").first
-    tag_facebook.status = Status.validated
-    tag_facebook.save    
+    tag_facebook.accept
+    
     respond_to do |format|
       format.html { redirect_to root_path }
     end
   end
 
   def decline_tag
-    tag = Tag.find(params[:tag_id])
-    write_in_rdf(current_user.identifier, false, tag.uri)
-    
     tag_facebook = TagsFacebook.where(:tag_id => params[:tag_id], :facebook_identifier => current_user.identifier).order("created_at DESC").first
-    tag_facebook.status = Status.rejected
-    tag_facebook.save
+    tag_facebook.decline
     respond_to do |format|
       format.html { redirect_to root_path }
     end
@@ -80,20 +73,22 @@ class FacebooksController < ApplicationController
     client.authorization_code = params[:code]
     access_token = client.access_token!
     user = FbGraph::User.me(access_token).fetch
-    authenticate Facebook.identify(user)
+    fb_user = Facebook.identify(user)
+    fb_user.uri = "http://www.facebook.com/#{user.identifier}"
+    fb_user.save
+
+    authenticate fb_user
     
     friends = user.friends
     # Defining facebook people as fb_person
     begin
         graph = RDF::Graph.load('app/assets/rdf/people-film.nt', :format => :ntriples)
         RDF::Writer.open('app/assets/rdf/people-film.nt') do |writer|
-            graph << [RDF::URI.new("http://www.facebook.com/" + user.identifier), RDF.type, RDF::FOAF.person]
-            
+            graph << [RDF::URI.new(fb_user.uri), RDF.type, RDF::FOAF.person]
             friends.each do |friend|
-                graph << [RDF::URI.new("http://www.facebook.com/" + user.identifier), RDF::FOAF.knows, RDF::URI.new("http://www.facebook.com/" + friend.identifier)]
+                graph << [RDF::URI.new(fb_user.uri), RDF::FOAF.knows, RDF::URI.new("http://www.facebook.com/" + friend.identifier)]
                 graph << [RDF::URI.new("http://www.facebook.com/" + friend.identifier), RDF.type, RDF::FOAF.person]
             end
-            
             writer << graph
         end
     rescue
@@ -108,37 +103,7 @@ class FacebooksController < ApplicationController
     redirect_to root_url
   end
 
-  private
-  
-  def write_in_rdf(identifier, like = true, tag_uri)
-    if like
-        node = RDF::FOAF.like
-    else
-        node = RDF::FOAF.dislike
-    end
-    begin  
-        graph = RDF::Graph.load('app/assets/rdf/people-film.nt', :format => :ntriples)
-        triple = [RDF::URI.new("http://www.facebook.com/" + identifier), node, RDF::URI.new(tag_uri)]
-        RDF::Writer.open('app/assets/rdf/people-film.nt') do |writer|
-            if !graph.has_triple?(triple)
-                graph << triple
-            end
-            writer << graph
-        end
-    rescue
-        puts "An error occured - No such file" 
-    end
-  end
-  
-  def retrieve_tag_info tag
-    if tag.thumbnail.empty?
-      tag.retrieve_thumbnail
-    end
-    if tag.wikipedia_url.empty?
-      tag.retrieve_wikipedia_url
-    end
-  end  
-  
+  private  
   def oauth2_error(e)
     flash[:error] = {
       :title => e.response[:error][:type],

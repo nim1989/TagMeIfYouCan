@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120214225003) do
+ActiveRecord::Schema.define(:version => 20120218152152) do
 
   create_table "directors", :force => true do |t|
     t.string   "uri"
@@ -25,13 +25,16 @@ ActiveRecord::Schema.define(:version => 20120214225003) do
     t.string   "access_token"
     t.datetime "created_at",                 :null => false
     t.datetime "updated_at",                 :null => false
+    t.string   "uri"
   end
 
   create_table "movies", :force => true do |t|
     t.string   "uri"
     t.string   "label"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
+    t.string   "wikipedia_url"
+    t.string   "thumbnail"
   end
 
   create_table "statuses", :force => true do |t|

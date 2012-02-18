@@ -39,10 +39,20 @@ query3 = RDF::Query.new do
 end
 
 m = []
-query2.execute(graph).each do |solution|
-  puts solution.friend_of_friend
-  #m << solution.inferenced_film
+solutions = query.execute(graph)
+solutions.distinct
+solutions.filter do |solution|
+  solution.film != solution.inferenced_film
 end
+
+solutions.each do |solution|
+  puts solution.inferenced_film
+end
+
+# query2.execute(graph).each do |solution|
+#   puts solution.friend_of_friend
+#   #m << solution.inferenced_film
+# end
 m.uniq!
 puts m
 

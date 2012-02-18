@@ -1,7 +1,7 @@
 #menu {
   display: inline-block;
   vertical-align: top;
-  width: 100px;
+  width: 15%;
   ul {
     list-style: none;
     padding: 0;
@@ -18,17 +18,19 @@
   display: inline-block;
   vertical-align: top;
   border-left      : solid 1px #E2E2E2;
+  width: 84%;
 }
 
 #content_2, #content_3 {
   display: none;
 }
 
-h1.title {
+h2.title {
   > * {
     display: inline-block;
     vertical-align: top;
   }
+  margin-bottom: 0;
 }
 
 h2 {

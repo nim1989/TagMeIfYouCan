@@ -113,7 +113,7 @@ $(document).ready(function() {
                 _.each(results, function(movie_object, facebook_id) {
                     var li = $('<li></li>')
                     var person = $('<div></div>').addClass('person');
-                    person.append($('<fb:profile-pic uid="' + facebook_id + '"></fb:profile-pic>'));
+                    person.append($('<fb:profile-pic size="square" uid="' + facebook_id + '"></fb:profile-pic>'));
                     person.append($('<fb:name uid="' + facebook_id + '"></fb:name>'));
                     var movies = $('<div></div>').addClass('movies');
                     _.each(movie_object, function(movie) {
@@ -199,4 +199,26 @@ $(document).ready(function() {
     });
     
     
+   /** MENU **/ 
+   $('#menu ul li#un').click(function(){
+      $('#menu ul li').removeClass('selected');
+      $(this).addClass('selected');
+      $('#content_1').css('display', 'block');
+      $('#content_2').css('display', 'none');
+      $('#content_3').css('display', 'none');
+   });
+   $('#menu ul li#deux').click(function(){
+      $('#menu ul li').removeClass('selected');
+      $(this).addClass('selected');
+      $('#content_1').css('display', 'none');
+      $('#content_2').css('display', 'block');
+      $('#content_3').css('display', 'none');
+   });
+   $('#menu ul li#trois').click(function(){
+      $('#menu ul li').removeClass('selected');
+      $(this).addClass('selected');
+      $('#content_1').css('display', 'none');
+      $('#content_2').css('display', 'none');
+      $('#content_3').css('display', 'block');
+   });
 });

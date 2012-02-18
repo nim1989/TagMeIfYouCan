@@ -245,18 +245,17 @@ class HomeController < ApplicationController
     current_user_uri = current_user.uri
     ## Same actors
     query = RDF::Query.new do
-        #pattern [RDF::URI.new(current_user_uri), RDF::FOAF.like, :film]
+        pattern [RDF::URI.new(current_user_uri), RDF::FOAF.like, :film]
 
         pattern [:film, RDF::URI.new('http://dbpedia.org/property/starring'), RDF::URI.new(actor)]
-        #pattern [RDF::URI.new(current_user_uri), RDF::FOAF.knows, :friend]
+        pattern [RDF::URI.new(current_user_uri), RDF::FOAF.knows, :friend]
 
-        #pattern [:inferenced_film, RDF::URI.new('http://dbpedia.org/property/starring'), RDF::URI.new(actor)]
-        #pattern [:friend, RDF::FOAF.knows, :friend_of_friend]
-        #pattern [:friend_of_friend, RDF::FOAF.like, :inferenced_film]
+        pattern [:inferenced_film, RDF::URI.new('http://dbpedia.org/property/starring'), RDF::URI.new(actor)]
+        pattern [:friend, RDF::FOAF.knows, :friend_of_friend]
+        pattern [:friend_of_friend, RDF::FOAF.like, :inferenced_film]
     end
     friends = []
     solutions = query.execute(graph)
-    debugger
 
     solutions.distinct # Remove duplicates entries
     solutions.filter{|solution| solution.film != solution.inferenced_film } # Remove movies that user already likes
@@ -285,13 +284,17 @@ class HomeController < ApplicationController
     
     friends = []
     solutions = query.execute(graph)
-    solutions.distinct # Remove duplicates entries
     solutions.each do |solution|
       friends << solution.friend_of_friend.to_s
     end
+    friends.uniq!
+    user = FbGraph::User.me(current_user.access_token).fetch
+    friends_identifier = user.friends.collect{|friend| friend.identifier}
     
+    debugger
     f = friends.collect{|friend| friend.gsub('http://www.facebook.com/', '') }
     f.reject!{ |friend| friend == current_user.identifier }
+    f.reject!{ |friend| friends_identifier.include?(friend) }
     respond_to do |format|
       format.json{ render :json => f }
     end

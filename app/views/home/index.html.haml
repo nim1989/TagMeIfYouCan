@@ -1,3 +1,4 @@
+%fb:profile-pic{:uid => current_user.identifier, :size => "square" }
 %h2 
   Bienvenue  
   %fb:name{:uid => current_user.identifier, :useyou => 'false'}
@@ -58,7 +59,7 @@
   
   = select_tag 'directors', options_for_select(@directors.uniq!), :name => 'directors'
   
-  = submit_tag 'Chercher', :id => 'search_directors'
+  = submit_tag 'Chercher', { :id => 'search_directors', :class => "uibutton confirm"}
 
 %ul#results_for_people
 
@@ -77,6 +78,6 @@
   
   = select_tag 'actors', options_for_select(@actors.uniq!), :multiple => true, :name => 'actors'
   
-  = submit_tag 'Chercher', :id => 'search_actors'
+  = submit_tag 'Chercher',{ :id => 'search_actors', :class => "uibutton confirm"}
 
 #results_for_actors_people

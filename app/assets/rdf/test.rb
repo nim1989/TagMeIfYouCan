@@ -17,21 +17,30 @@ include RDF
 # rescue
 #     puts "An error occured"    
 # end
-
+# 
+# 
+# graph = RDF::Graph.load("people-film.nt")
+# query = RDF::Query.new do
+# #Meme réalisateur
+# #    pattern [:movie, RDF::URI.new("http://dbpedia.org/property/director"), RDF::URI.new('http://dbpedia.org/resource/Steven_Spielberg')]
+# 
+# #Meme Acteur
+# #    pattern [:movie, RDF::URI.new("http://dbpedia.org/ontology/starring"), RDF::URI.new('http://dbpedia.org/resource/Tom_Cruise')]
+# 
+# 
+#     #pattern [:movie, RDF::URI.new("http://purl.org/dc/terms/subject"), :cat]
+#                 pattern [:pers, RDF::FOAF.like, :movie]
+# end
 
 graph = RDF::Graph.load("people-film.nt")
 query = RDF::Query.new do
-#Meme réalisateur
-#    pattern [:movie, RDF::URI.new("http://dbpedia.org/property/director"), RDF::URI.new('http://dbpedia.org/resource/Steven_Spielberg')]
-
-#Meme Acteur
-#    pattern [:movie, RDF::URI.new("http://dbpedia.org/ontology/starring"), RDF::URI.new('http://dbpedia.org/resource/Tom_Cruise')]
-
-
-    #pattern [:movie, RDF::URI.new("http://purl.org/dc/terms/subject"), :cat]
-                pattern [:pers, RDF::FOAF.like, :movie]
+   pattern [RDF::URI.new('http://www.facebook.com/834118723'), RDF::FOAF.like, :film]
+   pattern [:film, RDF::URI.new('http://dbpedia.org/property/director'), :director]
+   pattern [RDF::URI.new('http://www.facebook.com/834118723'), RDF::FOAF.knows, :person]
+   pattern [:person, RDF::FOAF.like, :inferenced_film]
+   pattern [:inferenced_film, RDF::URI.new('http://dbpedia.org/property/director'), :director]
 end
 
 query.execute(graph).each do |solution|
-  puts solution.pers + ' / ' + solution.movie
+  puts solution.person + ' / ' + solution.inferenced_film
 end

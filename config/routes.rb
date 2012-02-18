@@ -15,6 +15,7 @@ TagMeIfYouCan::Application.routes.draw do
   post 'home/get_movies_you_might_like'
   post 'home/movies_you_might_like'
   post 'home/friends_you_might_like'
+  post 'home/movies_you_might_like_from_actors'
   
   # Connect Site
   resource :facebook, :except => :create do

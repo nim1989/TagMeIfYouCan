@@ -3,6 +3,8 @@ class Tag < ActiveRecord::Base
   has_many :facebooks, :through => :tags_facebooks, :foreign_key => "facebook_identifier"
   
   validates :uri, :presence => true
+  
+  before_create :generate_wiki_url_and_thumb
 
   def retrieve_info
     # Append RDF information to people-movie.nt
@@ -27,5 +29,11 @@ class Tag < ActiveRecord::Base
       end
     rescue
     end
+  end
+
+  def generate_wiki_url_and_thumb
+    movie = Movie.where(:uri => self.uri)
+    self.wikipedia_url = movie.wikipedia_url
+    self.thumbnail = movie.thumbnail
   end
 end

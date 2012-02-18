@@ -31,15 +31,16 @@ class HomeController < ApplicationController
             @directors << solution.director
         end
         @directors = @directors.collect{ |director| [director.to_s.gsub('http://dbpedia.org/resource/','').gsub('_', ' '), director.to_s]} || []
+        current_user_uri = current_user.uri
         query2 = RDF::Query.new do
-            pattern [:l, RDF::URI.new("http://dbpedia.org/ontology/starring"), :actor]
+            pattern [RDF::URI.new(current_user_uri), RDF::FOAF.like, :film]
+            pattern [:film, RDF::URI.new("http://dbpedia.org/property/starring"), :actor]
         end
         @actors = []
         query2.execute(graph).each do |solution|
             @actors << solution.actor
         end
         @actors = @actors.collect{ |actor| [actor.to_s.gsub('http://dbpedia.org/resource/','').gsub('_', ' '), actor.to_s]}
-        
     end
   end
   
@@ -240,31 +241,31 @@ class HomeController < ApplicationController
 
   def movies_you_might_like_from_actors
     graph = RDF::Graph.load("app/assets/rdf/people-film.nt")
-    actors = params[:actors]
+    actor = params[:actors][0]
     current_user_uri = current_user.uri
     ## Same actors
-    query3 = RDF::Query.new do
-        pattern [RDF::URI.new(current_user_uri), RDF::FOAF.like, :film]
-        actors.each do |actor|
-          pattern [:film, RDF::URI.new('http://dbpedia.org/property/starring'), RDF::URI.new(actor)]
-        end
-        pattern [RDF::URI.new(current_user_uri), RDF::FOAF.knows, :person]
-        pattern [:person, RDF::FOAF.like, :inferenced_film]
-        actors.each do |actor|
-          pattern [:inferenced_film, RDF::URI.new('http://dbpedia.org/property/starring'), RDF::URI.new(actor)]
-        end
+    query = RDF::Query.new do
+        #pattern [RDF::URI.new(current_user_uri), RDF::FOAF.like, :film]
+
+        pattern [:film, RDF::URI.new('http://dbpedia.org/property/starring'), RDF::URI.new(actor)]
+        #pattern [RDF::URI.new(current_user_uri), RDF::FOAF.knows, :friend]
+
+        #pattern [:inferenced_film, RDF::URI.new('http://dbpedia.org/property/starring'), RDF::URI.new(actor)]
+        #pattern [:friend, RDF::FOAF.knows, :friend_of_friend]
+        #pattern [:friend_of_friend, RDF::FOAF.like, :inferenced_film]
     end
-    movies = []
+    friends = []
     solutions = query.execute(graph)
+    debugger
+
     solutions.distinct # Remove duplicates entries
     solutions.filter{|solution| solution.film != solution.inferenced_film } # Remove movies that user already likes
     solutions.each do |solution|
-      movies << solution.inferenced_film.to_s
+      friends << solution.friend_of_friend.to_s
     end
-    
-    m = movies.collect{|movie| Movie.where(:uri => movie).first }
+    f = friends.collect{|friend| friend.gsub('http://www.facebook.com/', '') }
     respond_to do |format|
-      format.json{ render :json => m }
+      format.json{ render :json => f }
     end
   end
 

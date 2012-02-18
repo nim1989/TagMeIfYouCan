@@ -46,15 +46,13 @@ solutions.filter do |solution|
 end
 
 solutions.each do |solution|
-  puts solution.inferenced_film
+  #puts solution.inferenced_film
 end
 
 # query2.execute(graph).each do |solution|
 #   puts solution.friend_of_friend
 #   #m << solution.inferenced_film
 # end
-m.uniq!
-puts m
 
 # queries = []
 # movies.each do |solution_movie|
@@ -85,3 +83,11 @@ puts m
 # q.execute(graph).each do |solution|
 #   puts solution.film
 # end
+
+
+query2 = RDF::Query.new do
+    pattern [:film, RDF::URI.new("http://dbpedia.org/property/starring"), :actor]
+end
+query2.execute(graph).each do |solution|
+    puts solution.actor
+end

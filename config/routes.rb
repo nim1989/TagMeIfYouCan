@@ -12,6 +12,10 @@ TagMeIfYouCan::Application.routes.draw do
   match 'infos'           => 'home#infos'
   post 'home/get_infos'
   post 'home/get_infos_actors'
+  post 'home/get_movies_you_might_like'
+  post 'home/movies_you_might_like'
+  post 'home/friends_you_might_like'
+  
   # Connect Site
   resource :facebook, :except => :create do
     get  :callback    , :to => :create

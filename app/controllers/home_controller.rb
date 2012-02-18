@@ -30,8 +30,7 @@ class HomeController < ApplicationController
         query.execute(graph).each do |solution|
             @directors << solution.director
         end
-        @directors = @directors.collect{ |director| [director.to_s.gsub('http://dbpedia.org/resource/','').gsub('_', ' '), director.to_s]}
-        
+        @directors = @directors.collect{ |director| [director.to_s.gsub('http://dbpedia.org/resource/','').gsub('_', ' '), director.to_s]} || []
         query2 = RDF::Query.new do
             pattern [:l, RDF::URI.new("http://dbpedia.org/ontology/starring"), :actor]
         end
@@ -86,12 +85,10 @@ class HomeController < ApplicationController
         end
     end
     
-    
     @movies = []
     query.execute(graph).each do |solution|
         @movies << solution.movie
     end
-    debugger
     
     @pers = []
     query.execute(graph).each do |solution|
@@ -104,7 +101,7 @@ class HomeController < ApplicationController
   end
 
   def search_movie
-    movies = Movie.where("lower(label) LIKE '%#{params[:query_string]}%'")
+    movies = Movie.where("lower(label) LIKE '#{params[:query_string]}%'")
     respond_to do |format|
       format.json{ render :json => movies.to_json }
     end
@@ -163,29 +160,142 @@ class HomeController < ApplicationController
 
   def he_might_like
     # Getting random uri that users has been tagged with
-    uri = TagsFacebook.where(:facebook_identifier => params[:user_identifier]).collect{ |tag_facebook| tag_facebook.tag.uri }.shuffle.first
-    query = <<-QUERY    
-      select distinct ?new_game, ?label where {
-        <#{uri}> dcterms:subject ?category.
-        ?new_category skos:related ?category.
-        ?new_game dcterms:subject ?new_category.
-        ?new_game rdfs:label ?label.
-        FILTER(lang(?label) = 'en')
-      }
-    QUERY
-    params = {:query => query, 
-              :format => "application/sparql-results+json",
-              'default-graph-uri' => "http://dbpedia.org"}
-    postData = Net::HTTP.post_form(URI.parse('http://dbpedia.org/sparql'), params)
-    begin
-      @results = JSON.parse(postData.body)["results"]["bindings"]
-    rescue
-      @results = []
+    uris = TagsFacebook.where(:status_id => Status.validated.id, :facebook_identifier => params[:user_identifier]).collect{ |tag_facebook| tag_facebook.tag.uri }
+    uris.uniq!#{ |tag_facebook| tag_facebook.tag.uri }
+    @movies_uri = []
+    uris.each do |uri| 
+        query = <<-QUERY    
+          SELECT DISTINCT ?name where {
+            <#{uri}> dbpedia-owl:director ?director.
+            ?movie <http://dbpedia.org/property/director> ?director.
+            ?movie dbpprop:name ?name.
+          }
+        QUERY
+        params = {:query => query, 
+                  :format => "application/sparql-results+json",
+                  'default-graph-uri' => "http://dbpedia.org"}
+        postData = Net::HTTP.post_form(URI.parse('http://dbpedia.org/sparql'), params)
+        begin
+            @movies_uri.concat(JSON.parse(postData.body)["results"]["bindings"].collect{ |uri| uri['name']['value'] })
+        end
     end
+    respond_to do |format|
+      format.json{ render :json => @movies_uri.shuffle.first.to_json }
+    end
+  end
+
+  def get_movies_you_might_like
+    # Getting random uri that users has been tagged with
+    uris = TagsFacebook.where(:status_id => Status.validated.id, :facebook_identifier => current_user.identifier).collect{ |tag_facebook| tag_facebook.tag.uri }
+    uris.uniq!#{ |tag_facebook| tag_facebook.tag.uri }
+    @movies_uri = []
+    uris.each do |uri| 
+        query = <<-QUERY    
+          SELECT DISTINCT ?movie where {
+             <#{uri}> dbpedia-owl:director ?director.
+              ?movie <http://dbpedia.org/property/director> ?director
+          }
+        QUERY
+        params = {:query => query, 
+                  :format => "application/sparql-results+json",
+                  'default-graph-uri' => "http://dbpedia.org"}
+        postData = Net::HTTP.post_form(URI.parse('http://dbpedia.org/sparql'), params)
+        begin
+            @movies_uri.concat(JSON.parse(postData.body)["results"]["bindings"].collect{ |uri| uri['movie']['value'] })
+        end
+    end
+
     respond_to do |format|
       format.json{ render :json => @results.to_json }
     end
   end
+
+
+  ######## Suggestion from ntriple file
+  def movies_you_might_like
+    graph = RDF::Graph.load("app/assets/rdf/people-film.nt")
+    ## Same director
+    current_user_uri = current_user.uri
+    query = RDF::Query.new do
+        pattern [RDF::URI.new(current_user_uri), RDF::FOAF.like, :film]
+        pattern [:film, RDF::URI.new('http://dbpedia.org/property/director'), :director]
+        pattern [RDF::URI.new(current_user_uri), RDF::FOAF.knows, :friend]
+        pattern [:friend, RDF::FOAF.like, :inferenced_film]
+        pattern [:inferenced_film, RDF::URI.new('http://dbpedia.org/property/director'), :director]
+    end
+    movies = []
+    solutions = query.execute(graph)
+    solutions.distinct # Remove duplicates entries
+    solutions.filter{|solution| solution.film != solution.inferenced_film } # Remove movies that user already likes
+    solutions.each do |solution|
+      movies << solution.inferenced_film.to_s
+    end
+
+    m = movies.collect{|movie| Movie.where(:uri => movie).first }
+
+    respond_to do |format|
+      format.json{ render :json => m }
+    end
+  end
+
+  def movies_you_might_like_from_actors
+    graph = RDF::Graph.load("app/assets/rdf/people-film.nt")
+    actors = params[:actors]
+    current_user_uri = current_user.uri
+    ## Same actors
+    query3 = RDF::Query.new do
+        pattern [RDF::URI.new(current_user_uri), RDF::FOAF.like, :film]
+        actors.each do |actor|
+          pattern [:film, RDF::URI.new('http://dbpedia.org/property/starring'), RDF::URI.new(actor)]
+        end
+        pattern [RDF::URI.new(current_user_uri), RDF::FOAF.knows, :person]
+        pattern [:person, RDF::FOAF.like, :inferenced_film]
+        actors.each do |actor|
+          pattern [:inferenced_film, RDF::URI.new('http://dbpedia.org/property/starring'), RDF::URI.new(actor)]
+        end
+    end
+    movies = []
+    solutions = query.execute(graph)
+    solutions.distinct # Remove duplicates entries
+    solutions.filter{|solution| solution.film != solution.inferenced_film } # Remove movies that user already likes
+    solutions.each do |solution|
+      movies << solution.inferenced_film.to_s
+    end
+    
+    m = movies.collect{|movie| Movie.where(:uri => movie).first }
+    respond_to do |format|
+      format.json{ render :json => m }
+    end
+  end
+
+
+  def friends_you_might_like
+    graph = RDF::Graph.load("app/assets/rdf/people-film.nt")
+    ## Same director
+    current_user_uri = current_user.uri
+    query = RDF::Query.new do
+      pattern [RDF::URI.new(current_user_uri), RDF::FOAF.like, :film]
+      pattern [:film, RDF::URI.new('http://dbpedia.org/property/director'), :director]
+      pattern [RDF::URI.new(current_user_uri), RDF::FOAF.knows, :friend]
+      pattern [:friend, RDF::FOAF.knows, :friend_of_friend]
+      pattern [:friend_of_friend, RDF::FOAF.like, :inferenced_film]
+      pattern [:inferenced_film, RDF::URI.new('http://dbpedia.org/property/director'), :director]
+    end
+    
+    friends = []
+    solutions = query.execute(graph)
+    solutions.distinct # Remove duplicates entries
+    solutions.each do |solution|
+      friends << solution.friend_of_friend.to_s
+    end
+    
+    f = friends.collect{|friend| friend.gsub('http://www.facebook.com/', '') }
+    f.reject!{ |friend| friend == current_user.identifier }
+    respond_to do |format|
+      format.json{ render :json => f }
+    end
+  end
+
 end
 
 # Suggestion
@@ -211,4 +321,21 @@ end
 # SELECT ?x ?label WHERE {
 #   ?x rdfs:label ?label
 #   FILTER(regex(?label,"^foot"))
+# }
+# 
+# select distinct ?movie where {
+#   {
+#     <http://dbpedia.org/resource/Minority_Report_%28film%29> dbpedia-owl:director ?director.
+#     ?movie <http://dbpedia.org/property/director> ?director.
+#   }
+#   UNION
+#   {
+#     <http://dbpedia.org/page/Batman_Beyond:_Return_of_the_Joker> dbpedia-owl:director ?director.
+#     ?movie <http://dbpedia.org/property/director> ?director.
+#   }
+#   UNION
+#   {
+#     <http://dbpedia.org/page/The_Prestige_%28film%29> dbpedia-owl:director ?director.
+#     ?movie <http://dbpedia.org/property/director> ?director.
+#   }
 # }

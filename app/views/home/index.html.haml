@@ -57,7 +57,7 @@
   
   = label_tag 'directors', 'des films de'
   
-  = select_tag 'directors', options_for_select(@directors.uniq!), :name => 'directors'
+  = select_tag 'directors', options_for_select(@directors.uniq), :name => 'directors'
   
   = submit_tag 'Chercher', { :id => 'search_directors', :class => "uibutton confirm"}
 
@@ -76,8 +76,15 @@
   
   = label_tag 'actors', 'des films avec'
   
-  = select_tag 'actors', options_for_select(@actors.uniq!), :multiple => true, :name => 'actors'
+  = select_tag 'actors', options_for_select(@actors.uniq), :multiple => true, :name => 'actors'
   
   = submit_tag 'Chercher',{ :id => 'search_actors', :class => "uibutton confirm"}
 
 #results_for_actors_people
+
+
+%button#movies_you_might_like.uibutton Films que vous pourriez aimer
+#movies_you_might_like_results
+
+%button#friends_you_might_like.uibutton Amis que vous pourriez aimer
+%ul#friends_you_might_like_results

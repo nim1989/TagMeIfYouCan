@@ -6,5 +6,39 @@ class TagsFacebook < ActiveRecord::Base
 
   validates :facebook_identifier     , :presence => true
   validates :from_facebook_identifier, :presence => true
+  
+  
+  def accept
+    write_in_rdf(self.facebook.uri, true)
+    self.status = Status.validated
+    self.save
+  end
+
+  def decline
+    write_in_rdf(self.facebook.uri, false)
+    self.status = Status.rejected
+    self.save
+  end
+  
+  private 
+  def write_in_rdf(uri, like = true)
+    if like
+        node = RDF::FOAF.like
+    else
+        node = RDF::FOAF.dislike
+    end
+    begin  
+        graph = RDF::Graph.load('app/assets/rdf/people-film.nt', :format => :ntriples)
+        triple = [RDF::URI.new(uri), node, RDF::URI.new(self.tag.uri)]
+        RDF::Writer.open('app/assets/rdf/people-film.nt') do |writer|
+            if !graph.has_triple?(triple)
+                graph << triple
+            end
+            writer << graph
+        end
+    rescue
+        puts "An error occured - No such file" 
+    end
+  end
 
 end

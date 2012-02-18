@@ -11,7 +11,13 @@
   %body
     #fb-root
     #notice= flash[:notice]
-    = yield
+    #menu
+      %ul
+        %li#un Tags
+        %li#deux Rechercher
+        %li#trois Suggestions
+    #content_wrapper
+      = yield
 
 
     = javascript_include_tag 'http://connect.facebook.net/en_US/all.js'

@@ -199,4 +199,20 @@ $(document).ready(function() {
     });
     
     
+   /** MENU **/ 
+   $('#menu ul li#un').click(function(){
+      $('#content_1').css('display', 'block');
+      $('#content_2').css('display', 'none');
+      $('#content_3').css('display', 'none');
+   });
+   $('#menu ul li#deux').click(function(){
+      $('#content_1').css('display', 'none');
+      $('#content_2').css('display', 'block');
+      $('#content_3').css('display', 'none');
+   });
+   $('#menu ul li#trois').click(function(){
+      $('#content_1').css('display', 'none');
+      $('#content_2').css('display', 'none');
+      $('#content_3').css('display', 'block');
+   });
 });

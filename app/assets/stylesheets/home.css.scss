@@ -1,3 +1,26 @@
+#menu {
+  display: inline-block;
+  vertical-align: top;
+  width: 100px;
+  ul {
+    list-style: none;
+    padding: 0;
+    li {
+      padding: 0.5em;
+    }
+  }
+}
+
+#content_wrapper {
+  display: inline-block;
+  vertical-align: top;
+  border-left      : solid 1px #E2E2E2;
+}
+
+#content_2, #content_3 {
+  display: none;
+}
+
 h1.title {
   > * {
     display: inline-block;

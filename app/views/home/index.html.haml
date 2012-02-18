@@ -4,83 +4,90 @@
   %fb:name{:uid => current_user.identifier, :useyou => 'false'}
   sur Tag Me If You Can
   %br/
-= render 'search_tag_form'
-%h3 Les tags avec lesquels j'ai été taggé
-%ul.list
-  - if @pending_tags.length == 0
-    %li{:class => 'no_tag'} Aucun tag en attente
-  - else 
-    - @pending_tags.each do |tag_facebook|
-      %li.confirm_tag
-        %fb:profile-pic{:uid => tag_facebook.from_facebook_identifier, :size => "square" }
-        %fb:name{:uid => tag_facebook.from_facebook_identifier, :useyou => 'false'}
-        %p vous a taggé avec 
-        = link_to tag_facebook.tag.name, tag_facebook.tag.wikipedia_url, :class => 'ilb'
-        .ilb= button_to 'Accepter', accept_tag_facebook_path(:tag_id => tag_facebook.tag.id), :class => "uibutton confirm"
-        .ilb= button_to 'Refuser', decline_tag_facebook_path(:tag_id => tag_facebook.tag.id), :class => "uibutton"
-        .ilb= button_to "Retourner le tag", return_tag_facebook_path(:tag_id => tag_facebook.tag.id, :to_facebook_identifier => tag_facebook.from_facebook.identifier), :class => "uibutton"
-        - render :partial => '/home/search_tag_form', :locals => {:from_facebook => tag_facebook.from_facebook.identifier}
-%h3 Les tags que j'ai validé
-%ul#validate_tag.list
-  - if @validated_tags.length == 0
-    %li{:class => 'no_tag'} Aucun tag validé
-  - else 
-    - @validated_tags.each do |tag_facebook|
-      %li
-        %div.img_tag{:style => "background-image: url(#{tag_facebook.tag.thumbnail})"} &nbsp;
-        = link_to tag_facebook.tag.name, tag_facebook.tag.wikipedia_url
 
-%h3 Les tags que j'ai refusé
-%ul#not_validate_tag.list
-  - if @rejected_tags.length == 0
-    %li{:class => 'no_tag'} Aucun tag refusé
-  - else 
-    - @rejected_tags.each do |tag_facebook|
-      %li
-        %div.img_tag{:style => "background-image: url(#{tag_facebook.tag.thumbnail})"} &nbsp;
-        = link_to tag_facebook.tag.name, tag_facebook.tag.wikipedia_url
+#content_1
 
-%h2 Trouver des gens en fonction des réalisateur
+  = render 'search_tag_form'
 
-= form_tag home_get_infos_path, :class => 'tag_form' do 
+  %h3 Les tags avec lesquels j'ai été taggé
+  %ul.list
+    - if @pending_tags.length == 0
+      %li{:class => 'no_tag'} Aucun tag en attente
+    - else 
+      - @pending_tags.each do |tag_facebook|
+        %li.confirm_tag
+          %fb:profile-pic{:uid => tag_facebook.from_facebook_identifier, :size => "square" }
+          %fb:name{:uid => tag_facebook.from_facebook_identifier, :useyou => 'false'}
+          %p vous a taggé avec 
+          = link_to tag_facebook.tag.name, tag_facebook.tag.wikipedia_url, :class => 'ilb'
+          .ilb= button_to 'Accepter', accept_tag_facebook_path(:tag_id => tag_facebook.tag.id), :class => "uibutton confirm"
+          .ilb= button_to 'Refuser', decline_tag_facebook_path(:tag_id => tag_facebook.tag.id), :class => "uibutton"
+          .ilb= button_to "Retourner le tag", return_tag_facebook_path(:tag_id => tag_facebook.tag.id, :to_facebook_identifier => tag_facebook.from_facebook.identifier), :class => "uibutton"
+          - render :partial => '/home/search_tag_form', :locals => {:from_facebook => tag_facebook.from_facebook.identifier}
+  %h3 Les tags que j'ai validé
+  %ul#validate_tag.list
+    - if @validated_tags.length == 0
+      %li{:class => 'no_tag'} Aucun tag validé
+    - else 
+      - @validated_tags.each do |tag_facebook|
+        %li
+          %div.img_tag{:style => "background-image: url(#{tag_facebook.tag.thumbnail})"} &nbsp;
+          = link_to tag_facebook.tag.name, tag_facebook.tag.wikipedia_url
   
-  %p Tous les utilisateurs qui
+  %h3 Les tags que j'ai refusé
+  %ul#not_validate_tag.list
+    - if @rejected_tags.length == 0
+      %li{:class => 'no_tag'} Aucun tag refusé
+    - else 
+      - @rejected_tags.each do |tag_facebook|
+        %li
+          %div.img_tag{:style => "background-image: url(#{tag_facebook.tag.thumbnail})"} &nbsp;
+          = link_to tag_facebook.tag.name, tag_facebook.tag.wikipedia_url
 
-  = label_tag 'like_true', 'ont accepté les tag'  
-  = radio_button_tag('like', 'true', true, :name => 'like')
-  = label_tag 'like_false', 'n\'ont pas accepté les tags'
-  = radio_button_tag('like', 'false', false, :name => 'like')
+#content_2
+  %h2 Trouver des gens en fonction des réalisateur
   
-  = label_tag 'directors', 'des films de'
+  = form_tag home_get_infos_path, :class => 'tag_form' do 
+    
+    %p Tous les utilisateurs qui
   
-  = select_tag 'directors', options_for_select(@directors.uniq), :name => 'directors'
+    = label_tag 'like_true', 'ont accepté les tag'  
+    = radio_button_tag('like', 'true', true, :name => 'like')
+    = label_tag 'like_false', 'n\'ont pas accepté les tags'
+    = radio_button_tag('like', 'false', false, :name => 'like')
+    
+    = label_tag 'directors', 'des films de'
+    
+    = select_tag 'directors', options_for_select(@directors.uniq), :name => 'directors'
+    
+    = submit_tag 'Chercher', { :id => 'search_directors', :class => "uibutton confirm"}
   
-  = submit_tag 'Chercher', { :id => 'search_directors', :class => "uibutton confirm"}
-
-%ul#results_for_people
-
-%h2 Trouver des gens en fonction des acteurs
-
-= form_tag home_get_infos_actors_path, :class => 'tag_form' do 
+  %ul#results_for_people
   
-  %p Tous les utilisateurs qui
-
-  = label_tag 'like_true', 'ont accepté les tag'  
-  = radio_button_tag('like', 'true', true, :name => 'like')
-  = label_tag 'like_false', 'n\'ont pas accepté les tags'
-  = radio_button_tag('like', 'false', false, :name => 'like')
+  %h2 Trouver des gens en fonction des acteurs
   
-  = label_tag 'actors', 'des films avec'
+  = form_tag home_get_infos_actors_path, :class => 'tag_form' do 
+    
+    %p Tous les utilisateurs qui
   
-  = select_tag 'actors', options_for_select(@actors.uniq), :multiple => true, :name => 'actors'
+    = label_tag 'like_true', 'ont accepté les tag'  
+    = radio_button_tag('like', 'true', true, :name => 'like')
+    = label_tag 'like_false', 'n\'ont pas accepté les tags'
+    = radio_button_tag('like', 'false', false, :name => 'like')
+    
+    = label_tag 'actors', 'des films avec'
+    
+    = select_tag 'actors', options_for_select(@actors.uniq), :multiple => true, :name => 'actors'
+    
+    = submit_tag 'Chercher',{ :id => 'search_actors', :class => "uibutton confirm"}
   
-  = submit_tag 'Chercher',{ :id => 'search_actors', :class => "uibutton confirm"}
-
-#results_for_actors_people
-
-
-%button#movies_you_might_like.uibutton Films que vous pourriez aimer
-#movies_you_might_like_results
-
-%button#friends_you_might_like.uibutton Amis que vous pourriez aimer
-%ul#friends_you_might_like_results
+  #results_for_actors_people
+  
+  
+#content_3
+  
+  %button#movies_you_might_like.uibutton Films que vous pourriez aimer
+  #movies_you_might_like_results
+  
+  %button#friends_you_might_like.uibutton Amis que vous pourriez aimer
+  %ul#friends_you_might_like_results

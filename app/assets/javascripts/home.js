@@ -156,7 +156,6 @@ $(document).ready(function() {
 
     
     //$('#movies_you_might_like').click(function() {
-    var movies_you_might_like = function() {
         $.ajax({
             url     : '/home/movies_you_might_like',
             type    : 'post',
@@ -175,7 +174,6 @@ $(document).ready(function() {
             }
         });
     }
-    movies_you_might_like();
     //    return false;
     //});
 

@@ -13,10 +13,10 @@
     #notice= flash[:notice]
     %h2.title 
       %fb:profile-pic{:uid => current_user.identifier, :size => "square" }
-      Bienvenue  
-      %fb:name{:uid => current_user.identifier, :useyou => 'false'}
-      sur Tag Me If You Can
-      %br/
+      %div
+        Bienvenue  
+        %fb:name{:uid => current_user.identifier, :useyou => 'false'}
+        sur Tag Me If You Can
     #menu
       %ul
         %li#un.selected Tags

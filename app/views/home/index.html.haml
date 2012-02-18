@@ -61,13 +61,13 @@
   
   = form_tag home_get_infos_actors_path, :class => 'tag_form' do 
 
-    = label_tag 'actors', 'Tous les utilisateurs qui ont aimé un film avec'
+    = label_tag 'actors', 'Tous les amis de mes amis qui ont aimé un film avec'
     
     = select_tag 'actors', options_for_select(@actors.uniq), :name => 'actors'
     
     = submit_tag 'Chercher',{ :id => 'search_actors', :class => "uibutton confirm"}
 
-    #results_for_actors_people
+  %ul#results_for_actors_people
   
   
 #content_3

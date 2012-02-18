@@ -241,7 +241,8 @@ class HomeController < ApplicationController
 
   def movies_you_might_like_from_actors
     graph = RDF::Graph.load("app/assets/rdf/people-film.nt")
-    actor = params[:actors][0]
+    actor = params[:actors]
+
     current_user_uri = current_user.uri
     ## Same actors
     query = RDF::Query.new do
@@ -257,12 +258,18 @@ class HomeController < ApplicationController
     friends = []
     solutions = query.execute(graph)
 
-    solutions.distinct # Remove duplicates entries
     solutions.filter{|solution| solution.film != solution.inferenced_film } # Remove movies that user already likes
     solutions.each do |solution|
       friends << solution.friend_of_friend.to_s
     end
+
+    user = FbGraph::User.me(current_user.access_token).fetch
+    friends_identifier = user.friends.collect{|friend| friend.identifier}
+
     f = friends.collect{|friend| friend.gsub('http://www.facebook.com/', '') }
+    f.reject!{ |friend| friend == current_user.identifier }
+    f.reject!{ |friend| friends_identifier.include?(friend) }
+    f.uniq!
     respond_to do |format|
       format.json{ render :json => f }
     end
@@ -291,10 +298,10 @@ class HomeController < ApplicationController
     user = FbGraph::User.me(current_user.access_token).fetch
     friends_identifier = user.friends.collect{|friend| friend.identifier}
     
-    debugger
     f = friends.collect{|friend| friend.gsub('http://www.facebook.com/', '') }
     f.reject!{ |friend| friend == current_user.identifier }
     f.reject!{ |friend| friends_identifier.include?(friend) }
+    f.uniq!
     respond_to do |format|
       format.json{ render :json => f }
     end

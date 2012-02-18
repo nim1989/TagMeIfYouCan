@@ -8,9 +8,11 @@ class Tag < ActiveRecord::Base
     # Append RDF information to people-movie.nt
     query = <<-QUERY
         CONSTRUCT {
-            <#{self.uri}> ?property ?object.
+            <#{self.uri}> dbpprop:starring ?star.
+            <#{self.uri}> dbpedia-owl:director ?director.
         } WHERE {
-            <#{self.uri}> ?property ?object.
+            <#{self.uri}> dbpprop:starring ?star.
+            <#{self.uri}> dbpedia-owl:director ?director.
         }
       QUERY
     params = {:query => query, 

@@ -66,14 +66,7 @@
 
 = form_tag home_get_infos_actors_path, :class => 'tag_form' do 
   
-  %p Tous les utilisateurs qui
-
-  = label_tag 'like_true', 'ont accepté les tag'  
-  = radio_button_tag('like', 'true', true, :name => 'like')
-  = label_tag 'like_false', 'n\'ont pas accepté les tags'
-  = radio_button_tag('like', 'false', false, :name => 'like')
-  
-  = label_tag 'actors', 'des films avec'
+  = label_tag 'actors' 'Tous les utilisateurs qui ont aimé un film avec'
   
   = select_tag 'actors', options_for_select(@actors.uniq), :multiple => true, :name => 'actors'
   

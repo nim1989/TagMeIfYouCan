@@ -201,16 +201,22 @@ $(document).ready(function() {
     
    /** MENU **/ 
    $('#menu ul li#un').click(function(){
+      $('#menu ul li').removeClass('selected');
+      $(this).addClass('selected');
       $('#content_1').css('display', 'block');
       $('#content_2').css('display', 'none');
       $('#content_3').css('display', 'none');
    });
    $('#menu ul li#deux').click(function(){
+      $('#menu ul li').removeClass('selected');
+      $(this).addClass('selected');
       $('#content_1').css('display', 'none');
       $('#content_2').css('display', 'block');
       $('#content_3').css('display', 'none');
    });
    $('#menu ul li#trois').click(function(){
+      $('#menu ul li').removeClass('selected');
+      $(this).addClass('selected');
       $('#content_1').css('display', 'none');
       $('#content_2').css('display', 'none');
       $('#content_3').css('display', 'block');

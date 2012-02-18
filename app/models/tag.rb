@@ -3,6 +3,8 @@ class Tag < ActiveRecord::Base
   has_many :facebooks, :through => :tags_facebooks, :foreign_key => "facebook_identifier"
   before_create :generate_wiki_url_and_thumb
   validates :uri, :presence => true
+  
+  before_create :generate_wiki_url_and_thumb
 
   def generate_wiki_url_and_thumb
     movie = Movie.where(:uri => self.uri).first
@@ -14,9 +16,11 @@ class Tag < ActiveRecord::Base
     # Append RDF information to people-movie.nt
     query = <<-QUERY
         CONSTRUCT {
-            <#{self.uri}> ?property ?object.
+            <#{self.uri}> dbpprop:starring ?star.
+            <#{self.uri}> dbpedia-owl:director ?director.
         } WHERE {
-            <#{self.uri}> ?property ?object.
+            <#{self.uri}> dbpprop:starring ?star.
+            <#{self.uri}> dbpedia-owl:director ?director.
         }
       QUERY
     params = {:query => query, 
@@ -31,5 +35,11 @@ class Tag < ActiveRecord::Base
       end
     rescue
     end
+  end
+
+  def generate_wiki_url_and_thumb
+    movie = Movie.where(:uri => self.uri).first
+    self.wikipedia_url = movie.wikipedia_url
+    self.thumbnail = movie.thumbnail
   end
 end

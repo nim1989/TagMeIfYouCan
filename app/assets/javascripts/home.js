@@ -134,10 +134,9 @@ $(document).ready(function() {
     });
      $('#search_actors').click(function() {
         $.ajax({
-            url     : '/home/get_infos_actors',
+            url     : '/home/movies_you_might_like_from_actors',
             type    : 'post',
             data    :  {
-                like:       $('#like_true').is(':checked'),
                 actors:  $('#actors').val()
             },
             dataType: "json",
@@ -156,7 +155,7 @@ $(document).ready(function() {
     });
 
     
-    $('#movies_you_might_like').click(function() {
+    //$('#movies_you_might_like').click(function() {
         $.ajax({
             url     : '/home/movies_you_might_like',
             type    : 'post',
@@ -174,10 +173,11 @@ $(document).ready(function() {
 
             }
         });
-        return false;
-    });
+    }
+    //    return false;
+    //});
 
-    $('#friends_you_might_like').click(function() {
+    //$('#friends_you_might_like').click(function() {
         $.ajax({
             url     : '/home/friends_you_might_like',
             type    : 'post',
@@ -195,8 +195,8 @@ $(document).ready(function() {
                 FB.XFBML.parse(document.getElementById('friends_you_might_like_results'));
             }
         });
-        return false;
-    });
+    //    return false;
+    //});
     
     
    /** MENU **/ 

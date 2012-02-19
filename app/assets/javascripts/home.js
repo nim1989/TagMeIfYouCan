@@ -10,24 +10,20 @@ $(document).ready(function() {
     };
 
 
-    $("#ajax_loader").hide();
     var xhr = $.ajax();
     $(".query_string").keyup(function(event) {
         xhr.abort();
-        $("#ajax_loader").hide();
         var val = $(this).val();
         var data = {query_string: val};
         var form_el = $(this).closest('.tag_form');
         if (data.query_string.length > 1) {
             $('#results').css('visibility', 'visible');
-            $("#ajax_loader").show();
             xhr = $.ajax({
                 url     : '/search_movie.json',
                 type    : 'post',
                 data    : data,
                 dataType: "json",
                 success: function(results, b, c) {
-                    $("#ajax_loader").hide();   
                     $('#results').empty();
                     _.each(results, function(result){
                         if (result.uri) {
@@ -65,6 +61,8 @@ $(document).ready(function() {
 
     /****************************************************************************************** Infos */
     $('#search_directors').click(function() {
+        $('#results_for_people').empty();
+        $('#results_for_people').append($('<img alt="Ajax-loader" height="16" src="/assets/ajax-loader.gif" width="16">'));
         $.ajax({
             url     : '/home/get_infos',
             type    : 'post',
@@ -104,6 +102,8 @@ $(document).ready(function() {
         return false;
     });
     $('#search_actors').click(function() {
+        $('#results_for_actors_people').empty();
+        $('#results_for_actors_people').append($('<img alt="Ajax-loader" height="16" src="/assets/ajax-loader.gif" width="16">'));
         $.ajax({
             url     : '/home/movies_you_might_like_from_actors',
             type    : 'post',
@@ -159,7 +159,7 @@ $(document).ready(function() {
             $('#friends_you_might_like_results').empty();
             if (_.isEmpty(results)) {
                 li = $('<li></li>').addClass('no_tag').text('Aucune personne à suggérer');
-                $('#movies_you_might_like_results').append(li);
+                $('#friends_you_might_like_results').append(li);
             } else {
                 _.each(results, function(facebook_id) {
                     var li = $('<li></li>').addClass('person')

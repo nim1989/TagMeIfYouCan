@@ -1,3 +1,5 @@
+require 'net/http'
+
 class Tag < ActiveRecord::Base
   has_many :tags_facebooks
   has_many :facebooks, :through => :tags_facebooks, :foreign_key => "facebook_identifier"
@@ -8,6 +10,17 @@ class Tag < ActiveRecord::Base
     movie = Movie.where(:uri => self.uri).first
     self.wikipedia_url = movie.wikipedia_url
     self.thumbnail = movie.thumbnail.gsub!('commons/thumb','en').gsub!(/\/200px.*/, '')
+    uri = URI(self.thumbnail)
+    result = Net::HTTP.get_response(uri)
+    if !result.is_a?(Net::HTTPSuccess) 
+      uri = URI('http://www.freebase.com/api/service/search?query=' + movie.label + '&type=/film/film')
+      result = Net::HTTP.get(uri)
+      result = JSON.parse(result)
+      gui = result['result'][0]['guid']
+      gui.slice!(0)
+      self.thumbnail = 'http://api.freebase.com/api/trans/image_thumb/guid/' + gui + '?maxwidth=100'  
+    end
+    puts self.thumbnail
   end
  
   def retrieve_info

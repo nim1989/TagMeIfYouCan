@@ -24,7 +24,7 @@ class HomeController < ApplicationController
         
         graph = RDF::Graph.load("app/assets/rdf/people-film.nt")
         query = RDF::Query.new do
-            pattern [:l, RDF::URI.new("http://dbpedia.org/property/director"), :director]
+            pattern [:l, RDF::URI.new("http://dbpedia.org/ontology/director"), :director]
         end
         @directors = []
         query.execute(graph).each do |solution|
@@ -40,7 +40,7 @@ class HomeController < ApplicationController
         query2.execute(graph).each do |solution|
             @actors << solution.actor
         end
-        @actors = @actors.collect{ |actor| [actor.to_s.gsub('http://dbpedia.org/resource/','').gsub('_', ' '), actor.to_s]}
+        @actors = @actors.collect{ |actor| [actor.to_s.gsub('http://dbpedia.org/resource/','').gsub('_', ' ').gsub('%28', '(').gsub('%29', ')'), actor.to_s]}
     end
   end
   
@@ -53,19 +53,16 @@ class HomeController < ApplicationController
         foaf = RDF::FOAF.like    
     end
     query = RDF::Query.new do
-        pattern [:movie, RDF::URI.new("http://dbpedia.org/property/director"), RDF::URI.new(director)]
-        pattern [:movie, RDF::URI.new("http://dbpedia.org/ontology/thumbnail"), :movie_thumb]
-        pattern [:movie, RDF::URI.new("http://dbpedia.org/property/name"), :movie_name]
-        pattern [:movie, RDF::FOAF.page, :wikipedia_url]
+        pattern [:movie, RDF::URI.new("http://dbpedia.org/ontology/director"), RDF::URI.new(director)]
         pattern [:pers, foaf, :movie]
     end
     @pers = {}
+
     query.execute(graph).each do |solution|
         @pers[solution.pers.to_s.gsub('http://www.facebook.com/', '')] = [] if @pers[solution.pers.to_s.gsub('http://www.facebook.com/', '')].nil?
-        @pers[solution.pers.to_s.gsub('http://www.facebook.com/', '')] << {:thumbnail => solution.movie_thumb.to_s,
-                                                                           :wikipedia_url => solution.wikipedia_url.to_s,
-                                                                           :movie_name => solution.movie_name.to_s} #solution.movie
+        @pers[solution.pers.to_s.gsub('http://www.facebook.com/', '')] << Movie.where(:uri => solution.movie.to_s).first
     end
+
     respond_to do |format|
         format.json { render :json => @pers.to_json }
     end
@@ -102,7 +99,7 @@ class HomeController < ApplicationController
   end
 
   def search_movie
-    movies = Movie.where("lower(label) LIKE '#{params[:query_string]}%'")
+    movies = Movie.where("lower(label) LIKE '%#{params[:query_string].downcase}%'")
     respond_to do |format|
       format.json{ render :json => movies.to_json }
     end
@@ -142,10 +139,10 @@ class HomeController < ApplicationController
     current_user_uri = current_user.uri
     query = RDF::Query.new do
         pattern [RDF::URI.new(current_user_uri), RDF::FOAF.like, :film]
-        pattern [:film, RDF::URI.new('http://dbpedia.org/property/director'), :director]
+        pattern [:film, RDF::URI.new('http://dbpedia.org/ontology/director'), :director]
         pattern [RDF::URI.new(current_user_uri), RDF::FOAF.knows, :friend]
         pattern [:friend, RDF::FOAF.like, :inferenced_film]
-        pattern [:inferenced_film, RDF::URI.new('http://dbpedia.org/property/director'), :director]
+        pattern [:inferenced_film, RDF::URI.new('http://dbpedia.org/ontology/director'), :director]
     end
     movies = []
     solutions = query.execute(graph)
@@ -218,11 +215,11 @@ class HomeController < ApplicationController
     current_user_uri = current_user.uri
     query = RDF::Query.new do
       pattern [RDF::URI.new(current_user_uri), RDF::FOAF.like, :film]
-      pattern [:film, RDF::URI.new('http://dbpedia.org/property/director'), :director]
+      pattern [:film, RDF::URI.new('http://dbpedia.org/ontology/director'), :director]
       pattern [RDF::URI.new(current_user_uri), RDF::FOAF.knows, :friend]
       pattern [:friend, RDF::FOAF.knows, :friend_of_friend]
       pattern [:friend_of_friend, RDF::FOAF.like, :inferenced_film]
-      pattern [:inferenced_film, RDF::URI.new('http://dbpedia.org/property/director'), :director]
+      pattern [:inferenced_film, RDF::URI.new('http://dbpedia.org/ontology/director'), :director]
     end
     
     friends = []

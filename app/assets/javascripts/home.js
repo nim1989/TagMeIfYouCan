@@ -9,7 +9,6 @@ $(document).ready(function() {
         $('#results').css('visibility', 'hidden');
     };
 
-
     var xhr = $.ajax();
     $(".query_string").keyup(function(event) {
         xhr.abort();
@@ -18,6 +17,11 @@ $(document).ready(function() {
         var form_el = $(this).closest('.tag_form');
         if (data.query_string.length > 1) {
             $('#results').css('visibility', 'visible');
+            if ($('#results').find('#query-ajax').length == 0) {
+              var li = $('<li></li>').css('text-align', 'center').append($('<img id="query-ajax" alt="Ajax-loader" height="16" src="/assets/ajax-loader.gif" width="16">'));
+              $('#results').append(li);
+            }
+
             xhr = $.ajax({
                 url     : '/search_movie.json',
                 type    : 'post',
@@ -82,11 +86,11 @@ $(document).ready(function() {
                         var person = $('<div></div>').addClass('person');
                         person.append($('<fb:profile-pic size="square" uid="' + facebook_id + '"></fb:profile-pic>'));
                         person.append($('<fb:name uid="' + facebook_id + '"></fb:name>'));
-                        var movies = $('<div></div>').addClass('movies');
+                        var movies = $('<ul></ul>').addClass('movies').addClass('list');
                         _.each(movie_object, function(movie) {
-                            var movieDIV = $('<div></div>').addClass('movie');
+                            var movieDIV = $('<li></li>').addClass('movie');
                             movieDIV.append($('<div></div>').addClass('img_tag').attr('style', 'background-image: url(' + movie.thumbnail + ')'));
-                            movieDIV.append($('<a></a>').html(movie.movie_name).attr('href',movie.wikipedia_url));
+                            movieDIV.append($('<a></a>').html(movie.label).attr('href',movie.wikipedia_url));
                             movies.append(movieDIV);
                         });
                         li.append(person);
@@ -119,8 +123,8 @@ $(document).ready(function() {
                 } else {
                     _.each(results, function(facebook_id) {
                         var person = $('<div class="person"></div>')
-                        person.append($('<fb:name uid="' + facebook_id + '"></fb:name>'));
                         person.append($('<fb:profile-pic uid="' + facebook_id + '"></fb:profile-pic>'));
+                        person.append($('<fb:name uid="' + facebook_id + '"></fb:name>'));
                         $('#results_for_actors_people').append(person);
                     });
                     FB.XFBML.parse(document.getElementById('results_for_actors_people'));

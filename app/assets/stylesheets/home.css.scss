@@ -186,7 +186,7 @@ ul#results {
     }
 }
 
-ul#results_for_people, ul#friends_you_might_like_results {
+ul#results_for_people, ul#friends_you_might_like_results, ul#results_for_actors_people {
 /*
     list-style: none;
     padding-left: 0;
@@ -213,16 +213,16 @@ ul#results_for_people, ul#friends_you_might_like_results {
         }
     }
 }
-/*
+
 .movies {
-    display: table-cell;
-    vertical-align: top;
+    padding: 10px;
+    display: inline-block !important;
+    border: none !important;
     .movie {
-        display: inline-block;
-        vertical-align: top;
+        border: none !important;
+        display: inline-block !important;
     }
 }
-*/
 
 #directors_chzn, #actors_chzn{
   width: 200px !important;

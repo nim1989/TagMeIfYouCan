@@ -13,7 +13,7 @@ class Tag < ActiveRecord::Base
     uri = URI(self.thumbnail)
     result = Net::HTTP.get_response(uri)
     if !result.is_a?(Net::HTTPSuccess) 
-      uri = URI('http://www.freebase.com/api/service/search?query=' + movie.label + '&type=/film/film')
+      uri = URI(URI.escape('http://www.freebase.com/api/service/search?query=' + movie.label + '&type=/film/film'))
       result = Net::HTTP.get(uri)
       result = JSON.parse(result)
       gui = result['result'][0]['guid']

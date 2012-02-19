@@ -17,13 +17,14 @@
         Bienvenue  
         %fb:name{:uid => current_user.identifier, :useyou => 'false'}
         sur Tag Me If You Can
-    #menu
-      %ul
-        %li#un.selected Tags
-        %li#deux Rechercher
-        %li#trois Suggestions
-    #content_wrapper
-      = yield
+    #wrap
+      #menu
+        %ul
+          %li#un.selected Tags
+          %li#deux Rechercher
+          %li#trois Suggestions
+      #content_wrapper
+        = yield
 
     = javascript_include_tag 'http://connect.facebook.net/en_US/all.js'
     :javascript

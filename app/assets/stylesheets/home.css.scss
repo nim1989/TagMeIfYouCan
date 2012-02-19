@@ -1,5 +1,5 @@
 #menu {
-  display: inline-block;
+  display: table-cell;
   vertical-align: top;
   width: 15%;
   ul {
@@ -20,10 +20,14 @@
 }
 
 #content_wrapper {
-  display: inline-block;
+  display: table-cell;
   vertical-align: top;
   border-left      : solid 1px #E2E2E2;
-  width: 84%;
+}
+
+#wrap {
+  display: table;
+  width: 100%;
 }
 
 #content_2, #content_3 {
@@ -82,10 +86,13 @@ input {
 
 .confirm_tag {
   font-size: 12px;
-  display  : table-row;
+  display  : table-row !important;
   > * {
-    display       : table-cell;
-    vertical-align: middle;
+    display       : table-cell !important;
+    vertical-align: middle !important;
+  }
+  a {
+    max-width: none !important;
   }
   .tag_form {
     background: none;
@@ -226,4 +233,8 @@ ul#results_for_people, ul#friends_you_might_like_results {
 
 #movies_you_might_like_results img.gif {
   padding-left: 20px;
+}
+
+#movies_you_might_like_results .no_tag {
+  margin-left: 20px;
 }

@@ -9,7 +9,9 @@ class Tag < ActiveRecord::Base
   def generate_wiki_url_and_thumb
     movie = Movie.where(:uri => self.uri).first
    self.wikipedia_url = movie.wikipedia_url
-   self.thumbnail = movie.thumbnail.gsub!('commons/thumb','en').gsub(/\/200px.*/, '')
+   puts(movie.thumbnail)
+   self.thumbnail = movie.thumbnail.gsub!('commons/thumb','en').gsub!(/\/200px.*/, '')
+   puts(self.thumbnail)
   end
  
   def retrieve_info

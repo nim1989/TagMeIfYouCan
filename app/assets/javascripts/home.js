@@ -154,51 +154,6 @@ $(document).ready(function() {
         return false;
     });
 
-    
-    //$('#movies_you_might_like').click(function() {
-        $.ajax({
-            url     : '/home/movies_you_might_like',
-            type    : 'post',
-            dataType: "json",
-            success: function(results, b, c) {
-                $('#movies_you_might_like_results').empty();
-                var movies = $('<div></div>').addClass('movies');
-                _.each(results, function(movie) {
-                    var movieDIV = $('<div></div>').addClass('movie');
-                    movieDIV.append($('<div></div>').addClass('img_tag').attr('style', 'background-image: url(' + movie.thumbnail + ')'));
-                    movieDIV.append($('<a></a>').html(movie.label).attr('href',movie.wikipedia_url));
-                    movies.append(movieDIV);
-                });
-                $('#movies_you_might_like_results').append(movies);
-
-            }
-        });
-    }
-    //    return false;
-    //});
-
-    //$('#friends_you_might_like').click(function() {
-        $.ajax({
-            url     : '/home/friends_you_might_like',
-            type    : 'post',
-            dataType: "json",
-            success: function(results, b, c) {
-                $('#friends_you_might_like_results').empty();
-                _.each(results, function(facebook_id) {
-                    var li = $('<li></li>')
-                    var person = $('<div></div>').addClass('person');
-                    person.append($('<fb:profile-pic uid="' + facebook_id + '"></fb:profile-pic>'));
-                    person.append($('<fb:name uid="' + facebook_id + '"></fb:name>'));
-                    li.append(person);
-                    $('#friends_you_might_like_results').append(li);
-                });
-                FB.XFBML.parse(document.getElementById('friends_you_might_like_results'));
-            }
-        });
-    //    return false;
-    //});
-    
-    
    /** MENU **/ 
    $('#menu ul li#un').click(function(){
       $('#menu ul li').removeClass('selected');

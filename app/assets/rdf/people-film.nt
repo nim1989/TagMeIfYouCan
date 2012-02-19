@@ -57,6 +57,9 @@
 <http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/100001474952781> .
 <http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/100001488929210> .
 <http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/like> <http://dbpedia.org/resource/Inception> .
+<http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/like> <http://dbpedia.org/resource/Unforgiven> .
+<http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/like> <http://dbpedia.org/resource/Blood_Work_%28film%29> .
+<http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/like> <http://dbpedia.org/resource/Iron_Man_%28film%29> .
 <http://www.facebook.com/531559626> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
 <http://www.facebook.com/540023917> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
 <http://www.facebook.com/543770253> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
@@ -93,8 +96,10 @@
 <http://www.facebook.com/1305180669> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
 <http://www.facebook.com/1328592921> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
 <http://www.facebook.com/1338944766> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/1338944766> <http://xmlns.com/foaf/0.1/like> <http://dbpedia.org/resource/Top_Gun> .
 <http://www.facebook.com/1356360692> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
 <http://www.facebook.com/1381683411> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
+<http://www.facebook.com/1381683411> <http://xmlns.com/foaf/0.1/like> <http://dbpedia.org/resource/Blood_Work_%28film%29> .
 <http://www.facebook.com/1403754121> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
 <http://www.facebook.com/1408026976> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
 <http://www.facebook.com/1417164268> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
@@ -296,6 +301,9 @@
 <http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/like> <http://dbpedia.org/resource/Love_Actually> .
 <http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/like> <http://dbpedia.org/resource/Invictus_%28film%29> .
 <http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/like> <http://dbpedia.org/resource/Spider-Man_3> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/like> <http://dbpedia.org/resource/Gran_Torino> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/like> <http://dbpedia.org/resource/Minority_Report_%28film%29> .
+<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/like> <http://dbpedia.org/resource/Mission:_Impossible_III> .
 <http://www.facebook.com/100000255564478> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
 <http://www.facebook.com/100000271158398> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
 <http://www.facebook.com/100000534082078> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
@@ -562,11 +570,6 @@
 <http://www.facebook.com/100001371978211> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
 <http://www.facebook.com/100002470598226> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
 <http://www.facebook.com/100002480412297> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
-<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/like> <http://dbpedia.org/resource/Gran_Torino> .
-<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/like> <http://dbpedia.org/resource/Minority_Report_%28film%29> .
-<http://www.facebook.com/100000023494269> <http://xmlns.com/foaf/0.1/like> <http://dbpedia.org/resource/Mission:_Impossible_III> .
-<http://www.facebook.com/1381683411> <http://xmlns.com/foaf/0.1/like> <http://dbpedia.org/resource/Blood_Work_%28film%29> .
-<http://www.facebook.com/1381683411> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
 <http://www.facebook.com/935956> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
 <http://www.facebook.com/5307766> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
 <http://www.facebook.com/9500821> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
@@ -627,68 +630,6 @@
 <http://www.facebook.com/819395272> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
 <http://www.facebook.com/827670250> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
 <http://www.facebook.com/832400293> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
-<http://www.facebook.com/834118723> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
-<http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/531559626> .
-<http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/540023917> .
-<http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/543770253> .
-<http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/544005369> .
-<http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/550988465> .
-<http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/568053174> .
-<http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/575234250> .
-<http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/579504433> .
-<http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/582307935> .
-<http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/619251519> .
-<http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/622393059> .
-<http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/632455035> .
-<http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/646656760> .
-<http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/673034702> .
-<http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/678008027> .
-<http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/700373403> .
-<http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/704830357> .
-<http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/707068921> .
-<http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/708737173> .
-<http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/769880205> .
-<http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/771022717> .
-<http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/779080406> .
-<http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/809987235> .
-<http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/811987566> .
-<http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/817301691> .
-<http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/817824392> .
-<http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/852099838> .
-<http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/1089126684> .
-<http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/1128770992> .
-<http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/1189374418> .
-<http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/1206902480> .
-<http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/1228063014> .
-<http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/1254882742> .
-<http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/1305180669> .
-<http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/1328592921> .
-<http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/1338944766> .
-<http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/1356360692> .
-<http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/1381683411> .
-<http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/1403754121> .
-<http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/1408026976> .
-<http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/1417164268> .
-<http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/1485253057> .
-<http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/1496348261> .
-<http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/1624581347> .
-<http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/100000023494269> .
-<http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/100000255564478> .
-<http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/100000271158398> .
-<http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/100000534082078> .
-<http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/100000568525419> .
-<http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/100000571614489> .
-<http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/100000626381083> .
-<http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/100000666098598> .
-<http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/100000670143289> .
-<http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/100000728783628> .
-<http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/100000969852080> .
-<http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/100001474952781> .
-<http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/knows> <http://www.facebook.com/100001488929210> .
-<http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/like> <http://dbpedia.org/resource/Unforgiven> .
-<http://www.facebook.com/834118723> <http://xmlns.com/foaf/0.1/like> <http://dbpedia.org/resource/Blood_Work_%28film%29> .
-<http://www.facebook.com/1338944766> <http://xmlns.com/foaf/0.1/like> <http://dbpedia.org/resource/Top_Gun> .
-<http://www.facebook.com/1338944766> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
 <http://www.facebook.com/849224081> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
 <http://www.facebook.com/896040091> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
 <http://www.facebook.com/1000995120> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
@@ -779,22 +720,6 @@
 <http://www.facebook.com/100002426733465> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
 <http://www.facebook.com/100003021277357> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
 <http://www.facebook.com/100003272396566> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
-
-<http://www.facebook.com/531559626> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
-<http://www.facebook.com/579504433> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
-<http://www.facebook.com/582307935> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
-<http://www.facebook.com/769880205> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
-<http://www.facebook.com/809987235> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
-<http://www.facebook.com/811987566> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
-<http://www.facebook.com/817301691> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
-<http://www.facebook.com/852099838> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
-<http://www.facebook.com/1128770992> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
-<http://www.facebook.com/1254882742> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
-<http://www.facebook.com/1403754121> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
-<http://www.facebook.com/1408026976> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
-<http://www.facebook.com/1417164268> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
-<http://www.facebook.com/1496348261> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
-<http://www.facebook.com/1624581347> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/person> .
 <http://dbpedia.org/resource/Unforgiven> <http://purl.org/dc/terms/subject> <http://dbpedia.org/resource/Category:Films_whose_director_won_the_Best_Director_Academy_Award> .
 <http://dbpedia.org/resource/Unforgiven> <http://purl.org/dc/terms/subject> <http://dbpedia.org/resource/Category:Films_whose_director_won_the_Best_Director_Golden_Globe> .
 <http://dbpedia.org/resource/Unforgiven> <http://purl.org/dc/terms/subject> <http://dbpedia.org/resource/Category:Films_about_prostitution> .
@@ -975,8 +900,6 @@
 <http://dbpedia.org/resource/Million_Dollar_Baby> <http://www.w3.org/2000/01/rdf-schema#label> "Million Dollar Baby"@nl .
 <http://dbpedia.org/resource/Million_Dollar_Baby> <http://www.w3.org/2000/01/rdf-schema#label> "Million Dollar Baby"@fr .
 <http://dbpedia.org/resource/Million_Dollar_Baby> <http://www.w3.org/2000/01/rdf-schema#label> "Million Dollar Baby"@en .
-<http://dbpedia.org/resource/Million_Dollar_Baby> <http://www.w3.org/2000/01/rdf-schema#label> "Million Dollar Baby"@en .
-<http://dbpedia.org/resource/Million_Dollar_Baby> <http://www.w3.org/2000/01/rdf-schema#label> "Million Dollar Baby"@fr .
 <http://dbpedia.org/resource/Million_Dollar_Baby> <http://www.w3.org/2000/01/rdf-schema#label> "Million Dollar Baby"@de .
 <http://dbpedia.org/resource/Million_Dollar_Baby> <http://www.w3.org/2000/01/rdf-schema#label> "Million Dollar Baby"@no .
 <http://dbpedia.org/resource/Million_Dollar_Baby> <http://www.w3.org/2000/01/rdf-schema#label> "Million Dollar Baby"@fi .
@@ -1604,137 +1527,6 @@
 <http://dbpedia.org/resource/Spider-Man_3> <http://dbpedia.org/property/alt> "Movie poster illustrates Spider-Man swinging from a web next to a reflection of himself in the window of a large skyscraper in New York City. The reflection shows the regular red-and-blue Spider-man costume, while the Spider-Man swinging through the city shows him wearing his symbiote black costume. Text at the top of the image includes the tagline \"The Greatest Battle Lies Within\". Text at the bottom of the poster reveals the title, production credits, and release date."@en .
 <http://dbpedia.org/resource/Spider-Man_3> <http://dbpedia.org/property/distributor> <http://dbpedia.org/resource/Columbia_Pictures> .
 <http://dbpedia.org/resource/Spider-Man_3> <http://xmlns.com/foaf/0.1/name> "Spider-Man 3"@en .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://dbpedia.org/ontology/abstract>	"\u300E\u30A4\u30F3\u30D3\u30AF\u30BF\u30B9/\u8CA0\u3051\u3056\u308B\u8005\u305F\u3061\u300F\uFF08\u539F\u984C\uFF1AInvictus\uFF09\u306F\u30012009\u5E74\u306E\u30A2\u30E1\u30EA\u30AB\u6620\u753B\uFF08\u65E5\u672C\u3067\u306F2010\u5E74\u516C\u958B\uFF09\u3002"@ja .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://dbpedia.org/property/wikiPageUsesTemplate>	<http://dbpedia.org/resource/Template:Infobox_film> .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://dbpedia.org/property/music>	<http://dbpedia.org/resource/Michael_Stevens_%28composer%29> .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://www.w3.org/2000/01/rdf-schema#comment>	"Invictus is een film van regisseur Clint Eastwood en is op 11 december 2009 in wereldpremi\u00E8re gegaan. De film is gebaseerd op onder meer het leven van Nelson Mandela. De hoofdrollen worden vertolkt door Morgan Freeman en Matt Damon. De film baseerde zich verder ook op het boek Playing The Enemy: Nelson Mandela And the Game That Made A Nation van schrijver John Carlin."@nl .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://dbpedia.org/class/yago/RugbyUnionFilms> .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://purl.org/dc/terms/subject>	<http://dbpedia.org/resource/Category:2009_films> .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://dbpedia.org/ontology/cinematography>	<http://dbpedia.org/resource/Tom_Stern_%28cinematographer%29> .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://dbpedia.org/ontology/abstract>	"Invictus - L'invincibile \u00E8 un film di Clint Eastwood del 2009. Il film \u00E8 un adattamento cinematografico del romanzo Ama il tuo nemico di John Carlin, a sua volta ispirato a fatti realmente accaduti. La trama si sviluppa attorno agli eventi che ebbero luogo in occasione della Coppa del Mondo di rugby del 1995, tenutasi in Sudafrica poco tempo dopo l'insediamento di Nelson Mandela come presidente della nazione. Lo stesso Mandela, interpretato da Morgan Freeman, \u00E8 fra i protagonisti del film, insieme al capitano della nazionale sudafricana di rugby, Francois Pienaar."@it .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://dbpedia.org/property/cinematography>	<http://dbpedia.org/resource/Tom_Stern_%28cinematographer%29> .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://purl.org/dc/terms/subject>	<http://dbpedia.org/resource/Category:Biographical_films> .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://www.w3.org/2000/01/rdf-schema#comment>	"Invictus es una pel\u00EDcula de 2009 basada en la vida de Nelson Mandela y ambientada durante la Copa Mundial de Rugby de 1995 en Sud\u00E1frica. Fue dirigida por Clint Eastwood y protagonizada por Morgan Freeman en el papel del entonces presidente de Sud\u00E1frica, Mandela y Matt Damon como Fran\u00E7ois Pienaar, el capit\u00E1n del equipo sudafricano de rugby. La historia est\u00E1 basada en el libro de John Carlin, Playing the Enemy: Nelson Mandela and the Game that Made a Nation."@es .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://www.w3.org/2000/01/rdf-schema#comment>	"\u300E\u30A4\u30F3\u30D3\u30AF\u30BF\u30B9/\u8CA0\u3051\u3056\u308B\u8005\u305F\u3061\u300F\uFF08\u539F\u984C\uFF1AInvictus\uFF09\u306F\u30012009\u5E74\u306E\u30A2\u30E1\u30EA\u30AB\u6620\u753B\uFF08\u65E5\u672C\u3067\u306F2010\u5E74\u516C\u958B\uFF09\u3002"@ja .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://dbpedia.org/property/producer>	"Clint Eastwood"@en .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://dbpedia.org/ontology/abstract>	"\u00AB\u041D\u0435\u043F\u043E\u043A\u043E\u0440\u0451\u043D\u043D\u044B\u0439\u00BB\u00A0\u2014 \u0431\u0438\u043E\u0433\u0440\u0430\u0444\u0438\u0447\u0435\u0441\u043A\u0430\u044F \u0434\u0440\u0430\u043C\u0430, \u043E\u0441\u043D\u043E\u0432\u0430\u043D\u043D\u0430\u044F \u043D\u0430 \u044D\u043F\u0438\u0437\u043E\u0434\u0435 \u0438\u0437 \u0436\u0438\u0437\u043D\u0438 \u041D\u0435\u043B\u044C\u0441\u043E\u043D\u0430 \u041C\u0430\u043D\u0434\u0435\u043B\u044B \u0438 \u043F\u0440\u043E\u0438\u0441\u0445\u043E\u0434\u044F\u0449\u0430\u044F \u0432\u043E \u0432\u0440\u0435\u043C\u044F 3-\u0433\u043E \u0447\u0435\u043C\u043F\u0438\u043E\u043D\u0430\u0442\u0430 \u043C\u0438\u0440\u0430 \u043F\u043E \u0440\u0435\u0433\u0431\u0438 \u0432 1995\u00A0\u0433\u043E\u0434\u0443. \u0421\u0446\u0435\u043D\u0430\u0440\u0438\u0439 \u043E\u0441\u043D\u043E\u0432\u0430\u043D \u043D\u0430 \u043A\u043D\u0438\u0433\u0435 \u0414\u0436\u043E\u043D\u0430 \u041A\u0430\u0440\u043B\u0438\u043D\u0430 Playing the Enemy: Nelson Mandela and the Game that Made a Nation. \u0424\u0438\u043B\u044C\u043C \u0432\u044B\u0448\u0435\u043B \u0432 \u043F\u0440\u043E\u043A\u0430\u0442 \u0432 \u0421\u0428\u0410 11 \u0434\u0435\u043A\u0430\u0431\u0440\u044F 2009\u00A0\u0433\u043E\u0434\u0430."@ru .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://www.w3.org/2000/01/rdf-schema#label>	"Invictus \u2013 Unbezwungen"@de .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://dbpedia.org/ontology/writer>	<http://dbpedia.org/resource/Anthony_Peckham> .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://dbpedia.org/ontology/Work> .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://dbpedia.org/ontology/abstract>	"Invictus is een film van regisseur Clint Eastwood en is op 11 december 2009 in wereldpremi\u00E8re gegaan. De film is gebaseerd op onder meer het leven van Nelson Mandela. De hoofdrollen worden vertolkt door Morgan Freeman en Matt Damon. De film baseerde zich verder ook op het boek Playing The Enemy: Nelson Mandela And the Game That Made A Nation van schrijver John Carlin."@nl .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://dbpedia.org/ontology/editing>	<http://dbpedia.org/resource/Joel_Cox> .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://www.w3.org/2002/07/owl#sameAs>	<http://rdf.freebase.com/ns/m/07yk1xz> .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://xmlns.com/foaf/0.1/page>	<http://en.wikipedia.org/wiki/Invictus_%28film%29> .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://dbpedia.org/class/yago/2009Films> .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://www.w3.org/2000/01/rdf-schema#label>	"\u30A4\u30F3\u30D3\u30AF\u30BF\u30B9/\u8CA0\u3051\u3056\u308B\u8005\u305F\u3061"@ja .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://dbpedia.org/property/producer>	<http://dbpedia.org/resource/Lori_McCreary> .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://dbpedia.org/ontology/producer>	<http://dbpedia.org/resource/Mace_Neufeld> .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://purl.org/dc/terms/subject>	<http://dbpedia.org/resource/Category:Sports_films_based_on_actual_events> .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://dbpedia.org/property/name>	"Invictus"@en .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://dbpedia.org/ontology/producer>	<http://dbpedia.org/resource/Morgan_Freeman> .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://dbpedia.org/class/yago/WarnerBros.Films> .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://dbpedia.org/ontology/musicComposer>	<http://dbpedia.org/resource/Kyle_Eastwood> .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://www.w3.org/2000/01/rdf-schema#label>	"\u6253\u4E0D\u5012\u7684\u52C7\u8005"@zh .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://www.w3.org/2000/01/rdf-schema#comment>	"\u300A\u6253\u4E0D\u5012\u7684\u52C7\u8005\u300B\uFF08Template:Lang-en\uFF09\u662F\u4E00\u90E82009\u5E74\u4E0A\u6620\uFF0C\u7531\u514B\u6797\u00B7\u4F0A\u65AF\u5A01\u7279\u57F7\u5C0E\uFF0C\u4F9D\u64DA1995\u5E74\u5357\u975E\u8209\u884C\u4E16\u754C\u76C3\u6A44\u6B16\u7403\u8CFD\u671F\u9593\uFF0C\u7576\u6642\u7684\u7E3D\u7D71\u7D0D\u723E\u905C\u00B7\u66FC\u5FB7\u62C9\uFF08\u6469\u6839\u00B7\u8CBB\u91CC\u66FC \u98FE\uFF09\u5982\u4F55\u8207\u570B\u5BB6\u6A44\u6B16\u7403\u968A\u968A\u9577\u6CD5\u862D\u7D22\u74E6\u00B7\u76AE\u7D0D\u723E\uFF08\u9EA5\u7279\u00B7\u6234\u8499 \u98FE\uFF09\u540C\u5FC3\u5354\u529B\uFF0C\u806F\u624B\u51DD\u805A\u570B\u4EBA\u5411\u5FC3\u529B\uFF0C\u8B93\u525B\u64FA\u812B\u7A2E\u65CF\u9694\u96E2\u5236\u5EA6\u4E0D\u4E45\u800C\u9762\u81E8\u5206\u88C2\u7684\u5357\u975E\u80FD\u5920\u5718\u7D50\u4E00\u81F4\u7684\u6545\u4E8B\uFF0C\u6539\u7DE8\u800C\u6210\u7684\u50B3\u8A18\u96FB\u5F71\u3002"@zh .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://dbpedia.org/property/budget>	"5.0E7"^^<http://dbpedia.org/datatype/usDollar> .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://dbpedia.org/ontology/director>	<http://dbpedia.org/resource/Clint_Eastwood> .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://www.w3.org/2000/01/rdf-schema#label>	"\u041D\u0435\u043F\u043E\u043A\u043E\u0440\u0451\u043D\u043D\u044B\u0439 (\u0444\u0438\u043B\u044C\u043C, 2009)"@ru .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://dbpedia.org/property/editing>	<http://dbpedia.org/resource/Gary_D._Roach> .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://dbpedia.org/ontology/abstract>	"Invictus \u2013 voittamaton on Clint Eastwoodin ohjaama Nelson Mandela -aiheinen draamaelokuva vuodelta 2009. Sen tapahtumat sijoittuvat Etel\u00E4-Afrikassa vuonna 1995 pelatun Rugby World Cup -turnauksen ymp\u00E4rille. Presidentti Mandelaa esitt\u00E4\u00E4 Morgan Freeman ja Matt Damon Fran\u00E7ois Pienaaria, Etel\u00E4-Afrikan rugbymaajoukkueen kapteenia. Elokuva sai Oscar-ehdokkuudet parhaasta miesp\u00E4\u00E4osasta (Freeman) sek\u00E4 parhaasta miessivuosasta (Damon)."@fi .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://dbpedia.org/property/editing>	<http://dbpedia.org/resource/Joel_Cox> .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://dbpedia.org/property/language>	"Maori"@en .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://purl.org/dc/terms/subject>	<http://dbpedia.org/resource/Category:Films_shot_in_South_Africa> .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://www.w3.org/2000/01/rdf-schema#label>	"Invictus (film, 2009)"@fr .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://www.w3.org/2000/01/rdf-schema#comment>	"\u00AB\u041D\u0435\u043F\u043E\u043A\u043E\u0440\u0451\u043D\u043D\u044B\u0439\u00BB\u00A0\u2014 \u0431\u0438\u043E\u0433\u0440\u0430\u0444\u0438\u0447\u0435\u0441\u043A\u0430\u044F \u0434\u0440\u0430\u043C\u0430, \u043E\u0441\u043D\u043E\u0432\u0430\u043D\u043D\u0430\u044F \u043D\u0430 \u044D\u043F\u0438\u0437\u043E\u0434\u0435 \u0438\u0437 \u0436\u0438\u0437\u043D\u0438 \u041D\u0435\u043B\u044C\u0441\u043E\u043D\u0430 \u041C\u0430\u043D\u0434\u0435\u043B\u044B \u0438 \u043F\u0440\u043E\u0438\u0441\u0445\u043E\u0434\u044F\u0449\u0430\u044F \u0432\u043E \u0432\u0440\u0435\u043C\u044F 3-\u0433\u043E \u0447\u0435\u043C\u043F\u0438\u043E\u043D\u0430\u0442\u0430 \u043C\u0438\u0440\u0430 \u043F\u043E \u0440\u0435\u0433\u0431\u0438 \u0432 1995\u00A0\u0433\u043E\u0434\u0443. \u0421\u0446\u0435\u043D\u0430\u0440\u0438\u0439 \u043E\u0441\u043D\u043E\u0432\u0430\u043D \u043D\u0430 \u043A\u043D\u0438\u0433\u0435 \u0414\u0436\u043E\u043D\u0430 \u041A\u0430\u0440\u043B\u0438\u043D\u0430 Playing the Enemy: Nelson Mandela and the Game that Made a Nation. \u0424\u0438\u043B\u044C\u043C \u0432\u044B\u0448\u0435\u043B \u0432 \u043F\u0440\u043E\u043A\u0430\u0442 \u0432 \u0421\u0428\u0410 11 \u0434\u0435\u043A\u0430\u0431\u0440\u044F 2009\u00A0\u0433\u043E\u0434\u0430."@ru .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://dbpedia.org/property/language>	"English"@en .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://www.w3.org/2000/01/rdf-schema#comment>	"Invictus \u2013 voittamaton on Clint Eastwoodin ohjaama Nelson Mandela -aiheinen draamaelokuva vuodelta 2009. Sen tapahtumat sijoittuvat Etel\u00E4-Afrikassa vuonna 1995 pelatun Rugby World Cup -turnauksen ymp\u00E4rille. Presidentti Mandelaa esitt\u00E4\u00E4 Morgan Freeman ja Matt Damon Fran\u00E7ois Pienaaria, Etel\u00E4-Afrikan rugbymaajoukkueen kapteenia. Elokuva sai Oscar-ehdokkuudet parhaasta miesp\u00E4\u00E4osasta (Freeman) sek\u00E4 parhaasta miessivuosasta (Damon)."@fi .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://purl.org/dc/terms/subject>	<http://dbpedia.org/resource/Category:Nelson_Mandela> .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://dbpedia.org/property/distributor>	<http://dbpedia.org/resource/Warner_Bros.> .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://purl.org/dc/terms/subject>	<http://dbpedia.org/resource/Category:American_sports_films> .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://dbpedia.org/property/producer>	<http://dbpedia.org/resource/Mace_Neufeld> .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://purl.org/dc/terms/subject>	<http://dbpedia.org/resource/Category:English-language_films> .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://dbpedia.org/ontology/gross>	"1.22233971E8"^^<http://dbpedia.org/datatype/usDollar> .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://dbpedia.org/ontology/abstract>	"Invictus - Niepokonany \u2212 ameryka\u0144ski film biograficzny w re\u017Cyserii Clinta Eastwooda, opowiadaj\u0105cy o wydarzeniach w Republice Po\u0142udniowej Afryki przed i w trakcie Pucharu \u015Awiata w rugby w 1995 roku, kt\u00F3rego RPA by\u0142o gospodarzem po demonta\u017Cu apartheidu. Historia opowiedziana w filmie oparta zosta\u0142a na ksi\u0105\u017Cce Johna Carlina pt. Playing the Enemy: Nelson Mandela and the Game That Changed a Nation. Film swoj\u0105 oficjaln\u0105 premier\u0119 mia\u0142 3 grudnia 2009 roku w Beverly Hills, w stanie Kalifornia. Tytu\u0142 filmu, \u201EInvictus\u201D nawi\u0105zuje do wiersza Williama Ernesta Henleya, kt\u00F3ry Mandela cytuje w filmie."@pl .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://dbpedia.org/class/yago/SpyglassEntertainmentFilms> .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://dbpedia.org/property/language>	"Afrikaans"@en .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://dbpedia.org/property/music>	<http://dbpedia.org/resource/Kyle_Eastwood> .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://dbpedia.org/ontology/runtime>	"8040"^^<http://www.w3.org/2001/XMLSchema#double> .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://xmlns.com/foaf/0.1/name>	"Invictus"@en .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://www.w3.org/2000/01/rdf-schema#label>	"Invictus"@sv .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://www.w3.org/2000/01/rdf-schema#comment>	"Invictus - L'invincibile \u00E8 un film di Clint Eastwood del 2009. Il film \u00E8 un adattamento cinematografico del romanzo Ama il tuo nemico di John Carlin, a sua volta ispirato a fatti realmente accaduti. La trama si sviluppa attorno agli eventi che ebbero luogo in occasione della Coppa del Mondo di rugby del 1995, tenutasi in Sudafrica poco tempo dopo l'insediamento di Nelson Mandela come presidente della nazione."@it .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://dbpedia.org/ontology/abstract>	"Invictus \u00E9 um filme do g\u00EAnero drama que retrata um emocionante momento na vida de Nelson Mandela, entre sua ascens\u00E3o \u00E0 presid\u00EAncia da \u00C1frica do Sul e a realiza\u00E7\u00E3o da Copa do Mundo de Rugby de 1995, naquele pa\u00EDs. Com dire\u00E7\u00E3o de Clint Eastwood, traz nos pap\u00E9is principais os atores norte-americanos Morgan Freeman (como Nelson Mandela) e Matt Damon. A estreia nos Estados Unidos ocorreu em dezembro de 2009."@pt .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://dbpedia.org/class/yago/Movie106613686> .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://dbpedia.org/class/yago/2000sDramaFilms> .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://dbpedia.org/property/screenplay>	<http://dbpedia.org/resource/Anthony_Peckham> .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://dbpedia.org/ontology/Film> .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://dbpedia.org/ontology/starring>	<http://dbpedia.org/resource/Matt_Damon> .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://www.w3.org/2000/01/rdf-schema#label>	"Invictus - Niepokonany"@pl .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://purl.org/dc/terms/subject>	<http://dbpedia.org/resource/Category:Warner_Bros._films> .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://dbpedia.org/ontology/editing>	<http://dbpedia.org/resource/Gary_D._Roach> .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://www.w3.org/2000/01/rdf-schema#label>	"Invictus \u2013 de uovervinnelige"@no .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://www.w3.org/2000/01/rdf-schema#label>	"Invictus (film)"@nl .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://dbpedia.org/ontology/thumbnail>	<http://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/HumanFactorInvictus.jpg/200px-HumanFactorInvictus.jpg> .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://www.w3.org/2000/01/rdf-schema#comment>	"Invictus \u00E4r en amerikansk dramafilm fr\u00E5n 2009, regisserad av Clint Eastwood och med Morgan Freeman och Matt Damon i huvudrollerna."@sv .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://dbpedia.org/property/studio>	<http://dbpedia.org/resource/Revelations_Entertainment> .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://dbpedia.org/property/director>	<http://dbpedia.org/resource/Clint_Eastwood> .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://dbpedia.org/class/yago/SportsFilmsBasedOnActuAlEvents> .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://dbpedia.org/ontology/budget>	"5.0E7"^^<http://dbpedia.org/datatype/usDollar> .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://dbpedia.org/property/starring>	<http://dbpedia.org/resource/Morgan_Freeman> .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://dbpedia.org/ontology/abstract>	"Invictus is a 2009 biographical sports drama film directed by Clint Eastwood starring Morgan Freeman and Matt Damon. The story is based on the John Carlin book Playing the Enemy: Nelson Mandela and the Game That Changed a Nation about the events in South Africa before and during the 1995 Rugby World Cup, hosted in that country following the dismantling of apartheid. Freeman and Damon play, respectively, South African President Nelson Mandela and Fran\u00E7ois Pienaar, the captain of the South African rugby union team the Springboks. Invictus was released in the United States on December 11, 2009. The title Invictus may be translated from the Latin as undefeated or unconquered, and is the title of a poem by English poet William Ernest Henley (1849\u20131903)."@en .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://dbpedia.org/ontology/producer>	<http://dbpedia.org/resource/Clint_Eastwood> .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://dbpedia.org/ontology/producer>	<http://dbpedia.org/resource/Robert_Lorenz> .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://dbpedia.org/ontology/abstract>	"Invictus \u2013 de uovervinnelige er en amerikansk semi-biografisk film fra 2009, basert p\u00E5 Nelson Mandelas liv under verdensmesterskapet i rugby i S\u00F8r-Afrika, 1995. Filmen er regissert av Clint Eastwood, med Morgan Freeman i hovedrollen som S\u00F8r-Afrikas president Mandela, og Matt Damon som Francois Pienaar, lagkapteinen p\u00E5 S\u00F8r-Afrikas nasjonale rugbylag. Filmen ble lansert 11. desember 2009 i USA, og hadde premiere 5. februar 2010 i Norge."@no .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://www.w3.org/2000/01/rdf-schema#comment>	"Invictus est un film am\u00E9ricain r\u00E9alis\u00E9 par Clint Eastwood, sorti en 2009."@fr .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://www.w3.org/2002/07/owl#Thing> .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://dbpedia.org/property/producer>	<http://dbpedia.org/resource/Morgan_Freeman> .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://www.w3.org/2000/01/rdf-schema#comment>	"Invictus \u2013 Unbezwungen ist ein US-amerikanischer Spielfilm des Regisseurs Clint Eastwood nach einem Roman von John Carlin aus dem Jahr 2008, der am 18. Februar 2010 in die deutschen Kinos kam. Bereits vor dem Filmstart in den USA am 11. Dezember 2009 wurde der Film als Oscar-Anw\u00E4rter gesehen."@de .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://purl.org/dc/terms/subject>	<http://dbpedia.org/resource/Category:Rugby_union_films> .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://www.w3.org/2000/01/rdf-schema#comment>	"Invictus \u2013 de uovervinnelige er en amerikansk semi-biografisk film fra 2009, basert p\u00E5 Nelson Mandelas liv under verdensmesterskapet i rugby i S\u00F8r-Afrika, 1995. Filmen er regissert av Clint Eastwood, med Morgan Freeman i hovedrollen som S\u00F8r-Afrikas president Mandela, og Matt Damon som Francois Pienaar, lagkapteinen p\u00E5 S\u00F8r-Afrikas nasjonale rugbylag. Filmen ble lansert 11. desember 2009 i USA, og hadde premiere 5. februar 2010 i Norge."@no .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://www.w3.org/2000/01/rdf-schema#label>	"Invictus (film)"@en .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://www.w3.org/2000/01/rdf-schema#comment>	"Invictus - Niepokonany \u2212 ameryka\u0144ski film biograficzny w re\u017Cyserii Clinta Eastwooda, opowiadaj\u0105cy o wydarzeniach w Republice Po\u0142udniowej Afryki przed i w trakcie Pucharu \u015Awiata w rugby w 1995 roku, kt\u00F3rego RPA by\u0142o gospodarzem po demonta\u017Cu apartheidu. Historia opowiedziana w filmie oparta zosta\u0142a na ksi\u0105\u017Cce Johna Carlina pt. Playing the Enemy: Nelson Mandela and the Game That Changed a Nation. Film swoj\u0105 oficjaln\u0105 premier\u0119 mia\u0142 3 grudnia 2009 roku w Beverly Hills, w stanie Kalifornia."@pl .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://purl.org/dc/terms/subject>	<http://dbpedia.org/resource/Category:Films_shot_anamorphically> .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://dbpedia.org/ontology/producer>	<http://dbpedia.org/resource/Lori_McCreary> .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://purl.org/dc/terms/subject>	<http://dbpedia.org/resource/Category:Films_set_in_1995> .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://purl.org/dc/terms/subject>	<http://dbpedia.org/resource/Category:2000s_drama_films> .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://purl.org/dc/terms/subject>	<http://dbpedia.org/resource/Category:Films_set_in_South_Africa> .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://dbpedia.org/ontology/Work/runtime>	"134.0"^^<http://dbpedia.org/datatype/minute> .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://dbpedia.org/class/yago/MalpasoFilms> .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://purl.org/dc/terms/subject>	<http://dbpedia.org/resource/Category:Spyglass_Entertainment_films> .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://schema.org/CreativeWork> .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://www.w3.org/2000/01/rdf-schema#comment>	"Invictus is a 2009 biographical sports drama film directed by Clint Eastwood starring Morgan Freeman and Matt Damon. The story is based on the John Carlin book Playing the Enemy: Nelson Mandela and the Game That Changed a Nation about the events in South Africa before and during the 1995 Rugby World Cup, hosted in that country following the dismantling of apartheid."@en .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://dbpedia.org/property/caption>	"Theatrical release poster"@en .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://dbpedia.org/ontology/starring>	<http://dbpedia.org/resource/Morgan_Freeman> .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://www.w3.org/2000/01/rdf-schema#comment>	"Invictus \u00E9 um filme do g\u00EAnero drama que retrata um emocionante momento na vida de Nelson Mandela, entre sua ascens\u00E3o \u00E0 presid\u00EAncia da \u00C1frica do Sul e a realiza\u00E7\u00E3o da Copa do Mundo de Rugby de 1995, naquele pa\u00EDs. Com dire\u00E7\u00E3o de Clint Eastwood, traz nos pap\u00E9is principais os atores norte-americanos Morgan Freeman (como Nelson Mandela) e Matt Damon. A estreia nos Estados Unidos ocorreu em dezembro de 2009."@pt .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://purl.org/dc/terms/subject>	<http://dbpedia.org/resource/Category:Malpaso_films> .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://www.w3.org/2000/01/rdf-schema#label>	"Invictus - L'invincibile"@it .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://dbpedia.org/property/studio>	<http://dbpedia.org/resource/Malpaso_Productions> .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://dbpedia.org/property/runtime>	"8040.0"^^<http://dbpedia.org/datatype/second> .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://dbpedia.org/ontology/wikiPageExternalLink>	<http://invictusmovie.warnerbros.com/> .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://dbpedia.org/ontology/abstract>	"Invictus \u2013 Unbezwungen ist ein US-amerikanischer Spielfilm des Regisseurs Clint Eastwood nach einem Roman von John Carlin aus dem Jahr 2008, der am 18. Februar 2010 in die deutschen Kinos kam. Bereits vor dem Filmstart in den USA am 11. Dezember 2009 wurde der Film als Oscar-Anw\u00E4rter gesehen. Der Titel des Films bezieht sich auf das Gedicht \u201EInvictus\u201C von William Ernest Henley, das dem Widerstandsk\u00E4mpfer und sp\u00E4terem Pr\u00E4sidenten S\u00FCdafrikas, Nelson Mandela, w\u00E4hrend der Jahre seiner Haft Halt und Trost gegeben hatte."@de .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://dbpedia.org/property/gross>	"1.22233971E8"^^<http://dbpedia.org/datatype/usDollar> .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://dbpedia.org/ontology/abstract>	"Invictus est un film am\u00E9ricain r\u00E9alis\u00E9 par Clint Eastwood, sorti en 2009."@fr .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://www.w3.org/2000/01/rdf-schema#label>	"Invictus \u2013 voittamaton"@fi .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://dbpedia.org/class/yago/AmericanSportsFilms> .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://dbpedia.org/ontology/abstract>	"Invictus es una pel\u00EDcula de 2009 basada en la vida de Nelson Mandela y ambientada durante la Copa Mundial de Rugby de 1995 en Sud\u00E1frica. Fue dirigida por Clint Eastwood y protagonizada por Morgan Freeman en el papel del entonces presidente de Sud\u00E1frica, Mandela y Matt Damon como Fran\u00E7ois Pienaar, el capit\u00E1n del equipo sudafricano de rugby. La historia est\u00E1 basada en el libro de John Carlin, Playing the Enemy: Nelson Mandela and the Game that Made a Nation. La pel\u00EDcula se estren\u00F3 en Estados Unidos el 11 de diciembre de 2009."@es .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://purl.org/dc/terms/subject>	<http://dbpedia.org/resource/Category:Apartheid_films> .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://xmlns.com/foaf/0.1/depiction>	<http://upload.wikimedia.org/wikipedia/commons/1/1d/HumanFactorInvictus.jpg> .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://purl.org/dc/terms/subject>	<http://dbpedia.org/resource/Category:South_Africa_national_rugby_union_team> .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://purl.org/dc/terms/subject>	<http://dbpedia.org/resource/Category:American_films> .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://dbpedia.org/property/studio>	<http://dbpedia.org/resource/Spyglass_Entertainment> .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://www.w3.org/2000/01/rdf-schema#label>	"Invictus (pel\u00EDcula)"@es .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://dbpedia.org/class/yago/FilmsDirectedByClintEastwood> .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://dbpedia.org/ontology/distributor>	<http://dbpedia.org/resource/Warner_Bros.> .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://dbpedia.org/ontology/abstract>	"\u300A\u6253\u4E0D\u5012\u7684\u52C7\u8005\u300B\uFF08Template:Lang-en\uFF09\u662F\u4E00\u90E82009\u5E74\u4E0A\u6620\uFF0C\u7531\u514B\u6797\u00B7\u4F0A\u65AF\u5A01\u7279\u57F7\u5C0E\uFF0C\u4F9D\u64DA1995\u5E74\u5357\u975E\u8209\u884C\u4E16\u754C\u76C3\u6A44\u6B16\u7403\u8CFD\u671F\u9593\uFF0C\u7576\u6642\u7684\u7E3D\u7D71\u7D0D\u723E\u905C\u00B7\u66FC\u5FB7\u62C9\uFF08\u6469\u6839\u00B7\u8CBB\u91CC\u66FC \u98FE\uFF09\u5982\u4F55\u8207\u570B\u5BB6\u6A44\u6B16\u7403\u968A\u968A\u9577\u6CD5\u862D\u7D22\u74E6\u00B7\u76AE\u7D0D\u723E\uFF08\u9EA5\u7279\u00B7\u6234\u8499 \u98FE\uFF09\u540C\u5FC3\u5354\u529B\uFF0C\u806F\u624B\u51DD\u805A\u570B\u4EBA\u5411\u5FC3\u529B\uFF0C\u8B93\u525B\u64FA\u812B\u7A2E\u65CF\u9694\u96E2\u5236\u5EA6\u4E0D\u4E45\u800C\u9762\u81E8\u5206\u88C2\u7684\u5357\u975E\u80FD\u5920\u5718\u7D50\u4E00\u81F4\u7684\u6545\u4E8B\uFF0C\u6539\u7DE8\u800C\u6210\u7684\u50B3\u8A18\u96FB\u5F71\u3002"@zh .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://www.w3.org/2000/01/rdf-schema#label>	"Invictus"@pt .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://dbpedia.org/property/basedOn>	"Playing the Enemy: Nelson Mandela and the Game That Changed a Nation by"@en .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://schema.org/Movie> .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://www.w3.org/2002/07/owl#sameAs>	<http://data.linkedmdb.org/resource/film/95579> .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://dbpedia.org/ontology/abstract>	"Invictus \u00E4r en amerikansk dramafilm fr\u00E5n 2009, regisserad av Clint Eastwood och med Morgan Freeman och Matt Damon i huvudrollerna."@sv .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://dbpedia.org/property/starring>	<http://dbpedia.org/resource/Matt_Damon> .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://dbpedia.org/ontology/musicComposer>	<http://dbpedia.org/resource/Michael_Stevens_%28composer%29> .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://dbpedia.org/property/producer>	<http://dbpedia.org/resource/Robert_Lorenz> .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://purl.org/dc/terms/subject>	<http://dbpedia.org/resource/Category:Films_directed_by_Clint_Eastwood> .
-<http://dbpedia.org/resource/Invictus_%28film%29>	<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>	<http://dbpedia.org/class/yago/English-languAgeFilms> .
 <http://dbpedia.org/resource/Gran_Torino> <http://dbpedia.org/property/director> <http://dbpedia.org/resource/Clint_Eastwood> .
 <http://dbpedia.org/resource/Gran_Torino> <http://dbpedia.org/ontology/abstract> "Gran Torino \u2013 filmowy dramat z elementami filmu akcji w re\u017Cyserii Clinta Eastwooda. Koprodukcja Stan\u00F3w Zjednoczonych i Australii z 2008 roku."@pl .
 <http://dbpedia.org/resource/Gran_Torino> <http://dbpedia.org/ontology/abstract> "\u300A\u9A45\u00B7\u9010\u300B\uFF08Template:Lang\uFF09\uFF0C\u662F2008\u5E74\u5947\u9023\u00B7\u4F0A\u58EB\u6D3B\u81EA\u5C0E\u81EA\u6F14\u7684\u7F8E\u570B\u96FB\u5F71\uFF0C\u5148\u57282008\u5E7412\u670812\u65E5\u5728\u5317\u7F8E\u90E8\u5206\u6232\u9662\u4E0A\u6620\uFF0C\u7136\u5F8C\u5728\u6B21\u5E741\u67089\u65E5\u5168\u9762\u516C\u6620\u3002\u9664\u4E86\u4F0A\u65AF\u7279\u4F0D\u5FB7\u5916\uFF0C\u5176\u4ED6\u4E3B\u6F14\u7684\u6F14\u54E1\u6709\u4E0D\u5C11\u662F\u82D7\u65CF\u88D4\u7F8E\u570B\u4EBA\u3002 \u6545\u4E8B\u654D\u8FF0\u4E00\u540D\u65B0\u8FD1\u55AA\u5076\u7684\u97D3\u6230\u9000\u4F0D\u8ECD\u4EBAWalt Kowalski\u3002\u6B64\u4EBA\u813E\u6C23\u4E0D\u597D\uFF0C\u8207\u5169\u500B\u5152\u5B50\u76F8\u8655\u4E0D\u4F73\u3002\u4ED6\u662F\u798F\u7279\u6C7D\u8ECA\u516C\u53F8\u7684\u9000\u4F11\u54E1\u5DE5\uFF0C\u5C45\u4F4F\u5728\u5BC6\u897F\u6839\u5DDE\u5E95\u7279\u5F8B\u65C1\u4E00\u500B\u5DF2\u6DEA\u70BA\u9ED1\u4EBA\u5340\u7684\u5C0F\u57CE\u3002\u4ED6\u610F\u5916\u7684\u548C\u82D7\u65CF\u88D4\u9130\u5C45\u5E74\u8F15\u4EBA\u5EFA\u7ACB\u95DC\u4FC2\u4E26\u4ED7\u7FA9\u52C7\u70BA\u5C0D\u6297\u5730\u65B9\u4E0D\u826F\u4EFD\u5B50\u8207\u82D7\u65CF\u88D4\u4E2D\u4E0D\u826F\u4EFD\u5B50\u3002\u82D7\u65CF\u88D4\u53D7\u6069\u6E67\u6CC9\u4EE5\u5831\uFF0C\u7D50\u679C\u8EAB\u60A3\u7D55\u75C7\u7684\u4ED6\u72A7\u7272\u81EA\u5DF1\u4EE5\u93DF\u9664\u82D7\u65CF\u88D4\u4E0D\u826F\u4EFD\u5B50\u3002\u7247\u540DGran Torino\u662F\u4E3B\u89D2\u7684\u611B\u8ECA\u7684\u578B\u865F\uFF0C\u7D50\u679C\u4ED6\u5C07\u611B\u8ECA\u907A\u7559\u7D66\u82D7\u65CF\u88D4\u5E74\u8F15\u4EBA\u3002"@zh .
@@ -1975,3 +1767,8 @@
 <http://dbpedia.org/resource/Mission:_Impossible_III> <http://dbpedia.org/property/starring> <http://dbpedia.org/resource/Maggie_Q> .
 <http://dbpedia.org/resource/Mission:_Impossible_III> <http://dbpedia.org/property/starring> <http://dbpedia.org/resource/Keri_Russell> .
 <http://dbpedia.org/resource/Mission:_Impossible_III> <http://dbpedia.org/ontology/director> <http://dbpedia.org/resource/J._J._Abrams> .
+<http://dbpedia.org/resource/Iron_Man_%28film%29> <http://dbpedia.org/property/starring> <http://dbpedia.org/resource/Gwyneth_Paltrow> .
+<http://dbpedia.org/resource/Iron_Man_%28film%29> <http://dbpedia.org/property/starring> <http://dbpedia.org/resource/Robert_Downey,_Jr.> .
+<http://dbpedia.org/resource/Iron_Man_%28film%29> <http://dbpedia.org/property/starring> <http://dbpedia.org/resource/Jeff_Bridges> .
+<http://dbpedia.org/resource/Iron_Man_%28film%29> <http://dbpedia.org/property/starring> <http://dbpedia.org/resource/Terrence_Howard> .
+<http://dbpedia.org/resource/Iron_Man_%28film%29> <http://dbpedia.org/ontology/director> <http://dbpedia.org/resource/Jon_Favreau> .

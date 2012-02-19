@@ -3,7 +3,7 @@
   - @users = user.friends.map{|user| [user.name, user.identifier] } 
   - @users.sort!{|user1, user2| user1[0] <=> user2[0] }
 
-= form_tag tag_facebook_path, :class => 'tag_form' do 
+= form_tag tag_facebook_path, :class => 'tag_form', :id => 'tag_form' do 
   
   = label_tag 'user_select', 'Tagger'
   = select_tag  'user_select', options_for_select(@users), :name => 'tag[user_identifier]'
@@ -19,4 +19,5 @@
   = hidden_field 'tag', "thumbnail", :class => 'thumbnail', :name => 'tag[thumbnail]'
   = submit_tag 'Tag', {:class => 'uibutton large confirm'}
   %button#suggest.uibutton.large Suggéstion
-  #suggest_box
+
+#warning_box.no_tag

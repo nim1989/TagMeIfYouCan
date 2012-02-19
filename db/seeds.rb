@@ -12,3 +12,5 @@ Movie.all.each do |movie|
   movie.thumbnail = movie.thumbnail.gsub('commons/thumb','en').gsub(/\/200px.*/, '')
   movie.save
 end
+
+File.open('app/assets/rdf/people-film.nt', 'w')

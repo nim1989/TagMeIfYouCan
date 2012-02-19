@@ -7,9 +7,7 @@ TagMeIfYouCan::Application.routes.draw do
     
   match 'search'         => 'home#search'
   match 'search_movie'   => 'home#search_movie'
-  match 'you_might_like' => 'home#you_might_like'
-  match 'he_might_like'  => 'home#he_might_like'
-  match 'infos'           => 'home#infos'
+  match 'infos'          => 'home#infos'
   post 'home/get_infos'
   post 'home/get_infos_actors'
   post 'home/get_movies_you_might_like'

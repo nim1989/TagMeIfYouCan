@@ -85,7 +85,7 @@ $(document).ready(function() {
                         var movies = $('<div></div>').addClass('movies');
                         _.each(movie_object, function(movie) {
                             var movieDIV = $('<div></div>').addClass('movie');
-                            movieDIV.append($('<div></div>').addClass('img_tag').attr('style', 'background-image: url(' + movie.movie_thumb + ')'));
+                            movieDIV.append($('<div></div>').addClass('img_tag').attr('style', 'background-image: url(' + movie.thumbnail + ')'));
                             movieDIV.append($('<a></a>').html(movie.movie_name).attr('href',movie.wikipedia_url));
                             movies.append(movieDIV);
                         });
@@ -197,41 +197,13 @@ $(document).ready(function() {
         $('#content_2').css('display', 'none');
         $('#content_3').css('display', 'block');
     });
+    $('#warning_box').hide();
+    $('#tag_form').submit(function() {
+        if (_.isUndefined($('#query_string').attr('data-value'))) {
+            $('#warning_box').show();
+            $('#warning_box').text('Vous devez entrer une valeur provenant de la Sugges Box.')
+            return false;
+        }
+        return true;
+    });
 });
-
-/*
-    $('#YouMightLike').click(function() {
-        $.ajax({
-            url     : '/you_might_like.json',
-            type    : 'post',
-            data    :  {
-                uri: 'http://dbpedia.org/resource/American_football'
-            },
-            dataType: "json",
-            success: function(results, b, c) {
-                var random = parseInt(Math.random() * results.length);
-                alert(results[random].label.value);
-            }
-        });
-    });
-    
-    $('#suggest').click(function() {
-        var user_id = $("[name='tag[user_identifier]']").val();
-        $.ajax({
-            url     : '/he_might_like.json',
-            type    : 'post',
-            data    :  {
-                user_identifier: user_id
-            },
-            dataType: "json",
-            success: function(result, b, c) {
-                if (result === null) {
-                    $('#suggest_box').html('Nous ne pouvons malheureusement rien suggérer.');
-                } else {
-                    $('#suggest_box').html(result);
-                }
-            }
-        });
-        return false;
-    });
-*/

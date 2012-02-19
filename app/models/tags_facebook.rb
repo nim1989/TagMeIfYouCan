@@ -4,8 +4,7 @@ class TagsFacebook < ActiveRecord::Base
   belongs_to :tag
   belongs_to :status
 
-  validates :facebook_identifier     , :presence => true
-  validates :from_facebook_identifier, :presence => true
+  validates :facebook_identifier, :from_facebook_identifier, :tag_id , :presence => true
   
   
   def accept

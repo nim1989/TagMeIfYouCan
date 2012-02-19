@@ -4,14 +4,10 @@ class Tag < ActiveRecord::Base
   before_create :generate_wiki_url_and_thumb
   validates :uri, :presence => true
   
-  before_create :generate_wiki_url_and_thumb
-
   def generate_wiki_url_and_thumb
     movie = Movie.where(:uri => self.uri).first
-   self.wikipedia_url = movie.wikipedia_url
-   puts(movie.thumbnail)
-   self.thumbnail = movie.thumbnail.gsub!('commons/thumb','en').gsub!(/\/200px.*/, '')
-   puts(self.thumbnail)
+    self.wikipedia_url = movie.wikipedia_url
+    self.thumbnail = movie.thumbnail.gsub!('commons/thumb','en').gsub!(/\/200px.*/, '')
   end
  
   def retrieve_info
@@ -37,11 +33,5 @@ class Tag < ActiveRecord::Base
       end
     rescue
     end
-  end
-
-  def generate_wiki_url_and_thumb
-    movie = Movie.where(:uri => self.uri).first
-    self.wikipedia_url = movie.wikipedia_url
-    self.thumbnail = movie.thumbnail
   end
 end

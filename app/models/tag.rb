@@ -9,7 +9,7 @@ class Tag < ActiveRecord::Base
   def generate_wiki_url_and_thumb
     movie = Movie.where(:uri => self.uri).first
     self.wikipedia_url = movie.wikipedia_url
-    self.thumbnail = movie.thumbnail.gsub!('commons/thumb','en').gsub!(/\/200px.*/, '')
+    self.thumbnail = movie.thumbnail
     uri = URI(self.thumbnail)
     result = Net::HTTP.get_response(uri)
     if !result.is_a?(Net::HTTPSuccess) 
@@ -20,7 +20,6 @@ class Tag < ActiveRecord::Base
       gui.slice!(0)
       self.thumbnail = 'http://api.freebase.com/api/trans/image_thumb/guid/' + gui + '?maxwidth=100'  
     end
-    puts self.thumbnail
   end
  
   def retrieve_info

@@ -233,7 +233,19 @@ class HomeController < ApplicationController
     end
 
     m = movies.collect{|movie| Movie.where(:uri => movie).first }
-
+    m.uniq!
+    m.each do |movie|
+      uri = URI(movie.thumbnail)
+      result = Net::HTTP.get_response(uri)    
+      if !result.is_a?(Net::HTTPSuccess) 
+        uri = URI('http://www.freebase.com/api/service/search?query=' + movie.label + '&type=/film/film')
+        result = Net::HTTP.get(uri)
+        result = JSON.parse(result)
+        gui = result['result'][0]['guid']
+        gui.slice!(0)
+        self.thumbnail = 'http://api.freebase.com/api/trans/image_thumb/guid/' + gui + '?maxwidth=100'  
+      end
+    end    
     respond_to do |format|
       format.json{ render :json => m }
     end
@@ -270,6 +282,7 @@ class HomeController < ApplicationController
     f.reject!{ |friend| friend == current_user.identifier }
     f.reject!{ |friend| friends_identifier.include?(friend) }
     f.uniq!
+    
     respond_to do |format|
       format.json{ render :json => f }
     end

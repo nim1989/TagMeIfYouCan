@@ -1,5 +1,4 @@
 #content_1
-
   = render 'search_tag_form'
 
   %h2 Les tags avec lesquels j'ai été taggé
@@ -43,16 +42,19 @@
   = form_tag home_get_infos_path, :class => 'tag_form' do 
     
     %p Tous les utilisateurs qui
-  
-    = label_tag 'like_true', 'ont accepté les tag'  
-    = radio_button_tag('like', 'true', true, :name => 'like')
-    = label_tag 'like_false', 'n\'ont pas accepté les tags'
-    = radio_button_tag('like', 'false', false, :name => 'like')
+    %p
+      %span
+        = radio_button_tag('like', 'true', true, :name => 'like')
+        = label_tag 'like_true', 'ont'  
+      %br/
+      %span
+        = radio_button_tag('like', 'false', false, :name => 'like')
+        = label_tag 'like_false', 'n\'ont pas'
     
-    = label_tag 'directors', 'des films de'
+    = label_tag 'directors', 'accepté les tags des films de'
     
     = select_tag 'directors', options_for_select(@directors.uniq), :name => 'directors'
-    
+
     = submit_tag 'Chercher', { :id => 'search_directors', :class => "uibutton confirm"}
   
   %ul#results_for_people
@@ -74,6 +76,8 @@
   
   %h2 Films que vous pourriez aimer
   #movies_you_might_like_results
-  
+    = image_tag 'ajax-loader.gif', :width => 16, :height => '16'
+    
   %h2 Amis que vous pourriez aimer
   %ul#friends_you_might_like_results
+    = image_tag 'ajax-loader.gif', :width => 16, :height => '16'

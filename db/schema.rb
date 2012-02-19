@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120218163257) do
+ActiveRecord::Schema.define(:version => 20120219174551) do
 
   create_table "facebooks", :force => true do |t|
     t.string   "identifier",   :limit => 20
@@ -27,7 +27,7 @@ ActiveRecord::Schema.define(:version => 20120218163257) do
     t.datetime "created_at",    :null => false
     t.datetime "updated_at",    :null => false
     t.string   "wikipedia_url"
-    t.string   "thumbnail"
+    t.text     "thumbnail"
   end
 
   add_index "movies", ["label"], :name => "index_movies_on_label"
@@ -42,7 +42,7 @@ ActiveRecord::Schema.define(:version => 20120218163257) do
     t.datetime "created_at",    :null => false
     t.datetime "updated_at",    :null => false
     t.string   "wikipedia_url"
-    t.string   "thumbnail"
+    t.text     "thumbnail"
   end
 
   create_table "tags_facebooks", :force => true do |t|

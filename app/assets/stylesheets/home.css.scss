@@ -7,9 +7,14 @@
     padding: 0;
     li {
       padding: 0.5em;
+      cursor: pointer;
     }
     li.selected {
       background-color: #F2F2F2;
+        background-color: #6D84B4;
+        color: white;
+        border-bottom   : 1px solid #3B5998;
+        border-top      : 1px solid #3B5998;
     }
   }
 }
@@ -106,8 +111,11 @@ input {
     background-size          : cover;
 }
 
-#validate_tag, #not_validate_tag {
-  //display: block;
+#validate_tag, #not_validate_tag, ul.list {
+  list-style    : none;
+  padding-left  : 1em;
+  display       : table;
+  border-spacing: 5px;
   li {
     text-align    : center;
     display       : table-cell;
@@ -172,9 +180,11 @@ ul#results {
 }
 
 ul#results_for_people, ul#friends_you_might_like_results {
+/*
     list-style: none;
     padding-left: 0;
     width: 100%;
+*/
     li {
       display: table;
       border-bottom: 1px solid #E2E2E2;
@@ -196,6 +206,7 @@ ul#results_for_people, ul#friends_you_might_like_results {
         }
     }
 }
+/*
 .movies {
     display: table-cell;
     vertical-align: top;
@@ -204,10 +215,15 @@ ul#results_for_people, ul#friends_you_might_like_results {
         vertical-align: top;
     }
 }
+*/
 
 #directors_chzn, #actors_chzn{
   width: 200px !important;
   > div {
     width: 198px !important;
   }
+}
+
+#movies_you_might_like_results img.gif {
+  padding-left: 20px;
 }

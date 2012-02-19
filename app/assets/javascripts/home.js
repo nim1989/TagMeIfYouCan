@@ -140,9 +140,9 @@ $(document).ready(function() {
                 li = $('<li></li>').addClass('no_tag').text('Aucun film à suggérer');
                 $('#movies_you_might_like_results').append(li);
             } else {
-                var movies = $('<div></div>').addClass('movies');
+                var movies = $('<ul></ul>').addClass('movies list');
                 _.each(results, function(movie) {
-                    var movieDIV = $('<div></div>').addClass('movie');
+                    var movieDIV = $('<li></li>').addClass('movie');
                     movieDIV.append($('<div></div>').addClass('img_tag').attr('style', 'background-image: url(' + movie.thumbnail + ')'));
                     movieDIV.append($('<a></a>').html(movie.label).attr('href',movie.wikipedia_url));
                     movies.append(movieDIV);

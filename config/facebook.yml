@@ -11,4 +11,4 @@ production:
   client_id: 242629845814737
   client_secret: c409e1a66614ca0b5fd18a5748df5e74
   scope: user_about_me,read_friendlists
-  canvas_url: http://tagmeifyoucan.herokuapp.com/
+  canvas_url: https://ec2-23-21-248-56.compute-1.amazonaws.com/

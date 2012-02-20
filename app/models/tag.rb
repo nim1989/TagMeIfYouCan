@@ -40,7 +40,7 @@ class Tag < ActiveRecord::Base
     postData = Net::HTTP.post_form(URI.parse('http://dbpedia.org/sparql'), params)
 
     begin
-      File.open('app/assets/rdf/people-film.nt', 'a') do |file| 
+      File.open(RDF_FILE_PATH, 'a') do |file| 
         file.puts postData.body
       end
     rescue

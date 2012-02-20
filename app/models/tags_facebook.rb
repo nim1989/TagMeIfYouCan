@@ -22,29 +22,22 @@ class TagsFacebook < ActiveRecord::Base
   private 
   def write_in_rdf(uri, like = true)
     if like
-        node = RDF::FOAF.like
+      node = RDF::FOAF.like
     else
-        node = RDF::FOAF.dislike
+      node = RDF::FOAF.dislike
     end
-
-
-
     begin
-        graph = RDF::Graph.load(RDF_FILE_PATH, :format => :ntriples)
-        triple = [RDF::URI.new(uri), node, RDF::URI.new(self.tag.uri)]
-        user_triple = [RDF::URI.new(uri), node, RDF::URI.new(self.tag.uri)]
-        RDF::Writer.open('app/assets/rdf/people-film.nt') do |writer|
-            if !graph.has_triple?(triple)
-                graph << triple
-            end
+      graph = RDF::Graph.load(RDF_FILE_PATH, :format => :ntriples)
+      triple = [RDF::URI.new(uri), node, RDF::URI.new(self.tag.uri)]
 
-            if !graph.has_triple?(triple)
-                graph << triple
-            end
-            writer << graph
+      RDF::Writer.open(RDF_FILE_PATH) do |writer|
+        if !graph.has_triple?(triple)
+          graph << triple
         end
+        writer << graph
+      end
     rescue
-        puts "An error occured - No such file" 
+      puts "An error occured - No such file" 
     end
   end
 

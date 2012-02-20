@@ -187,12 +187,14 @@ ul#results {
     }
 }
 
+ul#results_for_people {
+    padding: 0;
+    li {
+        border-right: 1px solid #E2E2E2;
+    }
+}
+
 ul#results_for_people, ul#friends_you_might_like_results, ul#results_for_actors_people {
-/*
-    list-style: none;
-    padding-left: 0;
-    width: 100%;
-*/
     li {
       display: table;
       border-bottom: 1px solid #E2E2E2;

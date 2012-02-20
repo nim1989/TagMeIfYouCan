@@ -3,6 +3,8 @@ class Facebook < ActiveRecord::Base
   has_many :tags_facebooks
   has_many :tags, :through => :tags_facebooks
 
+  before_create :create_uri
+  
   def profile
     @profile ||= FbGraph::User.me(self.access_token).fetch
   end
@@ -40,4 +42,10 @@ class Facebook < ActiveRecord::Base
       _fb_user_
     end
   end
+
+  private
+  def create_uri
+    self.uri = "http://www.facebook.com/" + self.identifier
+  end
+  
 end

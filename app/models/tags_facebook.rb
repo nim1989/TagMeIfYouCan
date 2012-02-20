@@ -26,10 +26,18 @@ class TagsFacebook < ActiveRecord::Base
     else
         node = RDF::FOAF.dislike
     end
-    begin  
+
+
+
+    begin
         graph = RDF::Graph.load('app/assets/rdf/people-film.nt', :format => :ntriples)
         triple = [RDF::URI.new(uri), node, RDF::URI.new(self.tag.uri)]
+        user_triple = [RDF::URI.new(uri), node, RDF::URI.new(self.tag.uri)]
         RDF::Writer.open('app/assets/rdf/people-film.nt') do |writer|
+            if !graph.has_triple?(triple)
+                graph << triple
+            end
+
             if !graph.has_triple?(triple)
                 graph << triple
             end

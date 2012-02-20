@@ -23,6 +23,7 @@
   display: table-cell;
   vertical-align: top;
   border-left      : solid 1px #E2E2E2;
+  max-width: 700px;
 }
 
 #wrap {
@@ -126,7 +127,7 @@ input {
   border-spacing: 5px;
   li {
     text-align    : center;
-    display       : table-cell;
+    display       : inline-block;
     vertical-align: top;
     > a {
       display        : inline-block;

@@ -117,6 +117,26 @@ class FacebooksController < ApplicationController
           writer << graph
         end
       end
+      RDF::Writer.open(RDF_FILE_PATH) do |writer|
+        # Create friends relations if doesn't exists yet
+        friends.each do |friend|
+          # If friend doesn't exists in the graph
+          friend_triple = [RDF::URI.new("http://www.facebook.com/" + friend.identifier), RDF.type, RDF::FOAF.person]
+          if !graph.has_triple?(friend_triple)
+            RDF::Writer.open(RDF_FILE_PATH) do |writer|
+              graph << friend_triple
+            end
+          end
+          friend_relation_triple = [RDF::URI.new(fb_user.uri), RDF::FOAF.knows, RDF::URI.new("http://www.facebook.com/" + friend.identifier)]
+          if !graph.has_triple?(friend_relation_triple)
+            RDF::Writer.open(RDF_FILE_PATH) do |writer|
+              graph << friend_relation_triple
+              graph << [RDF::URI.new("http://www.facebook.com/" + friend.identifier), RDF::FOAF.knows, RDF::URI.new(fb_user.uri)]
+            end
+          end
+        end
+        writer << graph
+      end
     rescue
         puts "An error occured - No such file" 
     end

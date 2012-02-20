@@ -30,7 +30,7 @@ class HomeController < ApplicationController
         query.execute(graph).each do |solution|
             @directors << solution.director
         end
-        @directors = @directors.collect{ |director| [director.to_s.gsub('http://dbpedia.org/resource/','').gsub('_', ' '), director.to_s]} || []
+        @directors = @directors.collect{ |director| [URI.escape(director.to_s.gsub('http://dbpedia.org/resource/','').gsub('_', ' ')), director.to_s]} || []
         current_user_uri = current_user.uri
         query2 = RDF::Query.new do
             pattern [RDF::URI.new(current_user_uri), RDF::FOAF.like, :film]

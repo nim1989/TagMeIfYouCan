@@ -1,7 +1,11 @@
-if ! File.directory? "app/assets/rdf"
-  Dir.mkdir('app/assets/rdf')
+if ! File.directory? Rails.root.join('app', 'assets')
+  Dir.mkdir(Rails.root.join('app', 'assets'))
 end
 
-if !FileTest.exists?('app/assets/rdf/people-film.nt') 
-  File.open('app/assets/rdf/people-film.nt', 'a')
+if ! File.directory? Rails.root.join('app', 'assets', 'rdf')
+  Dir.mkdir(Rails.root.join('app', 'assets', 'rdf'))
+end
+
+if !FileTest.exists?(Rails.root.join('app', 'assets', 'rdf', 'people-film.nt'))
+  File.open(Rails.root.join('app', 'assets', 'rdf', 'people-film.nt'), 'a')
 end

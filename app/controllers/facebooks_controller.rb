@@ -27,16 +27,16 @@ class FacebooksController < ApplicationController
     friend_identifier = params[:tag][:user_identifier]
     # Create friend and relation if doesn't exists yet
     begin
-      graph = RDF::Graph.load('app/assets/rdf/people-film.nt', :format => :ntriples)
+      graph = RDF::Graph.load(RDF_FILE_PATH, :format => :ntriples)
       # If friend doesn't exists in the graph
       if !graph.has_triple?([RDF::URI.new("http://www.facebook.com/" + friend_identifier), RDF.type, RDF::FOAF.person])
-        RDF::Writer.open('app/assets/rdf/people-film.nt') do |writer|
+        RDF::Writer.open(RDF_FILE_PATH) do |writer|
           graph << [RDF::URI.new("http://www.facebook.com/" + friend_identifier), RDF.type, RDF::FOAF.person]            
           writer << graph
         end
       end
       if !graph.has_triple?([RDF::URI.new(current_user.uri), RDF::FOAF.knows, RDF::URI.new("http://www.facebook.com/" + friend_identifier)])
-        RDF::Writer.open('app/assets/rdf/people-film.nt') do |writer|
+        RDF::Writer.open(RDF_FILE_PATH) do |writer|
           graph << [RDF::URI.new(current_user.uri), RDF::FOAF.knows, RDF::URI.new("http://www.facebook.com/" + friend_identifier)]
           graph << [RDF::URI.new("http://www.facebook.com/" + friend_identifier), RDF::FOAF.knows, RDF::URI.new(current_user.uri)]
           writer << graph
@@ -109,10 +109,10 @@ class FacebooksController < ApplicationController
     friends = user.friends
     # Defining facebook people as fb_person
     begin
-      graph = RDF::Graph.load('app/assets/rdf/people-film.nt', :format => :ntriples)
+      graph = RDF::Graph.load(RDF_FILE_PATH, :format => :ntriples)
       # If user doesn't exists in the graph
       if !graph.has_triple?([RDF::URI.new(fb_user.uri), RDF.type, RDF::FOAF.person])
-        RDF::Writer.open('app/assets/rdf/people-film.nt') do |writer|
+        RDF::Writer.open(RDF_FILE_PATH) do |writer|
           graph << [RDF::URI.new(fb_user.uri), RDF.type, RDF::FOAF.person]
           writer << graph
         end

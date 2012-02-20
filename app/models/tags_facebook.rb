@@ -30,7 +30,7 @@ class TagsFacebook < ActiveRecord::Base
 
 
     begin
-        graph = RDF::Graph.load('app/assets/rdf/people-film.nt', :format => :ntriples)
+        graph = RDF::Graph.load(RDF_FILE_PATH, :format => :ntriples)
         triple = [RDF::URI.new(uri), node, RDF::URI.new(self.tag.uri)]
         user_triple = [RDF::URI.new(uri), node, RDF::URI.new(self.tag.uri)]
         RDF::Writer.open('app/assets/rdf/people-film.nt') do |writer|

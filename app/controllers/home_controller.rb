@@ -22,7 +22,7 @@ class HomeController < ApplicationController
         @validated_tags.uniq!{ |tag_facebook| tag_facebook.tag.uri }
         @rejected_tags.uniq!{ |tag_facebook| tag_facebook.tag.uri }
         
-        graph = RDF::Graph.load("app/assets/rdf/people-film.nt")
+        graph = RDF::Graph.load(RDF_FILE_PATH, :format => :ntriples)
         query = RDF::Query.new do
             pattern [:l, RDF::URI.new("http://dbpedia.org/ontology/director"), :director]
         end
@@ -45,7 +45,7 @@ class HomeController < ApplicationController
   end
   
   def get_infos
-    graph = RDF::Graph.load("app/assets/rdf/people-film.nt")
+    graph = RDF::Graph.load(RDF_FILE_PATH)
     director = params[:directors]
     if params[:like] == 'false'
         foaf = RDF::FOAF.dislike
@@ -70,7 +70,7 @@ class HomeController < ApplicationController
   end
   
   def get_infos_actors
-    graph = RDF::Graph.load("app/assets/rdf/people-film.nt")
+    graph = RDF::Graph.load(RDF_FILE_PATH, :format => :ntriples)
     actors = params[:actors]
     if params[:like] == 'false'
         foaf = RDF::FOAF.dislike
@@ -134,7 +134,7 @@ class HomeController < ApplicationController
 
   ######## Suggestion from ntriple file
   def movies_you_might_like
-    graph = RDF::Graph.load("app/assets/rdf/people-film.nt")
+    graph = RDF::Graph.load(RDF_FILE_PATH, :format => :ntriples)
     ## Same director
     current_user_uri = current_user.uri
     query = RDF::Query.new do
@@ -172,7 +172,7 @@ class HomeController < ApplicationController
   end
 
   def movies_you_might_like_from_actors
-    graph = RDF::Graph.load("app/assets/rdf/people-film.nt")
+    graph = RDF::Graph.load(RDF_FILE_PATH, :format => :ntriples)
     actor = params[:actors]
 
     current_user_uri = current_user.uri
@@ -210,7 +210,7 @@ class HomeController < ApplicationController
 
 
   def friends_you_might_like
-    graph = RDF::Graph.load("app/assets/rdf/people-film.nt")
+    graph = RDF::Graph.load(RDF_FILE_PATH, :format => :ntriples)
     ## Same director
     current_user_uri = current_user.uri
     query = RDF::Query.new do

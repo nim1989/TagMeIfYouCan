@@ -30,13 +30,9 @@ class TagsFacebook < ActiveRecord::Base
       node = RDF::FOAF.dislike
     end
     begin
-      puts "----------------------------------------------------------------"      
-      puts uri
       graph = RDF::Graph.load(RDF_FILE_PATH, :format => :ntriples)
       triple = [RDF::URI.new(uri), node, RDF::URI.new(self.tag.uri)]
-      puts triple
       RDF::Writer.open(RDF_FILE_PATH) do |writer|
-        puts graph.has_triple?(triple)
         if !graph.has_triple?(triple)
           graph << triple
         end

@@ -38,19 +38,6 @@ $(document).ready(function() {
                             $('#results').append(liTag);
                         }
                     });
-/*
-                    $('#query_string').keydown(function(evt) {
-                        switch (evt.keyCode) {
-                            case 38:
-                                $('#results').
-                                break;
-                            case 40:
-                                break;
-                            case 13:
-                                break;
-                          }
-                    });
-*/
                 }
             });
         } else {

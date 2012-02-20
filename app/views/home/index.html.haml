@@ -14,7 +14,7 @@
           = link_to tag_facebook.tag.name, tag_facebook.tag.wikipedia_url, :class => 'ilb'
           .ilb= button_to 'Accepter', accept_tag_facebook_path(:tag_id => tag_facebook.tag.id), :class => "uibutton confirm"
           .ilb= button_to 'Refuser', decline_tag_facebook_path(:tag_id => tag_facebook.tag.id), :class => "uibutton"
-          .ilb= button_to "Retourner le tag", return_tag_facebook_path(:tag_id => tag_facebook.tag.id, :to_facebook_identifier => tag_facebook.from_facebook.identifier), :class => "uibutton"
+          .ilb= button_to "Accepter et renvoyer le tag", return_tag_facebook_path(:tag_id => tag_facebook.tag.id, :to_facebook_identifier => tag_facebook.from_facebook.identifier), :class => "uibutton"
           - render :partial => '/home/search_tag_form', :locals => {:from_facebook => tag_facebook.from_facebook.identifier}
   %h2 Les tags que j'ai validé
   %ul#validate_tag.list

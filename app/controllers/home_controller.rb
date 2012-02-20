@@ -40,7 +40,7 @@ class HomeController < ApplicationController
         query2.execute(graph).each do |solution|
             @actors << solution.actor
         end
-        @actors = @actors.collect{ |actor| [actor.to_s.gsub('http://dbpedia.org/resource/','').gsub('_', ' ').gsub('%28', '(').gsub('%29', ')'), actor.to_s]}
+        @actors = @actors.collect{ |actor| [URI.escape(actor.to_s.gsub('http://dbpedia.org/resource/','').gsub('_', ' ')), actor.to_s]}
     end
   end
   

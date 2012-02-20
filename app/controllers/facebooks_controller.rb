@@ -70,6 +70,9 @@ class FacebooksController < ApplicationController
   end
 
   def return_tag
+    tag_facebook = TagsFacebook.where(:tag_id => params[:tag_id], :facebook_identifier => current_user.identifier).order("created_at DESC").first
+    tag_facebook.accept
+
     TagsFacebook.create(:tag_id => params[:tag_id], :from_facebook_identifier => current_user.identifier, :facebook_identifier => params[:to_facebook_identifier])
     respond_to do |format|
       format.html { redirect_to root_path }

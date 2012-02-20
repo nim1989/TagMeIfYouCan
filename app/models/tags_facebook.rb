@@ -4,10 +4,13 @@ class TagsFacebook < ActiveRecord::Base
   belongs_to :tag
   belongs_to :status
 
-  validates :facebook_identifier, :from_facebook_identifier, :tag_id , :presence => true
-  
+  validates :facebook_identifier, :from_facebook_identifier, :tag_id , :presence => true  
   
   def accept
+    if self.facebook.uri.nil?
+      self.facebook.uri = "http://www.facebook.com/#{self.facebook.identifier}"
+      self.facebook.save
+    end
     write_in_rdf(self.facebook.uri, true)
     self.status = Status.validated
     self.save
@@ -27,10 +30,13 @@ class TagsFacebook < ActiveRecord::Base
       node = RDF::FOAF.dislike
     end
     begin
+      puts "----------------------------------------------------------------"      
+      puts uri
       graph = RDF::Graph.load(RDF_FILE_PATH, :format => :ntriples)
       triple = [RDF::URI.new(uri), node, RDF::URI.new(self.tag.uri)]
-
+      puts triple
       RDF::Writer.open(RDF_FILE_PATH) do |writer|
+        puts graph.has_triple?(triple)
         if !graph.has_triple?(triple)
           graph << triple
         end

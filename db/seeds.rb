@@ -6,5 +6,4 @@ if Status.pending.nil?
 end
 
 
-File.open('app/assets/rdf/people-film.nt', 'w')
 require File.dirname(__FILE__) + '/seed_movie.rb'

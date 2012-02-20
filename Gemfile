@@ -4,14 +4,8 @@ gem 'rails', '3.2.1'
 
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
-group :production do
-  gem 'pg'
-end 
 
-group :development do
-  gem 'mysql2'
-end
-
+gem 'mysql2'
 
 # RDF
 gem 'rdf'

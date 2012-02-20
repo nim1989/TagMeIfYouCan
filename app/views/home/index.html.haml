@@ -45,13 +45,13 @@
     %p
       %span
         = radio_button_tag('like', 'true', true, :name => 'like')
-        = label_tag 'like_true', 'ont'  
+        = label_tag 'like_true', 'aiment'  
       %br/
       %span
         = radio_button_tag('like', 'false', false, :name => 'like')
-        = label_tag 'like_false', 'n\'ont pas'
+        = label_tag 'like_false', 'n\'aiment pas'
     
-    = label_tag 'directors', 'accepté les tags des films de'
+    = label_tag 'directors', 'les films de'
     
     = select_tag 'directors', options_for_select(@directors.uniq), :name => 'directors'
 

@@ -190,7 +190,7 @@ class HomeController < ApplicationController
     friends = []
     solutions = query.execute(graph)
 
-    solutions.filter{|solution| solution.film != solution.inferenced_film } # Remove movies that user already likes
+    #solutions.filter{|solution| solution.film != solution.inferenced_film } # Remove movies that user already likes
     solutions.each do |solution|
       friends << solution.friend_of_friend.to_s
     end
@@ -199,9 +199,9 @@ class HomeController < ApplicationController
     friends_identifier = user.friends.collect{|friend| friend.identifier}
 
     f = friends.collect{|friend| friend.gsub('http://www.facebook.com/', '') }
-    f.reject!{ |friend| friend == current_user.identifier }
-    f.reject!{ |friend| friends_identifier.include?(friend) }
-    f.uniq!
+    f = f.reject{ |friend| friend == current_user.identifier }
+    f = f.reject{ |friend| friends_identifier.include?(friend) }
+    f = f.uniq
     
     respond_to do |format|
       format.json{ render :json => f }

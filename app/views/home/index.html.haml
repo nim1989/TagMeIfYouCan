@@ -16,7 +16,7 @@
           .ilb= button_to 'Je n\'aime pas', decline_tag_facebook_path(:tag_id => tag_facebook.tag.id), :class => "uibutton"
           .ilb= button_to "Aimer et renvoyer le tag", return_tag_facebook_path(:tag_id => tag_facebook.tag.id, :to_facebook_identifier => tag_facebook.from_facebook.identifier), :class => "uibutton"
           - render :partial => '/home/search_tag_form', :locals => {:from_facebook => tag_facebook.from_facebook.identifier}
-  %h2 Les tags que j'ai validé
+  %h2 Films que j'aime
   %ul#validate_tag.list
     - if @validated_tags.length == 0
       %li{:class => 'no_tag'} Aucun tag validé
@@ -26,7 +26,7 @@
           %div.img_tag{:style => "background-image: url(#{tag_facebook.tag.thumbnail})"} &nbsp;
           = link_to tag_facebook.tag.name, tag_facebook.tag.wikipedia_url
   
-  %h2 Les tags que j'ai refusé
+  %h2 Films que je n'aime pas
   %ul#not_validate_tag.list
     - if @rejected_tags.length == 0
       %li{:class => 'no_tag'} Aucun tag refusé

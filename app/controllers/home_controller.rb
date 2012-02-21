@@ -190,7 +190,7 @@ class HomeController < ApplicationController
     friends = []
     solutions = query.execute(graph)
 
-    #solutions.filter{|solution| solution.film != solution.inferenced_film } # Remove movies that user already likes
+
     solutions.each do |solution|
       friends << solution.friend_of_friend.to_s
     end

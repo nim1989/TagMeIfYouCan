@@ -1,7 +1,7 @@
 #content_1
   = render 'search_tag_form'
 
-  %h2 Les tags avec lesquels j'ai été taggé
+  %h2 Tags en attente de validation
   %ul.list
     - if @pending_tags.length == 0
       %li{:class => 'no_tag'} Aucun tag en attente
